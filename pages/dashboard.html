@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfyaLite Dashboard</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+<header class="page-header">
+  <h1>🌿 AfyaLite Dashboard</h1>
+  <p>Your nutrition and fitness overview</p>
+  <a href="../index.html" class="back-link">🏠 Back to Home</a>
+</header>
+
+<!-- Daily Streak -->
+<div class="streak-box">
+  🔥 Daily Exercise Streak: <span id="streakCount">0</span> days
+</div>
+
+<main class="dashboard-section">
+
+  <!-- Daily Health Score -->
+  <section class="dashboard-card">
+    <h2>💚 Daily Health Score</h2>
+    <div class="daily-score">
+      <div class="score-info">
+        <span id="dailyScorePercent">0%</span> completed
+      </div>
+      <div class="progress-bar daily-bar">
+        <div class="progress-fill" id="dailyScoreFill" style="width:0%"></div>
+      </div>
+      <p id="dailyScoreMsg" class="motivational-msg">Start your healthy meals today! 🌿</p>
+    </div>
+  </section>
+
+  <!-- Today's Meals -->
+  <section class="dashboard-card">
+    <h2>🍽️ Today's Meals</h2>
+    <textarea id="mealInput" rows="3" placeholder="Enter foods you ate today, e.g., ugali, sukuma, fish"></textarea>
+    <button id="checkMealBtn" style="background-color: rgb(0, 255, 34);border-radius:10px;margin:3px; padding:10px">Check Meal</button>
+    <div class="meal-recommendation">
+      <p id="mealRecommendation">Enter your meal above and click "Check Meal".</p>
+    </div>
+    <div class="progress-bar meal-bar">
+      <div class="progress-fill" id="mealProgressFill" style="width:0%"></div>
+    </div>
+  </section>
+
+  <!-- Weekly Exercise Summary -->
+  <section class="dashboard-card">
+    <h2>📊 Weekly Exercise Summary</h2>
+    <div class="weekly-summary" id="weeklySummary"></div>
+  </section>
+
+  <!-- Daily Tips -->
+  <section class="dashboard-card">
+    <h2>💡 Healthy Tips</h2>
+    <ul id="dailyTips"></ul>
+  </section>
+
+   <div class="back-home">
+        <a href="../index.html"><i class="fas fa-home"></i> Back to Home</a>
+    </div>
+
+
+</main>
+
+<footer class="page-footer">
+  <p>© 2025 AfyaLite – Health & Nutrition App 🌿</p>
+</footer>
+
+<script src="../js/dashboard.js"></script>
+</body>
+</html>

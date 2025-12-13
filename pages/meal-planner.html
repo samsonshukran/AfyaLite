@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🥗 Meal Planner - AfyaLite</title>
+<link rel="stylesheet" href="../style/meal-planner.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>🥗 Meal Planner</h1>
+        <p>Check if your meals are balanced and healthy 🍌🥘🥦</p>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="meal-input-section">
+        <h2>📝 Enter Your Meals</h2>
+
+        <div class="meal-row">
+            <label for="breakfastInput">Breakfast:</label>
+            <input type="text" id="breakfastInput" placeholder="e.g., Ugali, Eggs, Banana">
+            <p class="mealResult" id="breakfastResult"></p>
+        </div>
+
+        <div class="meal-row">
+            <label for="lunchInput">Lunch:</label>
+            <input type="text" id="lunchInput" placeholder="e.g., Rice, Sukuma, Fish">
+            <p class="mealResult" id="lunchResult"></p>
+        </div>
+
+        <div class="meal-row">
+            <label for="dinnerInput">Dinner:</label>
+            <input type="text" id="dinnerInput" placeholder="e.g., Chapati, Beans, Cabbage">
+            <p class="mealResult" id="dinnerResult"></p>
+        </div>
+
+        <button id="checkMealsBtn">Check Meals</button>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="mealProgressFill"></div>
+        </div>
+    </section>
+
+    <div class="back-home">
+        <a href="../index.html"><i class="fas fa-home"></i> Back to Home</a>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2025 AfyaLite - Health & Nutrition App 🌿</p>
+</footer>
+
+<script src="../js/meal-planner.js"></script>
+</body>
+</html>

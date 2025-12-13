@@ -1,0 +1,32 @@
+{
+  "weeklyMeals": [
+    {
+      "day": "Monday",
+      "foods": ["Porridge + Banana 🍌", "Githeri (Maize + Beans) 🌽🥘", "Tilapia + Sukuma + Ugali 🐟🥬"]
+    },
+    {
+      "day": "Tuesday",
+      "foods": ["Boiled Eggs + Tea 🍵🥚", "Ugali + Spinach + Fried Fish 🥬🐟", "Matoke + Beans 🥬🥘"]
+    },
+    {
+      "day": "Wednesday",
+      "foods": ["Mandazi + Tea 🍩🍵", "Chapati + Ndengu 🫓🥘", "Rice + Chicken + Veggies 🍚🍗🥦"]
+    },
+    {
+      "day": "Thursday",
+      "foods": ["Fruit Salad 🍍🍉🍌", "Ugali + Cabbage + Fish 🥬🐟", "Bean Stew + Chapati 🥘🫓"]
+    },
+    {
+      "day": "Friday",
+      "foods": ["Smoothie (Mango + Banana) 🥭🍌", "Githeri 🌽🥘", "Roasted Chicken + Veggies 🍗🥦"]
+    },
+    {
+      "day": "Saturday",
+      "foods": ["Cassava + Tea 🥥🍵", "Ugali + Sukuma + Beef 🥬🥩", "Fish Curry + Rice 🐟🍚"]
+    },
+    {
+      "day": "Sunday",
+      "foods": ["Pancakes + Tea 🥞🍵", "Matumbo + Ugali 🥘🌽", "Tilapia + Kachumbari 🐟🥗"]
+    }
+  ]
+}

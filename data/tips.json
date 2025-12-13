@@ -1,0 +1,3016 @@
+{
+  "dailyTips": [
+    "💧 Drink at least 8 glasses of water daily.",
+    "🥬 Include leafy greens like spinach, sukuma in meals.",
+    "🍌 Eat seasonal fruits like mango, pawpaw, bananas, guava, oranges.",
+    "🥘 Eat more beans, peas, and legumes for protein.",
+    "🏃 Walk 20–30 minutes every day.",
+    "🧼 Wash fruits and vegetables before eating.",
+    "🍳 Use steaming or boiling instead of frying.",
+    "🍚 Prefer whole grains like brown rice, millet, or oats.",
+    "🍗 Include lean proteins like fish, eggs, chicken, and beans.",
+    "🛌 Ensure 7–8 hours of sleep daily."
+  ],
+  "tips": [
+    {
+      "id": 1,
+      "category": "hygiene",
+      "situation": "prevention",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 2,
+      "category": "sleep",
+      "situation": "quality",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 3,
+      "category": "oral_health",
+      "situation": "dental hygiene",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 4,
+      "category": "heart",
+      "situation": "circulation",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 5,
+      "category": "first_aid",
+      "situation": "cuts",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 6,
+      "category": "first_aid",
+      "situation": "injuries",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 7,
+      "category": "seasonal_care",
+      "situation": "immunity",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 8,
+      "category": "maternal",
+      "situation": "pregnancy",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 9,
+      "category": "diabetes",
+      "situation": "prevention",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 10,
+      "category": "hair_care",
+      "situation": "scalp health",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 11,
+      "category": "maternal",
+      "situation": "nutrition needs",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 12,
+      "category": "food_safety",
+      "situation": "storage",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 13,
+      "category": "weight_management",
+      "situation": "weight loss",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 14,
+      "category": "heart",
+      "situation": "circulation",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 15,
+      "category": "immunity",
+      "situation": "recovery",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 16,
+      "category": "immunity",
+      "situation": "frequent illness",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 17,
+      "category": "diabetes",
+      "situation": "blood sugar",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 18,
+      "category": "seasonal_care",
+      "situation": "immunity",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 19,
+      "category": "hygiene",
+      "situation": "hand washing",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 20,
+      "category": "hair_care",
+      "situation": "hair loss",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 21,
+      "category": "maternal",
+      "situation": "pregnancy",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 22,
+      "category": "seasonal_care",
+      "situation": "activity",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 23,
+      "category": "child",
+      "situation": "healthy habits",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 24,
+      "category": "oral_health",
+      "situation": "dental hygiene",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 25,
+      "category": "child",
+      "situation": "immunity",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 26,
+      "category": "diabetes",
+      "situation": "prevention",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 27,
+      "category": "fitness",
+      "situation": "endurance",
+      "text": "Include 14 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 28,
+      "category": "oral_health",
+      "situation": "prevention",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 29,
+      "category": "travel_health",
+      "situation": "food safety",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 30,
+      "category": "skin_care",
+      "situation": "dry skin",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 31,
+      "category": "hair_care",
+      "situation": "shine",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 32,
+      "category": "first_aid",
+      "situation": "sprains",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 33,
+      "category": "heart",
+      "situation": "circulation",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 34,
+      "category": "sleep",
+      "situation": "routine",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 35,
+      "category": "skin_care",
+      "situation": "sun protection",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 36,
+      "category": "weight_management",
+      "situation": "metabolism",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 37,
+      "category": "heart",
+      "situation": "cholesterol",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 38,
+      "category": "food_safety",
+      "situation": "storage",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 39,
+      "category": "travel_health",
+      "situation": "food safety",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 40,
+      "category": "digestion",
+      "situation": "gut health",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 41,
+      "category": "hair_care",
+      "situation": "growth",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 42,
+      "category": "hydration",
+      "situation": "daily intake",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 43,
+      "category": "food_safety",
+      "situation": "cooking",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 44,
+      "category": "nutrition",
+      "situation": "malnutrition",
+      "text": "Eat fish regularly for better weight management."
+    },
+    {
+      "id": 45,
+      "category": "nutrition",
+      "situation": "energy levels",
+      "text": "Eat healthy fats regularly for better digestion."
+    },
+    {
+      "id": 46,
+      "category": "food_safety",
+      "situation": "hygiene",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 47,
+      "category": "travel_health",
+      "situation": "rest",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 48,
+      "category": "oral_health",
+      "situation": "prevention",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 49,
+      "category": "stress",
+      "situation": "anxiety",
+      "text": "Practice deep breathing for 10 minutes when feeling stressed."
+    },
+    {
+      "id": 50,
+      "category": "sleep",
+      "situation": "quality",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 51,
+      "category": "child",
+      "situation": "growth",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 52,
+      "category": "budget_nutrition",
+      "situation": "affordable",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 53,
+      "category": "hair_care",
+      "situation": "dry hair",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 54,
+      "category": "immunity",
+      "situation": "recovery",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 55,
+      "category": "hair_care",
+      "situation": "growth",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 56,
+      "category": "hair_care",
+      "situation": "shine",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 57,
+      "category": "eye_health",
+      "situation": "dry eyes",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 58,
+      "category": "weight_management",
+      "situation": "weight loss",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 59,
+      "category": "food_safety",
+      "situation": "cooking",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 60,
+      "category": "first_aid",
+      "situation": "burns",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 61,
+      "category": "hair_care",
+      "situation": "dry hair",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 62,
+      "category": "weight_management",
+      "situation": "maintenance",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 63,
+      "category": "travel_health",
+      "situation": "food safety",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 64,
+      "category": "seasonal_care",
+      "situation": "clothing",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 65,
+      "category": "travel_health",
+      "situation": "motion sickness",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 66,
+      "category": "digestion",
+      "situation": "regularity",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 67,
+      "category": "hygiene",
+      "situation": "personal",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 68,
+      "category": "elderly_care",
+      "situation": "aging",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 69,
+      "category": "maternal",
+      "situation": "energy",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 70,
+      "category": "stress",
+      "situation": "mental fatigue",
+      "text": "Practice deep breathing for 16 minutes when feeling stressed."
+    },
+    {
+      "id": 71,
+      "category": "maternal",
+      "situation": "pregnancy",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 72,
+      "category": "heart",
+      "situation": "prevention",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 73,
+      "category": "weight_management",
+      "situation": "obesity",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 74,
+      "category": "child",
+      "situation": "development",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 75,
+      "category": "hydration",
+      "situation": "exercise",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 76,
+      "category": "skin_care",
+      "situation": "hydration",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 77,
+      "category": "heart",
+      "situation": "blood pressure",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 78,
+      "category": "heart",
+      "situation": "prevention",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 79,
+      "category": "nutrition",
+      "situation": "vitamin deficiency",
+      "text": "Eat seeds regularly for better bone strength."
+    },
+    {
+      "id": 80,
+      "category": "eye_health",
+      "situation": "vision",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 81,
+      "category": "travel_health",
+      "situation": "preparation",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 82,
+      "category": "food_safety",
+      "situation": "preparation",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 83,
+      "category": "mental_health",
+      "situation": "depression",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 84,
+      "category": "elderly_care",
+      "situation": "cognitive health",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 85,
+      "category": "travel_health",
+      "situation": "motion sickness",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 86,
+      "category": "seasonal_care",
+      "situation": "clothing",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 87,
+      "category": "nutrition",
+      "situation": "vitamin deficiency",
+      "text": "Eat leafy greens regularly for better immunity."
+    },
+    {
+      "id": 88,
+      "category": "oral_health",
+      "situation": "breath",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 89,
+      "category": "fitness",
+      "situation": "flexibility",
+      "text": "Include 27 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 90,
+      "category": "eye_health",
+      "situation": "nutrition",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 91,
+      "category": "diabetes",
+      "situation": "monitoring",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 92,
+      "category": "child",
+      "situation": "immunity",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 93,
+      "category": "cooking_tips",
+      "situation": "nutrient retention",
+      "text": "Use healthy cooking methods like steaming and baking instead of frying."
+    },
+    {
+      "id": 94,
+      "category": "mental_health",
+      "situation": "social connection",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 95,
+      "category": "oral_health",
+      "situation": "gum health",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 96,
+      "category": "fitness",
+      "situation": "muscle gain",
+      "text": "Include 38 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 97,
+      "category": "elderly_care",
+      "situation": "mobility",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 98,
+      "category": "immunity",
+      "situation": "frequent illness",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 99,
+      "category": "immunity",
+      "situation": "prevention",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 100,
+      "category": "maternal",
+      "situation": "energy",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 101,
+      "category": "food_safety",
+      "situation": "storage",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 102,
+      "category": "diabetes",
+      "situation": "monitoring",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 103,
+      "category": "mental_health",
+      "situation": "mindfulness",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 104,
+      "category": "first_aid",
+      "situation": "sprains",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 105,
+      "category": "first_aid",
+      "situation": "emergency",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 106,
+      "category": "hair_care",
+      "situation": "scalp health",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 107,
+      "category": "weight_management",
+      "situation": "obesity",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 108,
+      "category": "eye_health",
+      "situation": "protection",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 109,
+      "category": "skin_care",
+      "situation": "aging",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 110,
+      "category": "oral_health",
+      "situation": "dental hygiene",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 111,
+      "category": "budget_nutrition",
+      "situation": "affordable",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 112,
+      "category": "fitness",
+      "situation": "endurance",
+      "text": "Include 25 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 113,
+      "category": "child",
+      "situation": "healthy habits",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 114,
+      "category": "stress",
+      "situation": "anxiety",
+      "text": "Practice deep breathing for 18 minutes when feeling stressed."
+    },
+    {
+      "id": 115,
+      "category": "hydration",
+      "situation": "daily intake",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 116,
+      "category": "digestion",
+      "situation": "constipation",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 117,
+      "category": "maternal",
+      "situation": "postpartum",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 118,
+      "category": "oral_health",
+      "situation": "gum health",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 119,
+      "category": "cooking_tips",
+      "situation": "nutrient retention",
+      "text": "Use healthy cooking methods like steaming and baking instead of frying."
+    },
+    {
+      "id": 120,
+      "category": "elderly_care",
+      "situation": "mobility",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 121,
+      "category": "immunity",
+      "situation": "cold season",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 122,
+      "category": "hygiene",
+      "situation": "prevention",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 123,
+      "category": "food_safety",
+      "situation": "storage",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 124,
+      "category": "food_safety",
+      "situation": "cooking",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 125,
+      "category": "nutrition",
+      "situation": "energy levels",
+      "text": "Eat leafy greens regularly for better muscle function."
+    },
+    {
+      "id": 126,
+      "category": "hygiene",
+      "situation": "food",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 127,
+      "category": "hygiene",
+      "situation": "hand washing",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 128,
+      "category": "stress",
+      "situation": "relaxation",
+      "text": "Practice deep breathing for 7 minutes when feeling stressed."
+    },
+    {
+      "id": 129,
+      "category": "travel_health",
+      "situation": "motion sickness",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 130,
+      "category": "mental_health",
+      "situation": "social connection",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 131,
+      "category": "maternal",
+      "situation": "pregnancy",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 132,
+      "category": "hygiene",
+      "situation": "food",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 133,
+      "category": "sleep",
+      "situation": "insomnia",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 134,
+      "category": "hygiene",
+      "situation": "food",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 135,
+      "category": "hygiene",
+      "situation": "hand washing",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 136,
+      "category": "heart",
+      "situation": "circulation",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 137,
+      "category": "oral_health",
+      "situation": "dental hygiene",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 138,
+      "category": "hydration",
+      "situation": "daily intake",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 139,
+      "category": "sleep",
+      "situation": "quality",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 140,
+      "category": "sleep",
+      "situation": "duration",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 141,
+      "category": "nutrition",
+      "situation": "malnutrition",
+      "text": "Eat herbs regularly for better digestion."
+    },
+    {
+      "id": 142,
+      "category": "hygiene",
+      "situation": "environmental",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 143,
+      "category": "immunity",
+      "situation": "weak immune system",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 144,
+      "category": "stress",
+      "situation": "mental fatigue",
+      "text": "Practice deep breathing for 6 minutes when feeling stressed."
+    },
+    {
+      "id": 145,
+      "category": "eye_health",
+      "situation": "vision",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 146,
+      "category": "heart",
+      "situation": "prevention",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 147,
+      "category": "food_safety",
+      "situation": "preparation",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 148,
+      "category": "skin_care",
+      "situation": "sun protection",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 149,
+      "category": "hygiene",
+      "situation": "food",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 150,
+      "category": "mental_health",
+      "situation": "depression",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 151,
+      "category": "hair_care",
+      "situation": "shine",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 152,
+      "category": "mental_health",
+      "situation": "stress",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 153,
+      "category": "sleep",
+      "situation": "duration",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 154,
+      "category": "seasonal_care",
+      "situation": "allergies",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 155,
+      "category": "seasonal_care",
+      "situation": "activity",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 156,
+      "category": "hydration",
+      "situation": "exercise",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 157,
+      "category": "elderly_care",
+      "situation": "aging",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 158,
+      "category": "skin_care",
+      "situation": "acne",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 159,
+      "category": "oral_health",
+      "situation": "breath",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 160,
+      "category": "cooking_tips",
+      "situation": "flavor",
+      "text": "Use healthy cooking methods like steaming and baking instead of frying."
+    },
+    {
+      "id": 161,
+      "category": "elderly_care",
+      "situation": "hydration",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 162,
+      "category": "seasonal_care",
+      "situation": "allergies",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 163,
+      "category": "hair_care",
+      "situation": "growth",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 164,
+      "category": "hydration",
+      "situation": "dehydration",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 165,
+      "category": "mental_health",
+      "situation": "stress",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 166,
+      "category": "travel_health",
+      "situation": "hydration",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 167,
+      "category": "hydration",
+      "situation": "daily intake",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 168,
+      "category": "food_safety",
+      "situation": "storage",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 169,
+      "category": "skin_care",
+      "situation": "hydration",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 170,
+      "category": "stress",
+      "situation": "mental fatigue",
+      "text": "Practice deep breathing for 12 minutes when feeling stressed."
+    },
+    {
+      "id": 171,
+      "category": "hair_care",
+      "situation": "scalp health",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 172,
+      "category": "first_aid",
+      "situation": "cuts",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 173,
+      "category": "cooking_tips",
+      "situation": "time saving",
+      "text": "Use healthy cooking methods like steaming and baking instead of frying."
+    },
+    {
+      "id": 174,
+      "category": "nutrition",
+      "situation": "vitamin deficiency",
+      "text": "Eat healthy fats regularly for better energy."
+    },
+    {
+      "id": 175,
+      "category": "oral_health",
+      "situation": "gum health",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 176,
+      "category": "elderly_care",
+      "situation": "hydration",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 177,
+      "category": "mental_health",
+      "situation": "mindfulness",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 178,
+      "category": "stress",
+      "situation": "mental fatigue",
+      "text": "Practice deep breathing for 19 minutes when feeling stressed."
+    },
+    {
+      "id": 179,
+      "category": "seasonal_care",
+      "situation": "immunity",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 180,
+      "category": "digestion",
+      "situation": "regularity",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 181,
+      "category": "eye_health",
+      "situation": "eye strain",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 182,
+      "category": "cooking_tips",
+      "situation": "healthy methods",
+      "text": "Use healthy cooking methods like steaming and baking instead of frying."
+    },
+    {
+      "id": 183,
+      "category": "skin_care",
+      "situation": "aging",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 184,
+      "category": "cooking_tips",
+      "situation": "nutrient retention",
+      "text": "Use healthy cooking methods like steaming and baking instead of frying."
+    },
+    {
+      "id": 185,
+      "category": "weight_management",
+      "situation": "portion control",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 186,
+      "category": "skin_care",
+      "situation": "aging",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 187,
+      "category": "heart",
+      "situation": "prevention",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 188,
+      "category": "seasonal_care",
+      "situation": "immunity",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 189,
+      "category": "heart",
+      "situation": "circulation",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 190,
+      "category": "hydration",
+      "situation": "hot weather",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 191,
+      "category": "maternal",
+      "situation": "pregnancy",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 192,
+      "category": "stress",
+      "situation": "anxiety",
+      "text": "Practice deep breathing for 19 minutes when feeling stressed."
+    },
+    {
+      "id": 193,
+      "category": "food_safety",
+      "situation": "cooking",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 194,
+      "category": "sleep",
+      "situation": "routine",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 195,
+      "category": "maternal",
+      "situation": "breastfeeding",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 196,
+      "category": "immunity",
+      "situation": "frequent illness",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 197,
+      "category": "first_aid",
+      "situation": "emergency",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 198,
+      "category": "oral_health",
+      "situation": "prevention",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 199,
+      "category": "maternal",
+      "situation": "postpartum",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 200,
+      "category": "eye_health",
+      "situation": "dry eyes",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 201,
+      "category": "oral_health",
+      "situation": "breath",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 202,
+      "category": "maternal",
+      "situation": "pregnancy",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 203,
+      "category": "travel_health",
+      "situation": "hydration",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 204,
+      "category": "maternal",
+      "situation": "postpartum",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 205,
+      "category": "hygiene",
+      "situation": "environmental",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 206,
+      "category": "hydration",
+      "situation": "illness",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 207,
+      "category": "seasonal_care",
+      "situation": "immunity",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 208,
+      "category": "hydration",
+      "situation": "illness",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 209,
+      "category": "hygiene",
+      "situation": "personal",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 210,
+      "category": "cooking_tips",
+      "situation": "time saving",
+      "text": "Use healthy cooking methods like steaming and baking instead of frying."
+    },
+    {
+      "id": 211,
+      "category": "mental_health",
+      "situation": "mindfulness",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 212,
+      "category": "mental_health",
+      "situation": "depression",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 213,
+      "category": "elderly_care",
+      "situation": "nutrition",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 214,
+      "category": "fitness",
+      "situation": "muscle gain",
+      "text": "Include 36 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 215,
+      "category": "travel_health",
+      "situation": "preparation",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 216,
+      "category": "budget_nutrition",
+      "situation": "affordable",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 217,
+      "category": "skin_care",
+      "situation": "dry skin",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 218,
+      "category": "sleep",
+      "situation": "restoration",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 219,
+      "category": "nutrition",
+      "situation": "malnutrition",
+      "text": "Eat dairy regularly for better hydration."
+    },
+    {
+      "id": 220,
+      "category": "maternal",
+      "situation": "postpartum",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 221,
+      "category": "sleep",
+      "situation": "duration",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 222,
+      "category": "first_aid",
+      "situation": "burns",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 223,
+      "category": "nutrition",
+      "situation": "vitamin deficiency",
+      "text": "Eat healthy fats regularly for better health."
+    },
+    {
+      "id": 224,
+      "category": "sleep",
+      "situation": "restoration",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 225,
+      "category": "elderly_care",
+      "situation": "nutrition",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 226,
+      "category": "maternal",
+      "situation": "breastfeeding",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 227,
+      "category": "weight_management",
+      "situation": "portion control",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 228,
+      "category": "first_aid",
+      "situation": "injuries",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 229,
+      "category": "sleep",
+      "situation": "duration",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 230,
+      "category": "diabetes",
+      "situation": "monitoring",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 231,
+      "category": "budget_nutrition",
+      "situation": "seasonal",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 232,
+      "category": "hair_care",
+      "situation": "dry hair",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 233,
+      "category": "first_aid",
+      "situation": "emergency",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 234,
+      "category": "child",
+      "situation": "healthy habits",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 235,
+      "category": "budget_nutrition",
+      "situation": "planning",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 236,
+      "category": "mental_health",
+      "situation": "social connection",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 237,
+      "category": "fitness",
+      "situation": "weight loss",
+      "text": "Include 23 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 238,
+      "category": "sleep",
+      "situation": "quality",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 239,
+      "category": "hygiene",
+      "situation": "personal",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 240,
+      "category": "nutrition",
+      "situation": "balanced meals",
+      "text": "Eat fruits regularly for better mental clarity."
+    },
+    {
+      "id": 241,
+      "category": "stress",
+      "situation": "mental fatigue",
+      "text": "Practice deep breathing for 9 minutes when feeling stressed."
+    },
+    {
+      "id": 242,
+      "category": "nutrition",
+      "situation": "vitamin deficiency",
+      "text": "Eat vegetables regularly for better weight management."
+    },
+    {
+      "id": 243,
+      "category": "child",
+      "situation": "immunity",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 244,
+      "category": "eye_health",
+      "situation": "eye strain",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 245,
+      "category": "first_aid",
+      "situation": "cuts",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 246,
+      "category": "elderly_care",
+      "situation": "nutrition",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 247,
+      "category": "hygiene",
+      "situation": "food",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 248,
+      "category": "skin_care",
+      "situation": "hydration",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 249,
+      "category": "food_safety",
+      "situation": "hygiene",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 250,
+      "category": "budget_nutrition",
+      "situation": "bulk buying",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 251,
+      "category": "travel_health",
+      "situation": "preparation",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 252,
+      "category": "oral_health",
+      "situation": "gum health",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 253,
+      "category": "eye_health",
+      "situation": "vision",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 254,
+      "category": "diabetes",
+      "situation": "monitoring",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 255,
+      "category": "eye_health",
+      "situation": "nutrition",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 256,
+      "category": "mental_health",
+      "situation": "social connection",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 257,
+      "category": "child",
+      "situation": "healthy habits",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 258,
+      "category": "hair_care",
+      "situation": "scalp health",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 259,
+      "category": "fitness",
+      "situation": "endurance",
+      "text": "Include 10 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 260,
+      "category": "travel_health",
+      "situation": "motion sickness",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 261,
+      "category": "maternal",
+      "situation": "postpartum",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 262,
+      "category": "weight_management",
+      "situation": "maintenance",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 263,
+      "category": "skin_care",
+      "situation": "dry skin",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 264,
+      "category": "fitness",
+      "situation": "flexibility",
+      "text": "Include 15 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 265,
+      "category": "maternal",
+      "situation": "nutrition needs",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 266,
+      "category": "sleep",
+      "situation": "quality",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 267,
+      "category": "skin_care",
+      "situation": "hydration",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 268,
+      "category": "eye_health",
+      "situation": "protection",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 269,
+      "category": "weight_management",
+      "situation": "obesity",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 270,
+      "category": "nutrition",
+      "situation": "vitamin deficiency",
+      "text": "Eat cruciferous vegetables regularly for better metabolism."
+    },
+    {
+      "id": 271,
+      "category": "diabetes",
+      "situation": "diet control",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 272,
+      "category": "hygiene",
+      "situation": "personal",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 273,
+      "category": "hydration",
+      "situation": "dehydration",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 274,
+      "category": "travel_health",
+      "situation": "preparation",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 275,
+      "category": "heart",
+      "situation": "blood pressure",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 276,
+      "category": "nutrition",
+      "situation": "malnutrition",
+      "text": "Eat spices regularly for better immunity."
+    },
+    {
+      "id": 277,
+      "category": "first_aid",
+      "situation": "emergency",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 278,
+      "category": "hair_care",
+      "situation": "growth",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 279,
+      "category": "nutrition",
+      "situation": "poor diet",
+      "text": "Eat leafy greens regularly for better stress reduction."
+    },
+    {
+      "id": 280,
+      "category": "immunity",
+      "situation": "frequent illness",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 281,
+      "category": "hydration",
+      "situation": "hot weather",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 282,
+      "category": "sleep",
+      "situation": "restoration",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 283,
+      "category": "oral_health",
+      "situation": "prevention",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 284,
+      "category": "eye_health",
+      "situation": "vision",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 285,
+      "category": "oral_health",
+      "situation": "breath",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 286,
+      "category": "oral_health",
+      "situation": "gum health",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 287,
+      "category": "child",
+      "situation": "immunity",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 288,
+      "category": "eye_health",
+      "situation": "nutrition",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 289,
+      "category": "mental_health",
+      "situation": "social connection",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 290,
+      "category": "fitness",
+      "situation": "flexibility",
+      "text": "Include 32 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 291,
+      "category": "fitness",
+      "situation": "inactive",
+      "text": "Include 32 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 292,
+      "category": "elderly_care",
+      "situation": "mobility",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 293,
+      "category": "maternal",
+      "situation": "postpartum",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 294,
+      "category": "skin_care",
+      "situation": "sun protection",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 295,
+      "category": "cooking_tips",
+      "situation": "equipment",
+      "text": "Use healthy cooking methods like steaming and baking instead of frying."
+    },
+    {
+      "id": 296,
+      "category": "maternal",
+      "situation": "nutrition needs",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 297,
+      "category": "weight_management",
+      "situation": "metabolism",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 298,
+      "category": "travel_health",
+      "situation": "rest",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 299,
+      "category": "maternal",
+      "situation": "postpartum",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 300,
+      "category": "stress",
+      "situation": "burnout",
+      "text": "Practice deep breathing for 6 minutes when feeling stressed."
+    },
+    {
+      "id": 301,
+      "category": "digestion",
+      "situation": "constipation",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 302,
+      "category": "hygiene",
+      "situation": "personal",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 303,
+      "category": "maternal",
+      "situation": "nutrition needs",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 304,
+      "category": "hair_care",
+      "situation": "scalp health",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 305,
+      "category": "travel_health",
+      "situation": "food safety",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 306,
+      "category": "digestion",
+      "situation": "indigestion",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 307,
+      "category": "skin_care",
+      "situation": "hydration",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 308,
+      "category": "seasonal_care",
+      "situation": "allergies",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 309,
+      "category": "hygiene",
+      "situation": "food",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 310,
+      "category": "maternal",
+      "situation": "breastfeeding",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 311,
+      "category": "elderly_care",
+      "situation": "nutrition",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 312,
+      "category": "skin_care",
+      "situation": "hydration",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 313,
+      "category": "sleep",
+      "situation": "restoration",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 314,
+      "category": "travel_health",
+      "situation": "food safety",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 315,
+      "category": "sleep",
+      "situation": "insomnia",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 316,
+      "category": "weight_management",
+      "situation": "weight loss",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 317,
+      "category": "food_safety",
+      "situation": "preparation",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 318,
+      "category": "nutrition",
+      "situation": "balanced meals",
+      "text": "Eat nuts regularly for better digestion."
+    },
+    {
+      "id": 319,
+      "category": "eye_health",
+      "situation": "nutrition",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 320,
+      "category": "digestion",
+      "situation": "gut health",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 321,
+      "category": "food_safety",
+      "situation": "preparation",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 322,
+      "category": "first_aid",
+      "situation": "injuries",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 323,
+      "category": "hygiene",
+      "situation": "personal",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 324,
+      "category": "skin_care",
+      "situation": "acne",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 325,
+      "category": "sleep",
+      "situation": "duration",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 326,
+      "category": "hair_care",
+      "situation": "shine",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 327,
+      "category": "heart",
+      "situation": "prevention",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 328,
+      "category": "eye_health",
+      "situation": "vision",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 329,
+      "category": "digestion",
+      "situation": "regularity",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 330,
+      "category": "weight_management",
+      "situation": "maintenance",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 331,
+      "category": "weight_management",
+      "situation": "portion control",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 332,
+      "category": "mental_health",
+      "situation": "anxiety",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 333,
+      "category": "sleep",
+      "situation": "restoration",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 334,
+      "category": "first_aid",
+      "situation": "burns",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 335,
+      "category": "sleep",
+      "situation": "routine",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 336,
+      "category": "hydration",
+      "situation": "illness",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 337,
+      "category": "seasonal_care",
+      "situation": "allergies",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 338,
+      "category": "hair_care",
+      "situation": "scalp health",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 339,
+      "category": "budget_nutrition",
+      "situation": "waste reduction",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 340,
+      "category": "sleep",
+      "situation": "routine",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 341,
+      "category": "child",
+      "situation": "development",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 342,
+      "category": "eye_health",
+      "situation": "dry eyes",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 343,
+      "category": "mental_health",
+      "situation": "stress",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 344,
+      "category": "mental_health",
+      "situation": "depression",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 345,
+      "category": "fitness",
+      "situation": "muscle gain",
+      "text": "Include 20 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 346,
+      "category": "mental_health",
+      "situation": "mindfulness",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 347,
+      "category": "skin_care",
+      "situation": "sun protection",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 348,
+      "category": "budget_nutrition",
+      "situation": "planning",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 349,
+      "category": "digestion",
+      "situation": "constipation",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 350,
+      "category": "budget_nutrition",
+      "situation": "planning",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 351,
+      "category": "nutrition",
+      "situation": "balanced meals",
+      "text": "Eat seeds regularly for better muscle function."
+    },
+    {
+      "id": 352,
+      "category": "travel_health",
+      "situation": "hydration",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 353,
+      "category": "diabetes",
+      "situation": "weight management",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 354,
+      "category": "oral_health",
+      "situation": "gum health",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 355,
+      "category": "maternal",
+      "situation": "energy",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 356,
+      "category": "digestion",
+      "situation": "constipation",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 357,
+      "category": "diabetes",
+      "situation": "monitoring",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 358,
+      "category": "first_aid",
+      "situation": "burns",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 359,
+      "category": "nutrition",
+      "situation": "balanced meals",
+      "text": "Eat dairy regularly for better muscle function."
+    },
+    {
+      "id": 360,
+      "category": "skin_care",
+      "situation": "aging",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 361,
+      "category": "budget_nutrition",
+      "situation": "seasonal",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 362,
+      "category": "child",
+      "situation": "appetite",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 363,
+      "category": "travel_health",
+      "situation": "preparation",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 364,
+      "category": "child",
+      "situation": "healthy habits",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 365,
+      "category": "first_aid",
+      "situation": "burns",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 366,
+      "category": "weight_management",
+      "situation": "portion control",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 367,
+      "category": "stress",
+      "situation": "relaxation",
+      "text": "Practice deep breathing for 13 minutes when feeling stressed."
+    },
+    {
+      "id": 368,
+      "category": "stress",
+      "situation": "mental fatigue",
+      "text": "Practice deep breathing for 17 minutes when feeling stressed."
+    },
+    {
+      "id": 369,
+      "category": "digestion",
+      "situation": "gut health",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 370,
+      "category": "food_safety",
+      "situation": "cooking",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 371,
+      "category": "weight_management",
+      "situation": "obesity",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 372,
+      "category": "hair_care",
+      "situation": "scalp health",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 373,
+      "category": "sleep",
+      "situation": "routine",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 374,
+      "category": "diabetes",
+      "situation": "blood sugar",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 375,
+      "category": "heart",
+      "situation": "prevention",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 376,
+      "category": "elderly_care",
+      "situation": "nutrition",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 377,
+      "category": "nutrition",
+      "situation": "energy levels",
+      "text": "Eat legumes regularly for better hydration."
+    },
+    {
+      "id": 378,
+      "category": "hydration",
+      "situation": "hot weather",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 379,
+      "category": "nutrition",
+      "situation": "vitamin deficiency",
+      "text": "Eat herbs regularly for better energy."
+    },
+    {
+      "id": 380,
+      "category": "digestion",
+      "situation": "constipation",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 381,
+      "category": "hydration",
+      "situation": "exercise",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 382,
+      "category": "travel_health",
+      "situation": "hydration",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 383,
+      "category": "fitness",
+      "situation": "inactive",
+      "text": "Include 11 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 384,
+      "category": "mental_health",
+      "situation": "stress",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 385,
+      "category": "child",
+      "situation": "healthy habits",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 386,
+      "category": "weight_management",
+      "situation": "maintenance",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 387,
+      "category": "mental_health",
+      "situation": "anxiety",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 388,
+      "category": "travel_health",
+      "situation": "food safety",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 389,
+      "category": "diabetes",
+      "situation": "diet control",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 390,
+      "category": "first_aid",
+      "situation": "cuts",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 391,
+      "category": "weight_management",
+      "situation": "portion control",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 392,
+      "category": "child",
+      "situation": "development",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 393,
+      "category": "mental_health",
+      "situation": "social connection",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 394,
+      "category": "stress",
+      "situation": "work pressure",
+      "text": "Practice deep breathing for 13 minutes when feeling stressed."
+    },
+    {
+      "id": 395,
+      "category": "maternal",
+      "situation": "energy",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 396,
+      "category": "diabetes",
+      "situation": "diet control",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 397,
+      "category": "hygiene",
+      "situation": "food",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 398,
+      "category": "travel_health",
+      "situation": "rest",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 399,
+      "category": "child",
+      "situation": "appetite",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 400,
+      "category": "hydration",
+      "situation": "illness",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 401,
+      "category": "immunity",
+      "situation": "recovery",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 402,
+      "category": "heart",
+      "situation": "prevention",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 403,
+      "category": "sleep",
+      "situation": "insomnia",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 404,
+      "category": "first_aid",
+      "situation": "injuries",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 405,
+      "category": "weight_management",
+      "situation": "portion control",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 406,
+      "category": "food_safety",
+      "situation": "hygiene",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 407,
+      "category": "nutrition",
+      "situation": "malnutrition",
+      "text": "Eat spices regularly for better bone strength."
+    },
+    {
+      "id": 408,
+      "category": "mental_health",
+      "situation": "stress",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 409,
+      "category": "elderly_care",
+      "situation": "cognitive health",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 410,
+      "category": "eye_health",
+      "situation": "vision",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 411,
+      "category": "immunity",
+      "situation": "cold season",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 412,
+      "category": "food_safety",
+      "situation": "cooking",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 413,
+      "category": "food_safety",
+      "situation": "hygiene",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 414,
+      "category": "nutrition",
+      "situation": "poor diet",
+      "text": "Eat root vegetables regularly for better stress reduction."
+    },
+    {
+      "id": 415,
+      "category": "stress",
+      "situation": "mental fatigue",
+      "text": "Practice deep breathing for 9 minutes when feeling stressed."
+    },
+    {
+      "id": 416,
+      "category": "hydration",
+      "situation": "hot weather",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 417,
+      "category": "skin_care",
+      "situation": "aging",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 418,
+      "category": "heart",
+      "situation": "prevention",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 419,
+      "category": "hygiene",
+      "situation": "personal",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 420,
+      "category": "first_aid",
+      "situation": "sprains",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 421,
+      "category": "elderly_care",
+      "situation": "cognitive health",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 422,
+      "category": "budget_nutrition",
+      "situation": "affordable",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 423,
+      "category": "heart",
+      "situation": "blood pressure",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 424,
+      "category": "child",
+      "situation": "growth",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 425,
+      "category": "travel_health",
+      "situation": "motion sickness",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 426,
+      "category": "travel_health",
+      "situation": "preparation",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 427,
+      "category": "seasonal_care",
+      "situation": "activity",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 428,
+      "category": "eye_health",
+      "situation": "protection",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 429,
+      "category": "oral_health",
+      "situation": "prevention",
+      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+    },
+    {
+      "id": 430,
+      "category": "travel_health",
+      "situation": "preparation",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 431,
+      "category": "maternal",
+      "situation": "pregnancy",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 432,
+      "category": "hygiene",
+      "situation": "personal",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 433,
+      "category": "diabetes",
+      "situation": "prevention",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 434,
+      "category": "travel_health",
+      "situation": "rest",
+      "text": "Stay hydrated and practice good hygiene while traveling."
+    },
+    {
+      "id": 435,
+      "category": "fitness",
+      "situation": "endurance",
+      "text": "Include 28 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 436,
+      "category": "budget_nutrition",
+      "situation": "bulk buying",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 437,
+      "category": "hair_care",
+      "situation": "hair loss",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 438,
+      "category": "child",
+      "situation": "growth",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 439,
+      "category": "hygiene",
+      "situation": "food",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 440,
+      "category": "digestion",
+      "situation": "constipation",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 441,
+      "category": "hydration",
+      "situation": "illness",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 442,
+      "category": "mental_health",
+      "situation": "mindfulness",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 443,
+      "category": "hair_care",
+      "situation": "scalp health",
+      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+    },
+    {
+      "id": 444,
+      "category": "child",
+      "situation": "growth",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 445,
+      "category": "nutrition",
+      "situation": "balanced meals",
+      "text": "Eat berries regularly for better health."
+    },
+    {
+      "id": 446,
+      "category": "heart",
+      "situation": "blood pressure",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 447,
+      "category": "food_safety",
+      "situation": "hygiene",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 448,
+      "category": "stress",
+      "situation": "anxiety",
+      "text": "Practice deep breathing for 7 minutes when feeling stressed."
+    },
+    {
+      "id": 449,
+      "category": "elderly_care",
+      "situation": "mobility",
+      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+    },
+    {
+      "id": 450,
+      "category": "mental_health",
+      "situation": "stress",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 451,
+      "category": "food_safety",
+      "situation": "preservation",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 452,
+      "category": "nutrition",
+      "situation": "energy levels",
+      "text": "Eat root vegetables regularly for better bone strength."
+    },
+    {
+      "id": 453,
+      "category": "first_aid",
+      "situation": "injuries",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 454,
+      "category": "child",
+      "situation": "growth",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 455,
+      "category": "hydration",
+      "situation": "daily intake",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 456,
+      "category": "hygiene",
+      "situation": "prevention",
+      "text": "Practice good personal hygiene and keep your environment clean."
+    },
+    {
+      "id": 457,
+      "category": "hydration",
+      "situation": "daily intake",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 458,
+      "category": "fitness",
+      "situation": "inactive",
+      "text": "Include 36 minutes of exercise in your daily routine."
+    },
+    {
+      "id": 459,
+      "category": "budget_nutrition",
+      "situation": "bulk buying",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 460,
+      "category": "budget_nutrition",
+      "situation": "seasonal",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 461,
+      "category": "heart",
+      "situation": "prevention",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 462,
+      "category": "budget_nutrition",
+      "situation": "planning",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 463,
+      "category": "digestion",
+      "situation": "gut health",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 464,
+      "category": "nutrition",
+      "situation": "vitamin deficiency",
+      "text": "Eat root vegetables regularly for better bone strength."
+    },
+    {
+      "id": 465,
+      "category": "budget_nutrition",
+      "situation": "planning",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    },
+    {
+      "id": 466,
+      "category": "immunity",
+      "situation": "weak immune system",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 467,
+      "category": "sleep",
+      "situation": "insomnia",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 468,
+      "category": "first_aid",
+      "situation": "cuts",
+      "text": "Keep basic first aid supplies at home and know how to use them."
+    },
+    {
+      "id": 469,
+      "category": "diabetes",
+      "situation": "blood sugar",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 470,
+      "category": "stress",
+      "situation": "relaxation",
+      "text": "Practice deep breathing for 7 minutes when feeling stressed."
+    },
+    {
+      "id": 471,
+      "category": "immunity",
+      "situation": "frequent illness",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 472,
+      "category": "eye_health",
+      "situation": "vision",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 473,
+      "category": "heart",
+      "situation": "blood pressure",
+      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+    },
+    {
+      "id": 474,
+      "category": "immunity",
+      "situation": "prevention",
+      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+    },
+    {
+      "id": 475,
+      "category": "food_safety",
+      "situation": "cooking",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 476,
+      "category": "digestion",
+      "situation": "indigestion",
+      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+    },
+    {
+      "id": 477,
+      "category": "stress",
+      "situation": "work pressure",
+      "text": "Practice deep breathing for 14 minutes when feeling stressed."
+    },
+    {
+      "id": 478,
+      "category": "sleep",
+      "situation": "insomnia",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 479,
+      "category": "food_safety",
+      "situation": "hygiene",
+      "text": "Practice proper food handling and storage to prevent foodborne illness."
+    },
+    {
+      "id": 480,
+      "category": "maternal",
+      "situation": "nutrition needs",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 481,
+      "category": "child",
+      "situation": "appetite",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 482,
+      "category": "child",
+      "situation": "appetite",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 483,
+      "category": "sleep",
+      "situation": "duration",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 484,
+      "category": "cooking_tips",
+      "situation": "equipment",
+      "text": "Use healthy cooking methods like steaming and baking instead of frying."
+    },
+    {
+      "id": 485,
+      "category": "weight_management",
+      "situation": "portion control",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 486,
+      "category": "seasonal_care",
+      "situation": "clothing",
+      "text": "Adjust your diet and activities according to seasonal changes."
+    },
+    {
+      "id": 487,
+      "category": "diabetes",
+      "situation": "blood sugar",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 488,
+      "category": "weight_management",
+      "situation": "metabolism",
+      "text": "Combine balanced diet with regular exercise for healthy weight."
+    },
+    {
+      "id": 489,
+      "category": "hydration",
+      "situation": "illness",
+      "text": "Drink water throughout the day, especially before and after physical activity."
+    },
+    {
+      "id": 490,
+      "category": "eye_health",
+      "situation": "nutrition",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 491,
+      "category": "eye_health",
+      "situation": "nutrition",
+      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+    },
+    {
+      "id": 492,
+      "category": "nutrition",
+      "situation": "balanced meals",
+      "text": "Eat root vegetables regularly for better skin health."
+    },
+    {
+      "id": 493,
+      "category": "sleep",
+      "situation": "quality",
+      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+    },
+    {
+      "id": 494,
+      "category": "maternal",
+      "situation": "postpartum",
+      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+    },
+    {
+      "id": 495,
+      "category": "child",
+      "situation": "growth",
+      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+    },
+    {
+      "id": 496,
+      "category": "diabetes",
+      "situation": "weight management",
+      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+    },
+    {
+      "id": 497,
+      "category": "skin_care",
+      "situation": "sun protection",
+      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+    },
+    {
+      "id": 498,
+      "category": "cooking_tips",
+      "situation": "equipment",
+      "text": "Use healthy cooking methods like steaming and baking instead of frying."
+    },
+    {
+      "id": 499,
+      "category": "mental_health",
+      "situation": "depression",
+      "text": "Take time for self-care and maintain social connections."
+    },
+    {
+      "id": 500,
+      "category": "budget_nutrition",
+      "situation": "affordable",
+      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+    }
+  ]
+}
