@@ -3,61 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🍏 AfyaLite - Nutrition & Health App</title>
-
-    <!-- CSS -->
+    <title>AfyaLite - Smart Health & Nutrition Platform</title>
     <link rel="stylesheet" href="style/style.css">
-
-    <!-- Font Awesome for icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍏</text></svg>">
 </head>
 <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <h1>Afya<span>Lite</span></h1>
+            </div>
+            
+            <div class="tagline" id="tagline"></div>
+            
+            <div class="header-stats">
+                <div class="stat-item">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Healthy Users</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Local Recipes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Health Support</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free Access</div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator" onclick="scrollToMain()">
+                <span>Explore Features</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
 
-<!-- Header Section -->
-<header>
-    <div class="header-container">
-        <h1>🍏 AfyaLite <span class="emoji">💙</span></h1>
-        <p class="tagline">Eat Well, Live Well, Stay Strong 🌍</p>
-    </div>
-</header>
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Welcome Section -->
+        <section class="welcome-section fade-in">
+            <div class="welcome-message">
+                <h2>Welcome to AfyaLite</h2>
+                <p class="welcome-subtitle">
+                    Your intelligent health companion that combines cutting-edge technology with 
+                    traditional East African wisdom to help you live healthier, happier, and longer.
+                </p>
+            </div>
+        </section>
 
-<!-- Main Navigation Section -->
-<main class="container">
-    <a href="pages/meal-planner.html" class="card">
-        <h2>🥗 Weekly Meal Planner <i class="fas fa-calendar-alt"></i></h2>
-        <p>Plan your meals for the week using locally available foods 🍌🥘🥦</p>
-    </a>
+        <!-- Features Section -->
+        <section class="features-section fade-in">
+            <div class="features-intro">
+                <h3>Your Health Toolkit</h3>
+                <p>
+                    Discover our suite of powerful tools designed to transform your health journey. 
+                    Each feature is crafted with care to provide you with the best experience.
+                </p>
+            </div>
 
-    <a href="pages/tips.html" class="card">
-        <h2>💡 Daily Healthy Tips <i class="fas fa-lightbulb"></i></h2>
-        <p>Get simple, affordable health and nutrition tips every day 🏃‍♂️💧</p>
-    </a>
+            <!-- Feature Cards -->
+            <div class="cards-container">
+                <a href="pages/meal-planner.html" class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Smart Meal Planner</h3>
+                    <p>
+                        Create personalized weekly meal plans with locally available foods. 
+                        Get intelligent suggestions based on your preferences and nutritional needs.
+                    </p>
+                    <div class="card-footer">
+                        <span>Start Planning</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
 
-    <a href="pages/recipes.html" class="card">
-        <h2>🍲 Quick Local Recipes <i class="fas fa-utensils"></i></h2>
-        <p>Discover easy-to-cook East African meals for breakfast, lunch, and dinner 🍗🥗🍛</p>
-    </a>
+                <a href="pages/tips.html" class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Daily Health Insights</h3>
+                    <p>
+                        Receive personalized health tips and insights every day. 
+                        Learn about nutrition, exercise, and wellness tailored to your lifestyle.
+                    </p>
+                    <div class="card-footer">
+                        <span>Get Inspired</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
 
-    <a href="pages/education.html" class="card">
-        <h2>📚 Nutrition Education <i class="fas fa-book"></i></h2>
-        <p>Learn about the importance of different nutrients in your diet 🍎🥦</p>
-    </a>
+                <a href="pages/recipes.html" class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Local Recipe Hub</h3>
+                    <p>
+                        Access hundreds of authentic East African recipes with modern twists. 
+                        Each recipe includes nutritional information and preparation tips.
+                    </p>
+                    <div class="card-footer">
+                        <span>Browse Recipes</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
 
-    <a href="pages/exercise.html" class="card">
-        <h2>🏃‍♂️ Exercise & Activity <i class="fas fa-running"></i></h2>
-        <p>Simple daily exercises to keep you active and healthy 💪🧘‍♀️</p>
-    </a>
+                <a href="pages/education.html" class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Nutrition Academy</h3>
+                    <p>
+                        Learn about healthy eating with interactive lessons and quizzes. 
+                        Understand how different nutrients affect your body and health.
+                    </p>
+                    <div class="card-footer">
+                        <span>Start Learning</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
 
-    <a href="pages/dashboard.html" class="card">
-        <h2>🌿 Dashboard Overview <i class="fas fa-tachometer-alt"></i></h2>
-        <p>Your personalized health and nutrition summary at a glance 📊📈</p>
-    </a>
-</main>
+                <a href="pages/exercise.html" class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Exercise Companion</h3>
+                    <p>
+                        Follow guided workout routines designed for all fitness levels. 
+                        Track your progress and achieve your fitness goals step by step.
+                    </p>
+                    <div class="card-footer">
+                        <span>Get Active</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
 
-<!-- Footer Section -->
-<footer>
-    <p>© 2025 AfyaLite - Health & Nutrition App | Made for you 🌿</p>
-</footer>
+                <a href="pages/dashboard.html" class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Health Dashboard</h3>
+                    <p>
+                        Monitor your health journey with our comprehensive dashboard. 
+                        Track meals, exercise, water intake, and overall wellness progress.
+                    </p>
+                    <div class="card-footer">
+                        <span>View Dashboard</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-heartbeat"></i>
+            </div>
+            <p class="footer-tag">
+                AfyaLite is more than an app - it's your partner in health. 
+                We're committed to making healthy living accessible, affordable, and enjoyable for everyone in East Africa.
+            </p>
+            <p class="copyright">
+                © 2025 AfyaLite - Health & Nutrition Platform. All rights reserved.<br>
+                Made with <i class="fas fa-heart" style="color: #ff5252;"></i> for healthier communities.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

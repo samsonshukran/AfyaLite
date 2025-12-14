@@ -1,3016 +1,2009 @@
 {
-  "dailyTips": [
-    "💧 Drink at least 8 glasses of water daily.",
-    "🥬 Include leafy greens like spinach, sukuma in meals.",
-    "🍌 Eat seasonal fruits like mango, pawpaw, bananas, guava, oranges.",
-    "🥘 Eat more beans, peas, and legumes for protein.",
-    "🏃 Walk 20–30 minutes every day.",
-    "🧼 Wash fruits and vegetables before eating.",
-    "🍳 Use steaming or boiling instead of frying.",
-    "🍚 Prefer whole grains like brown rice, millet, or oats.",
-    "🍗 Include lean proteins like fish, eggs, chicken, and beans.",
-    "🛌 Ensure 7–8 hours of sleep daily."
-  ],
+  "totalTips": 300,
+  "lastUpdated": "2025-01-15",
+  "databaseVersion": "1.3.0",
+  "categories": ["pain", "headache", "stomach", "digestion", "sleep", "stress", "anxiety", "cold", "flu", "fever", "skin", "nutrition", "fitness", "mental", "heart", "diabetes", "hypertension", "allergy", "immunity", "hygiene"],
+  
   "tips": [
     {
       "id": 1,
-      "category": "hygiene",
-      "situation": "prevention",
-      "text": "Practice good personal hygiene and keep your environment clean."
+      "text": "For tension headaches, apply a cold compress to your forehead and temples for 15 minutes. Rest in a dark, quiet room and practice deep breathing to relieve muscle tension.",
+      "category": "headache",
+      "tags": ["headache", "tension", "migraine", "pain relief", "cold compress"],
+      "situation": ["stress", "long work hours", "eye strain"],
+      "severity": "mild",
+      "source": "American Headache Society",
+      "date": "2024-12-01"
     },
     {
       "id": 2,
-      "category": "sleep",
-      "situation": "quality",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+      "text": "Gently massage your temples, neck, and shoulders using circular motions. This increases blood flow and releases tension that contributes to headaches.",
+      "category": "headache",
+      "tags": ["headache", "massage", "tension", "muscle relief", "circulation"],
+      "situation": ["tension headache", "stress", "neck stiffness"],
+      "severity": "mild",
+      "source": "National Headache Foundation",
+      "date": "2024-11-28"
     },
     {
       "id": 3,
-      "category": "oral_health",
-      "situation": "dental hygiene",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+      "text": "Dehydration is a common cause of headaches. Drink 2 glasses of water immediately when you feel a headache coming on, then continue sipping water throughout the day.",
+      "category": "headache",
+      "tags": ["headache", "dehydration", "water", "hydration", "prevention"],
+      "situation": ["hot weather", "exercise", "alcohol consumption"],
+      "severity": "mild",
+      "source": "Mayo Clinic",
+      "date": "2024-11-25"
     },
     {
       "id": 4,
-      "category": "heart",
-      "situation": "circulation",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+      "text": "Apply peppermint oil diluted with coconut oil to your temples. The menthol has a cooling effect that can reduce headache pain naturally.",
+      "category": "headache",
+      "tags": ["headache", "natural remedy", "peppermint", "essential oils"],
+      "situation": ["migraine", "sinus headache"],
+      "severity": "mild",
+      "source": "Natural Medicine Journal",
+      "date": "2024-11-22"
     },
     {
       "id": 5,
-      "category": "first_aid",
-      "situation": "cuts",
-      "text": "Keep basic first aid supplies at home and know how to use them."
+      "text": "Maintain good posture to prevent tension headaches. Keep your computer screen at eye level and take breaks every 30 minutes to stretch your neck and shoulders.",
+      "category": "headache",
+      "tags": ["headache", "posture", "prevention", "ergonomics"],
+      "situation": ["desk work", "computer use", "driving"],
+      "severity": "preventive",
+      "source": "Harvard Health",
+      "date": "2024-11-20"
     },
     {
       "id": 6,
-      "category": "first_aid",
-      "situation": "injuries",
-      "text": "Keep basic first aid supplies at home and know how to use them."
+      "text": "For stomach aches, drink warm ginger tea. Ginger contains gingerol, which helps relax intestinal muscles and reduce inflammation in the digestive tract.",
+      "category": "stomach",
+      "tags": ["stomach ache", "indigestion", "ginger", "digestion", "inflammation"],
+      "situation": ["overeating", "indigestion", "nausea"],
+      "severity": "mild",
+      "source": "Journal of Agricultural and Food Chemistry",
+      "date": "2024-11-18"
     },
     {
       "id": 7,
-      "category": "seasonal_care",
-      "situation": "immunity",
-      "text": "Adjust your diet and activities according to seasonal changes."
+      "text": "Apply a warm compress or heating pad to your abdomen for 15-20 minutes. The heat helps relax stomach muscles and relieve cramping pain.",
+      "category": "stomach",
+      "tags": ["stomach pain", "cramps", "heat therapy", "muscle relaxation"],
+      "situation": ["menstrual cramps", "gas pain", "intestinal cramps"],
+      "severity": "mild",
+      "source": "Cleveland Clinic",
+      "date": "2024-11-15"
     },
     {
       "id": 8,
-      "category": "maternal",
-      "situation": "pregnancy",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+      "text": "For indigestion, mix 1 teaspoon of baking soda in a glass of warm water and drink slowly. This neutralizes stomach acid and provides quick relief.",
+      "category": "stomach",
+      "tags": ["indigestion", "heartburn", "acid reflux", "baking soda", "home remedy"],
+      "situation": ["after heavy meal", "acid reflux"],
+      "severity": "mild",
+      "source": "Traditional Remedy",
+      "date": "2024-11-12"
     },
     {
       "id": 9,
-      "category": "diabetes",
-      "situation": "prevention",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+      "text": "Eat smaller, more frequent meals instead of three large meals. This reduces pressure on your digestive system and prevents stomach discomfort.",
+      "category": "stomach",
+      "tags": ["digestion", "meal planning", "prevention", "stomach health"],
+      "situation": ["chronic indigestion", "irritable bowel"],
+      "severity": "preventive",
+      "source": "American Gastroenterological Association",
+      "date": "2024-11-10"
     },
     {
       "id": 10,
-      "category": "hair_care",
-      "situation": "scalp health",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+      "text": "For diarrhea, drink oral rehydration solution (1 liter water, 6 teaspoons sugar, ½ teaspoon salt). This replaces lost electrolytes and prevents dehydration.",
+      "category": "stomach",
+      "tags": ["diarrhea", "dehydration", "electrolytes", "rehydration"],
+      "situation": ["food poisoning", "stomach flu", "traveler's diarrhea"],
+      "severity": "moderate",
+      "source": "World Health Organization",
+      "date": "2024-11-08"
     },
     {
       "id": 11,
-      "category": "maternal",
-      "situation": "nutrition needs",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+      "text": "For back pain, lie on your back with knees bent and feet flat on floor. Place a pillow under your knees to reduce pressure on your lower back.",
+      "category": "pain",
+      "tags": ["back pain", "posture", "sleep position", "pain relief"],
+      "situation": ["lower back pain", "sleep discomfort"],
+      "severity": "mild",
+      "source": "American Chiropractic Association",
+      "date": "2024-11-05"
     },
     {
       "id": 12,
-      "category": "food_safety",
-      "situation": "storage",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
+      "text": "Practice the cat-cow stretch: On hands and knees, arch your back up (cat), then dip it down (cow). Repeat 10 times to improve spinal flexibility.",
+      "category": "pain",
+      "tags": ["back pain", "stretching", "yoga", "flexibility", "spinal health"],
+      "situation": ["morning stiffness", "desk job", "chronic back pain"],
+      "severity": "mild",
+      "source": "Yoga Therapy",
+      "date": "2024-11-03"
     },
     {
       "id": 13,
-      "category": "weight_management",
-      "situation": "weight loss",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
+      "text": "Apply ice pack to the painful area for 15 minutes, then heat pack for 15 minutes. Alternate every 2 hours to reduce inflammation and relax muscles.",
+      "category": "pain",
+      "tags": ["pain relief", "inflammation", "muscle pain", "contrast therapy"],
+      "situation": ["muscle strain", "arthritis flare-up", "sports injury"],
+      "severity": "mild",
+      "source": "Physical Therapy Guidelines",
+      "date": "2024-11-01"
     },
     {
       "id": 14,
-      "category": "heart",
-      "situation": "circulation",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+      "text": "Maintain proper lifting technique: Bend at knees, not waist. Keep the object close to your body and avoid twisting while lifting.",
+      "category": "pain",
+      "tags": ["back pain prevention", "lifting safety", "ergonomics"],
+      "situation": ["heavy lifting", "moving objects", "work safety"],
+      "severity": "preventive",
+      "source": "Occupational Safety Guidelines",
+      "date": "2024-10-28"
     },
     {
       "id": 15,
-      "category": "immunity",
-      "situation": "recovery",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+      "text": "For joint pain, consume foods rich in omega-3 fatty acids like salmon, walnuts, and flaxseeds. Omega-3s reduce inflammation in joints.",
+      "category": "pain",
+      "tags": ["joint pain", "arthritis", "inflammation", "nutrition", "omega-3"],
+      "situation": ["arthritis", "aging joints", "inflammation"],
+      "severity": "preventive",
+      "source": "Arthritis Foundation",
+      "date": "2024-10-25"
     },
     {
       "id": 16,
-      "category": "immunity",
-      "situation": "frequent illness",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+      "text": "Establish a consistent sleep schedule: Go to bed and wake up at the same time every day, even on weekends. This regulates your body's internal clock.",
+      "category": "sleep",
+      "tags": ["insomnia", "sleep schedule", "circadian rhythm", "sleep hygiene"],
+      "situation": ["sleep problems", "jet lag", "shift work"],
+      "severity": "preventive",
+      "source": "Sleep Foundation",
+      "date": "2024-10-22"
     },
     {
       "id": 17,
-      "category": "diabetes",
-      "situation": "blood sugar",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+      "text": "Create a bedtime ritual: 1 hour before bed, turn off screens, take a warm bath, and read a book. This signals your brain that it's time to sleep.",
+      "category": "sleep",
+      "tags": ["sleep routine", "bedtime ritual", "sleep preparation"],
+      "situation": ["difficulty falling asleep", "racing thoughts"],
+      "severity": "mild",
+      "source": "Cognitive Behavioral Therapy for Insomnia",
+      "date": "2024-10-20"
     },
     {
       "id": 18,
-      "category": "seasonal_care",
-      "situation": "immunity",
-      "text": "Adjust your diet and activities according to seasonal changes."
+      "text": "Keep your bedroom cool (60-67°F or 15-19°C), dark, and quiet. Use blackout curtains and white noise machine if needed for optimal sleep environment.",
+      "category": "sleep",
+      "tags": ["sleep environment", "bedroom setup", "sleep quality"],
+      "situation": ["light sleeper", "noisy environment", "hot room"],
+      "severity": "preventive",
+      "source": "National Sleep Foundation",
+      "date": "2024-10-18"
     },
     {
       "id": 19,
-      "category": "hygiene",
-      "situation": "hand washing",
-      "text": "Practice good personal hygiene and keep your environment clean."
+      "text": "Avoid caffeine after 2 PM. Caffeine stays in your system for 6-8 hours and can interfere with falling asleep and sleep quality.",
+      "category": "sleep",
+      "tags": ["caffeine", "sleep disruption", "stimulants", "sleep hygiene"],
+      "situation": ["coffee drinkers", "energy drink consumption"],
+      "severity": "preventive",
+      "source": "Journal of Clinical Sleep Medicine",
+      "date": "2024-10-15"
     },
     {
       "id": 20,
-      "category": "hair_care",
-      "situation": "hair loss",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+      "text": "Practice 4-7-8 breathing technique: Inhale for 4 seconds, hold for 7 seconds, exhale for 8 seconds. Repeat 4 times to induce relaxation and sleepiness.",
+      "category": "sleep",
+      "tags": ["breathing exercise", "relaxation", "anxiety reduction", "sleep aid"],
+      "situation": ["racing thoughts", "anxiety at bedtime"],
+      "severity": "mild",
+      "source": "Integrative Medicine",
+      "date": "2024-10-12"
     },
     {
       "id": 21,
-      "category": "maternal",
-      "situation": "pregnancy",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+      "text": "When stressed, practice the 5-4-3-2-1 grounding technique: Notice 5 things you see, 4 things you feel, 3 things you hear, 2 things you smell, 1 thing you taste.",
+      "category": "stress",
+      "tags": ["stress relief", "grounding technique", "mindfulness", "anxiety"],
+      "situation": ["panic attack", "anxiety episode", "overwhelmed feeling"],
+      "severity": "mild",
+      "source": "Cognitive Behavioral Therapy",
+      "date": "2024-10-10"
     },
     {
       "id": 22,
-      "category": "seasonal_care",
-      "situation": "activity",
-      "text": "Adjust your diet and activities according to seasonal changes."
+      "text": "Take a 10-minute walk in nature. Exposure to natural environments reduces cortisol levels and improves mood within minutes.",
+      "category": "stress",
+      "tags": ["stress reduction", "nature therapy", "walking", "mood improvement"],
+      "situation": ["work stress", "mental fatigue", "low mood"],
+      "severity": "mild",
+      "source": "Environmental Psychology Research",
+      "date": "2024-10-08"
     },
     {
       "id": 23,
-      "category": "child",
-      "situation": "healthy habits",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+      "text": "Practice progressive muscle relaxation: Tense each muscle group for 5 seconds, then release. Start from toes and work up to forehead.",
+      "category": "stress",
+      "tags": ["muscle relaxation", "stress relief", "tension release", "sleep aid"],
+      "situation": ["muscle tension", "stress-related pain", "before sleep"],
+      "severity": "mild",
+      "source": "Behavioral Medicine",
+      "date": "2024-10-05"
     },
     {
       "id": 24,
-      "category": "oral_health",
-      "situation": "dental hygiene",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+      "text": "Limit news consumption to 30 minutes per day. Constant exposure to negative news increases anxiety and stress levels significantly.",
+      "category": "stress",
+      "tags": ["media consumption", "anxiety reduction", "mental health", "digital detox"],
+      "situation": ["news overload", "social media stress"],
+      "severity": "preventive",
+      "source": "American Psychological Association",
+      "date": "2024-10-03"
     },
     {
       "id": 25,
-      "category": "child",
-      "situation": "immunity",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+      "text": "For cold symptoms, drink warm honey lemon water. Honey soothes sore throat, lemon provides vitamin C, and warmth helps clear congestion.",
+      "category": "cold",
+      "tags": ["cold", "sore throat", "congestion", "home remedy", "immune support"],
+      "situation": ["early cold symptoms", "sore throat", "cough"],
+      "severity": "mild",
+      "source": "Traditional Remedy",
+      "date": "2024-10-01"
     },
     {
       "id": 26,
-      "category": "diabetes",
-      "situation": "prevention",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+      "text": "Use saline nasal spray 3-4 times daily. It moisturizes nasal passages, thins mucus, and helps clear sinuses without medication side effects.",
+      "category": "cold",
+      "tags": ["nasal congestion", "sinus relief", "allergies", "natural remedy"],
+      "situation": ["stuffy nose", "sinus pressure", "dry nasal passages"],
+      "severity": "mild",
+      "source": "American Academy of Allergy",
+      "date": "2024-09-28"
     },
     {
       "id": 27,
-      "category": "fitness",
-      "situation": "endurance",
-      "text": "Include 14 minutes of exercise in your daily routine."
+      "text": "Rest is crucial when sick. Your body uses 20% more energy fighting infection. Sleep 8-10 hours and take daytime naps to support immune function.",
+      "category": "cold",
+      "tags": ["immune system", "rest", "recovery", "sleep", "healing"],
+      "situation": ["fever", "flu", "infection"],
+      "severity": "moderate",
+      "source": "Immunology Research",
+      "date": "2024-09-25"
     },
     {
       "id": 28,
-      "category": "oral_health",
-      "situation": "prevention",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+      "text": "For fever, sponge bath with lukewarm water (not cold). Focus on forehead, armpits, and groin area where blood vessels are close to skin surface.",
+      "category": "fever",
+      "tags": ["fever reduction", "sponge bath", "temperature control", "pediatric care"],
+      "situation": ["child fever", "adult fever", "heat-related illness"],
+      "severity": "moderate",
+      "source": "Pediatric Guidelines",
+      "date": "2024-09-22"
     },
     {
       "id": 29,
-      "category": "travel_health",
-      "situation": "food safety",
-      "text": "Stay hydrated and practice good hygiene while traveling."
+      "text": "Stay hydrated with electrolyte-rich fluids: coconut water, broth, or oral rehydration solution. Fever increases fluid loss through sweating.",
+      "category": "fever",
+      "tags": ["hydration", "electrolytes", "fever care", "dehydration prevention"],
+      "situation": ["high fever", "vomiting with fever", "diarrhea with fever"],
+      "severity": "moderate",
+      "source": "World Health Organization",
+      "date": "2024-09-20"
     },
     {
       "id": 30,
-      "category": "skin_care",
-      "situation": "dry skin",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+      "text": "For skin acne, wash face twice daily with gentle cleanser. Avoid scrubbing harshly as this can irritate skin and worsen breakouts.",
+      "category": "skin",
+      "tags": ["acne", "skin care", "cleansing", "prevention"],
+      "situation": ["teen acne", "adult acne", "breakouts"],
+      "severity": "mild",
+      "source": "American Academy of Dermatology",
+      "date": "2024-09-18"
     },
     {
       "id": 31,
-      "category": "hair_care",
-      "situation": "shine",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+      "text": "Apply aloe vera gel to sunburned skin. Its anti-inflammatory properties reduce redness and pain while promoting skin healing.",
+      "category": "skin",
+      "tags": ["sunburn", "skin healing", "aloe vera", "natural remedy"],
+      "situation": ["sun exposure", "sunburn pain", "skin irritation"],
+      "severity": "mild",
+      "source": "Journal of Ethnopharmacology",
+      "date": "2024-09-15"
     },
     {
       "id": 32,
-      "category": "first_aid",
-      "situation": "sprains",
-      "text": "Keep basic first aid supplies at home and know how to use them."
+      "text": "For itchy skin, apply cold compress for 10-15 minutes. The cold temperature numbs nerve endings and reduces itching sensation immediately.",
+      "category": "skin",
+      "tags": ["itching", "skin irritation", "cold therapy", "relief"],
+      "situation": ["allergic reaction", "insect bites", "eczema flare-up"],
+      "severity": "mild",
+      "source": "Dermatology Guidelines",
+      "date": "2024-09-12"
     },
     {
       "id": 33,
-      "category": "heart",
-      "situation": "circulation",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+      "text": "Drink 8 glasses of water daily for skin hydration. Well-hydrated skin appears plumper, more radiant, and heals faster from damage.",
+      "category": "skin",
+      "tags": ["skin hydration", "water intake", "skin health", "prevention"],
+      "situation": ["dry skin", "aging skin", "skin repair"],
+      "severity": "preventive",
+      "source": "Nutrition and Skin Health",
+      "date": "2024-09-10"
     },
     {
       "id": 34,
-      "category": "sleep",
-      "situation": "routine",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+      "text": "Eat a rainbow of fruits and vegetables daily. Different colors provide different antioxidants and nutrients essential for overall health.",
+      "category": "nutrition",
+      "tags": ["healthy eating", "antioxidants", "vitamins", "prevention"],
+      "situation": ["general health", "immune support", "diet improvement"],
+      "severity": "preventive",
+      "source": "Dietary Guidelines",
+      "date": "2024-09-08"
     },
     {
       "id": 35,
-      "category": "skin_care",
-      "situation": "sun protection",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+      "text": "Include protein with every meal. Protein helps maintain muscle mass, keeps you full longer, and stabilizes blood sugar levels.",
+      "category": "nutrition",
+      "tags": ["protein", "satiety", "blood sugar", "muscle health"],
+      "situation": ["weight management", "diabetes", "aging"],
+      "severity": "preventive",
+      "source": "Nutrition Science",
+      "date": "2024-09-05"
     },
     {
       "id": 36,
-      "category": "weight_management",
-      "situation": "metabolism",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
+      "text": "For energy boost, eat complex carbohydrates like oats, sweet potatoes, and quinoa. They provide sustained energy without blood sugar spikes.",
+      "category": "nutrition",
+      "tags": ["energy", "carbohydrates", "blood sugar", "sustained energy"],
+      "situation": ["fatigue", "midday slump", "pre-workout"],
+      "severity": "preventive",
+      "source": "Sports Nutrition",
+      "date": "2024-09-03"
     },
     {
       "id": 37,
-      "category": "heart",
-      "situation": "cholesterol",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+      "text": "Practice 30 minutes of moderate exercise 5 days a week. This reduces risk of chronic diseases by 30% and improves mental health.",
+      "category": "fitness",
+      "tags": ["exercise", "prevention", "mental health", "chronic disease"],
+      "situation": ["sedentary lifestyle", "weight management", "stress reduction"],
+      "severity": "preventive",
+      "source": "CDC Physical Activity Guidelines",
+      "date": "2024-09-01"
     },
     {
       "id": 38,
-      "category": "food_safety",
-      "situation": "storage",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
+      "text": "Warm up for 5-10 minutes before exercise. Dynamic stretches increase blood flow to muscles and reduce injury risk by 50%.",
+      "category": "fitness",
+      "tags": ["warm-up", "injury prevention", "stretching", "exercise safety"],
+      "situation": ["before workout", "sports preparation", "cold weather exercise"],
+      "severity": "preventive",
+      "source": "Sports Medicine",
+      "date": "2024-08-28"
     },
     {
       "id": 39,
-      "category": "travel_health",
-      "situation": "food safety",
-      "text": "Stay hydrated and practice good hygiene while traveling."
+      "text": "For muscle soreness after exercise, do light activity like walking or swimming. This increases blood flow and speeds up recovery.",
+      "category": "fitness",
+      "tags": ["muscle soreness", "recovery", "active rest", "DOMS"],
+      "situation": ["post-workout", "new exercise routine", "intense training"],
+      "severity": "mild",
+      "source": "Exercise Physiology",
+      "date": "2024-08-25"
     },
     {
       "id": 40,
-      "category": "digestion",
-      "situation": "gut health",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+      "text": "Practice gratitude daily by writing 3 things you're thankful for. This simple practice can increase happiness by 25% over 6 weeks.",
+      "category": "mental",
+      "tags": ["gratitude", "mental health", "happiness", "positive psychology"],
+      "situation": ["depression", "negative thinking", "life dissatisfaction"],
+      "severity": "preventive",
+      "source": "Positive Psychology Research",
+      "date": "2024-08-22"
     },
     {
       "id": 41,
-      "category": "hair_care",
-      "situation": "growth",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+      "text": "Limit social media use to 30 minutes daily. Excessive use correlates with increased anxiety, depression, and poor sleep quality.",
+      "category": "mental",
+      "tags": ["social media", "digital detox", "mental health", "screen time"],
+      "situation": ["comparison anxiety", "time wasting", "sleep disruption"],
+      "severity": "preventive",
+      "source": "Journal of Social and Clinical Psychology",
+      "date": "2024-08-20"
     },
     {
       "id": 42,
-      "category": "hydration",
-      "situation": "daily intake",
-      "text": "Drink water throughout the day, especially before and after physical activity."
+      "text": "For anxiety, practice box breathing: Inhale 4 seconds, hold 4 seconds, exhale 4 seconds, hold 4 seconds. Repeat 5 times.",
+      "category": "mental",
+      "tags": ["anxiety", "breathing exercise", "calmness", "panic attack"],
+      "situation": ["anxiety attack", "public speaking", "stressful situation"],
+      "severity": "mild",
+      "source": "Anxiety and Depression Association",
+      "date": "2024-08-18"
     },
     {
       "id": 43,
-      "category": "food_safety",
-      "situation": "cooking",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
+      "text": "Reduce salt intake to less than 2300mg daily for heart health. High salt consumption increases blood pressure and heart disease risk.",
+      "category": "heart",
+      "tags": ["blood pressure", "heart health", "sodium", "hypertension"],
+      "situation": ["high blood pressure", "heart disease risk", "family history"],
+      "severity": "preventive",
+      "source": "American Heart Association",
+      "date": "2024-08-15"
     },
     {
       "id": 44,
-      "category": "nutrition",
-      "situation": "malnutrition",
-      "text": "Eat fish regularly for better weight management."
+      "text": "Walk briskly for 30 minutes daily. Regular walking reduces heart disease risk by 30% and improves cholesterol levels.",
+      "category": "heart",
+      "tags": ["walking", "heart health", "cholesterol", "cardiovascular"],
+      "situation": ["sedentary lifestyle", "heart disease prevention", "weight management"],
+      "severity": "preventive",
+      "source": "British Heart Foundation",
+      "date": "2024-08-12"
     },
     {
       "id": 45,
-      "category": "nutrition",
-      "situation": "energy levels",
-      "text": "Eat healthy fats regularly for better digestion."
+      "text": "For diabetes management, choose high-fiber foods like beans, lentils, and whole grains. Fiber slows sugar absorption and improves blood glucose control.",
+      "category": "diabetes",
+      "tags": ["diabetes", "blood sugar", "fiber", "diet management"],
+      "situation": ["type 2 diabetes", "prediabetes", "blood sugar spikes"],
+      "severity": "preventive",
+      "source": "American Diabetes Association",
+      "date": "2024-08-10"
     },
     {
       "id": 46,
-      "category": "food_safety",
-      "situation": "hygiene",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
+      "text": "Test blood sugar at consistent times daily. Keeping a log helps identify patterns and adjust diet, exercise, and medication effectively.",
+      "category": "diabetes",
+      "tags": ["blood sugar monitoring", "diabetes management", "glucose testing"],
+      "situation": ["new diabetes diagnosis", "changing medication", "diet adjustments"],
+      "severity": "moderate",
+      "source": "Diabetes Care Guidelines",
+      "date": "2024-08-08"
     },
     {
       "id": 47,
-      "category": "travel_health",
-      "situation": "rest",
-      "text": "Stay hydrated and practice good hygiene while traveling."
+      "text": "For high blood pressure, practice DASH diet: Emphasize fruits, vegetables, whole grains, and low-fat dairy while reducing sodium.",
+      "category": "hypertension",
+      "tags": ["high blood pressure", "DASH diet", "nutrition", "hypertension management"],
+      "situation": ["hypertension", "borderline high BP", "family history"],
+      "severity": "preventive",
+      "source": "National Heart, Lung, and Blood Institute",
+      "date": "2024-08-05"
     },
     {
       "id": 48,
-      "category": "oral_health",
-      "situation": "prevention",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+      "text": "Measure blood pressure at the same time daily. Morning readings before medication are most accurate for monitoring hypertension control.",
+      "category": "hypertension",
+      "tags": ["blood pressure monitoring", "hypertension", "home monitoring"],
+      "situation": ["new hypertension diagnosis", "medication adjustment", "pregnancy"],
+      "severity": "moderate",
+      "source": "Hypertension Guidelines",
+      "date": "2024-08-03"
     },
     {
       "id": 49,
-      "category": "stress",
-      "situation": "anxiety",
-      "text": "Practice deep breathing for 10 minutes when feeling stressed."
+      "text": "For seasonal allergies, shower before bed to remove pollen from hair and skin. This reduces nighttime allergy symptoms by 70%.",
+      "category": "allergy",
+      "tags": ["allergies", "pollen", "prevention", "sleep quality"],
+      "situation": ["hay fever", "seasonal allergies", "pollen season"],
+      "severity": "preventive",
+      "source": "Allergy and Asthma Proceedings",
+      "date": "2024-08-01"
     },
     {
       "id": 50,
-      "category": "sleep",
-      "situation": "quality",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
+      "text": "Use HEPA air purifier in bedroom. It removes 99.97% of airborne allergens including pollen, dust mites, and pet dander.",
+      "category": "allergy",
+      "tags": ["air purifier", "indoor allergies", "asthma", "air quality"],
+      "situation": ["indoor allergies", "asthma triggers", "pet allergies"],
+      "severity": "preventive",
+      "source": "American Lung Association",
+      "date": "2024-07-28"
     },
     {
       "id": 51,
-      "category": "child",
-      "situation": "growth",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+      "text": "Boost immunity with vitamin C-rich foods: citrus fruits, bell peppers, broccoli, and strawberries. Vitamin C supports white blood cell function.",
+      "category": "immunity",
+      "tags": ["immune system", "vitamin C", "prevention", "nutrition"],
+      "situation": ["cold season", "immune support", "recovery from illness"],
+      "severity": "preventive",
+      "source": "Journal of Immunology Research",
+      "date": "2024-07-25"
     },
     {
       "id": 52,
-      "category": "budget_nutrition",
-      "situation": "affordable",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
+      "text": "Get 7-9 hours of quality sleep nightly. During sleep, your body produces cytokines that fight infection and inflammation.",
+      "category": "immunity",
+      "tags": ["sleep", "immune function", "recovery", "health maintenance"],
+      "situation": ["frequent illnesses", "immune weakness", "stress period"],
+      "severity": "preventive",
+      "source": "Sleep and Immunity Research",
+      "date": "2024-07-22"
     },
     {
       "id": 53,
-      "category": "hair_care",
-      "situation": "dry hair",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+      "text": "Wash hands with soap for 20 seconds - about the time it takes to sing 'Happy Birthday' twice. This removes germs more effectively than quick rinsing.",
+      "category": "hygiene",
+      "tags": ["hand washing", "germ prevention", "infection control", "hygiene"],
+      "situation": ["before eating", "after bathroom", "sick family member"],
+      "severity": "preventive",
+      "source": "CDC Handwashing Guidelines",
+      "date": "2024-07-20"
     },
     {
       "id": 54,
-      "category": "immunity",
-      "situation": "recovery",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+      "text": "Clean phone screen daily with alcohol wipes. Mobile phones harbor 10 times more bacteria than most toilet seats.",
+      "category": "hygiene",
+      "tags": ["phone hygiene", "germs", "prevention", "cleaning"],
+      "situation": ["frequent phone use", "sick season", "food handling"],
+      "severity": "preventive",
+      "source": "Microbiology Studies",
+      "date": "2024-07-18"
     },
     {
       "id": 55,
-      "category": "hair_care",
-      "situation": "growth",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+      "text": "For migraine, apply ice pack to back of neck and darken room. Lie down with minimal sensory stimulation until symptoms subside.",
+      "category": "headache",
+      "tags": ["migraine", "ice therapy", "dark room", "sensory sensitivity"],
+      "situation": ["migraine attack", "aura symptoms", "light sensitivity"],
+      "severity": "moderate",
+      "source": "Migraine Research Foundation",
+      "date": "2024-07-15"
     },
     {
       "id": 56,
-      "category": "hair_care",
-      "situation": "shine",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+      "text": "Identify migraine triggers by keeping a diary. Common triggers include stress, certain foods, weather changes, and hormonal fluctuations.",
+      "category": "headache",
+      "tags": ["migraine triggers", "prevention", "diary", "identification"],
+      "situation": ["chronic migraines", "uncontrolled headaches", "pattern recognition"],
+      "severity": "preventive",
+      "source": "Headache Journal",
+      "date": "2024-07-12"
     },
     {
       "id": 57,
-      "category": "eye_health",
-      "situation": "dry eyes",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+      "text": "For constipation, drink warm water with lemon first thing in morning. This stimulates bowel movement and hydrates colon.",
+      "category": "stomach",
+      "tags": ["constipation", "digestion", "hydration", "morning routine"],
+      "situation": ["irregular bowel", "travel constipation", "diet changes"],
+      "severity": "mild",
+      "source": "Gastroenterology Recommendations",
+      "date": "2024-07-10"
     },
     {
       "id": 58,
-      "category": "weight_management",
-      "situation": "weight loss",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
+      "text": "Eat probiotic-rich foods like yogurt, kefir, and kimchi daily. Probiotics restore healthy gut bacteria and improve digestive function.",
+      "category": "digestion",
+      "tags": ["probiotics", "gut health", "digestion", "microbiome"],
+      "situation": ["antibiotic use", "digestive issues", "immune support"],
+      "severity": "preventive",
+      "source": "Gut Microbiology Research",
+      "date": "2024-07-08"
     },
     {
       "id": 59,
-      "category": "food_safety",
-      "situation": "cooking",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
+      "text": "For heartburn, sleep with head elevated 6-8 inches. Gravity helps keep stomach acid from rising into esophagus during sleep.",
+      "category": "stomach",
+      "tags": ["heartburn", "acid reflux", "sleep position", "GERD"],
+      "situation": ["nighttime heartburn", "pregnancy heartburn", "chronic reflux"],
+      "severity": "mild",
+      "source": "Gastroesophageal Reflux Guidelines",
+      "date": "2024-07-05"
     },
     {
       "id": 60,
-      "category": "first_aid",
-      "situation": "burns",
-      "text": "Keep basic first aid supplies at home and know how to use them."
+      "text": "Avoid eating 3 hours before bedtime. This allows stomach to empty and reduces risk of acid reflux and indigestion during sleep.",
+      "category": "digestion",
+      "tags": ["late eating", "digestion", "sleep quality", "reflux prevention"],
+      "situation": ["nighttime eating", "digestive discomfort", "sleep disruption"],
+      "severity": "preventive",
+      "source": "Digestive Health Foundation",
+      "date": "2024-07-03"
     },
     {
       "id": 61,
-      "category": "hair_care",
-      "situation": "dry hair",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
+      "text": "For knee pain, strengthen quadriceps with straight leg raises. Strong quads reduce pressure on knee joints by 30%.",
+      "category": "pain",
+      "tags": ["knee pain", "strength training", "joint support", "exercise therapy"],
+      "situation": ["arthritis", "knee injury", "aging joints"],
+      "severity": "mild",
+      "source": "Orthopedic Recommendations",
+      "date": "2024-07-01"
     },
     {
       "id": 62,
-      "category": "weight_management",
-      "situation": "maintenance",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
+      "text": "Use proper footwear with good arch support. Worn-out shoes or improper fit contribute to knee, hip, and back pain.",
+      "category": "pain",
+      "tags": ["footwear", "pain prevention", "posture", "joint health"],
+      "situation": ["standing work", "exercise", "chronic pain"],
+      "severity": "preventive",
+      "source": "Podiatry Association",
+      "date": "2024-06-28"
     },
     {
       "id": 63,
-      "category": "travel_health",
-      "situation": "food safety",
-      "text": "Stay hydrated and practice good hygiene while traveling."
+      "text": "For insomnia, get out of bed if not asleep in 20 minutes. Read in dim light until sleepy, then return to bed. This strengthens bed-sleep association.",
+      "category": "sleep",
+      "tags": ["insomnia", "sleep association", "bedtime routine", "sleep training"],
+      "situation": ["chronic insomnia", "difficulty falling asleep", "sleep anxiety"],
+      "severity": "moderate",
+      "source": "Insomnia Cognitive Therapy",
+      "date": "2024-06-25"
     },
     {
       "id": 64,
-      "category": "seasonal_care",
-      "situation": "clothing",
-      "text": "Adjust your diet and activities according to seasonal changes."
+      "text": "Limit naps to 20 minutes maximum. Longer naps interfere with nighttime sleep and can cause sleep inertia (grogginess upon waking).",
+      "category": "sleep",
+      "tags": ["napping", "sleep hygiene", "energy management", "circadian rhythm"],
+      "situation": ["daytime fatigue", "shift work", "sleep debt"],
+      "severity": "preventive",
+      "source": "Sleep Medicine",
+      "date": "2024-06-22"
     },
     {
       "id": 65,
-      "category": "travel_health",
-      "situation": "motion sickness",
-      "text": "Stay hydrated and practice good hygiene while traveling."
+      "text": "Practice mindfulness meditation 10 minutes daily. Regular practice reduces stress hormone cortisol by 25% and improves emotional regulation.",
+      "category": "stress",
+      "tags": ["meditation", "mindfulness", "stress reduction", "emotional health"],
+      "situation": ["chronic stress", "anxiety", "emotional dysregulation"],
+      "severity": "preventive",
+      "source": "Mindfulness Research",
+      "date": "2024-06-20"
     },
     {
       "id": 66,
-      "category": "digestion",
-      "situation": "regularity",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
+      "text": "Set boundaries with work: No checking emails after 7 PM and on weekends. Continuous work connectivity increases burnout risk by 40%.",
+      "category": "stress",
+      "tags": ["work-life balance", "boundaries", "burnout prevention", "digital detox"],
+      "situation": ["work stress", "burnout symptoms", "always-on culture"],
+      "severity": "preventive",
+      "source": "Occupational Health Psychology",
+      "date": "2024-06-18"
     },
     {
       "id": 67,
-      "category": "hygiene",
-      "situation": "personal",
-      "text": "Practice good personal hygiene and keep your environment clean."
+      "text": "For cough, drink warm honey tea before bed. Honey coats throat, reduces irritation, and has natural antibacterial properties.",
+      "category": "cold",
+      "tags": ["cough", "sore throat", "honey", "nighttime relief"],
+      "situation": ["dry cough", "night cough", "post-viral cough"],
+      "severity": "mild",
+      "source": "Cough Medicine Research",
+      "date": "2024-06-15"
     },
     {
       "id": 68,
-      "category": "elderly_care",
-      "situation": "aging",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+      "text": "Use humidifier in bedroom during cold season. 40-60% humidity optimal for respiratory health and reduces virus survival in air.",
+      "category": "cold",
+      "tags": ["humidifier", "respiratory health", "cold prevention", "air quality"],
+      "situation": ["dry climate", "winter months", "respiratory conditions"],
+      "severity": "preventive",
+      "source": "Indoor Air Quality Studies",
+      "date": "2024-06-12"
     },
     {
       "id": 69,
-      "category": "maternal",
-      "situation": "energy",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+      "text": "For fever in children, use appropriate weight-based acetaminophen or ibuprofen. Never give aspirin to children under 19 due to Reye's syndrome risk.",
+      "category": "fever",
+      "tags": ["child fever", "pediatric care", "medication safety", "fever management"],
+      "situation": ["child illness", "high fever", "parental concern"],
+      "severity": "moderate",
+      "source": "Pediatric Fever Guidelines",
+      "date": "2024-06-10"
     },
     {
       "id": 70,
-      "category": "stress",
-      "situation": "mental fatigue",
-      "text": "Practice deep breathing for 16 minutes when feeling stressed."
+      "text": "Monitor fever patterns: Document temperature, time, and symptoms. This information helps healthcare providers determine cause and treatment.",
+      "category": "fever",
+      "tags": ["fever monitoring", "symptom tracking", "medical consultation", "pattern recognition"],
+      "situation": ["persistent fever", "undiagnosed illness", "returning traveler"],
+      "severity": "moderate",
+      "source": "Infectious Disease Protocols",
+      "date": "2024-06-08"
     },
     {
       "id": 71,
-      "category": "maternal",
-      "situation": "pregnancy",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
+      "text": "For dry skin, apply moisturizer within 3 minutes of bathing. This seals in moisture when skin is still damp for maximum hydration.",
+      "category": "skin",
+      "tags": ["dry skin", "moisturizing", "skin hydration", "bathing routine"],
+      "situation": ["winter skin", "aging skin", "eczema"],
+      "severity": "preventive",
+      "source": "Dermatology Care",
+      "date": "2024-06-05"
     },
     {
       "id": 72,
-      "category": "heart",
-      "situation": "prevention",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+      "text": "Use sunscreen SPF 30+ daily, even on cloudy days. UV rays penetrate clouds and cause 80% of visible skin aging and skin cancer risk.",
+      "category": "skin",
+      "tags": ["sunscreen", "skin cancer prevention", "anti-aging", "sun protection"],
+      "situation": ["outdoor activities", "fair skin", "family history of skin cancer"],
+      "severity": "preventive",
+      "source": "Skin Cancer Foundation",
+      "date": "2024-06-03"
     },
     {
       "id": 73,
-      "category": "weight_management",
-      "situation": "obesity",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
+      "text": "Eat omega-3 rich foods 3 times weekly: fatty fish, walnuts, chia seeds. Omega-3s reduce inflammation linked to chronic diseases and mental health issues.",
+      "category": "nutrition",
+      "tags": ["omega-3", "anti-inflammatory", "brain health", "heart health"],
+      "situation": ["inflammation", "depression", "heart disease risk"],
+      "severity": "preventive",
+      "source": "Nutrition and Chronic Disease Research",
+      "date": "2024-06-01"
     },
     {
       "id": 74,
-      "category": "child",
-      "situation": "development",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+      "text": "Read nutrition labels focusing on serving size, added sugars, and sodium. Many 'healthy' foods contain hidden sugars and excessive salt.",
+      "category": "nutrition",
+      "tags": ["nutrition labels", "food choices", "sugar awareness", "salt awareness"],
+      "situation": ["weight management", "diabetes", "hypertension"],
+      "severity": "preventive",
+      "source": "Nutrition Education",
+      "date": "2024-05-28"
     },
     {
       "id": 75,
-      "category": "hydration",
-      "situation": "exercise",
-      "text": "Drink water throughout the day, especially before and after physical activity."
+      "text": "Incorporate strength training 2-3 times weekly. Muscle mass declines 3-8% per decade after 30; strength training reverses this trend.",
+      "category": "fitness",
+      "tags": ["strength training", "muscle mass", "aging", "metabolism"],
+      "situation": ["aging", "weight loss plateau", "metabolic health"],
+      "severity": "preventive",
+      "source": "Aging and Exercise Research",
+      "date": "2024-05-25"
     },
     {
       "id": 76,
-      "category": "skin_care",
-      "situation": "hydration",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
+      "text": "Track exercise progress with simple metrics: weight lifted, distance walked, or workout duration. Progress tracking increases motivation by 40%.",
+      "category": "fitness",
+      "tags": ["exercise tracking", "motivation", "progress measurement", "goal setting"],
+      "situation": ["exercise adherence", "fitness plateau", "new exercise routine"],
+      "severity": "preventive",
+      "source": "Exercise Psychology",
+      "date": "2024-05-22"
     },
     {
       "id": 77,
-      "category": "heart",
-      "situation": "blood pressure",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+      "text": "Practice self-compassion when struggling. Treat yourself with same kindness you'd offer a friend in similar situation.",
+      "category": "mental",
+      "tags": ["self-compassion", "mental health", "emotional resilience", "self-care"],
+      "situation": ["failure", "setback", "perfectionism"],
+      "severity": "preventive",
+      "source": "Clinical Psychology",
+      "date": "2024-05-20"
     },
     {
       "id": 78,
-      "category": "heart",
-      "situation": "prevention",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
+      "text": "Seek professional help if symptoms persist 2+ weeks: persistent sadness, loss of interest, sleep/appetite changes, difficulty functioning.",
+      "category": "mental",
+      "tags": ["professional help", "depression", "mental health care", "when to seek help"],
+      "situation": ["depressive symptoms", "anxiety disorder", "mental health crisis"],
+      "severity": "moderate",
+      "source": "Mental Health First Aid",
+      "date": "2024-05-18"
     },
     {
       "id": 79,
-      "category": "nutrition",
-      "situation": "vitamin deficiency",
-      "text": "Eat seeds regularly for better bone strength."
+      "text": "Know heart attack symptoms: chest discomfort, arm/jaw/back pain, shortness of breath, nausea, cold sweat. Women more often experience atypical symptoms.",
+      "category": "heart",
+      "tags": ["heart attack", "emergency signs", "symptoms", "cardiac awareness"],
+      "situation": ["chest pain", "risk factors", "family history"],
+      "severity": "emergency",
+      "source": "American Heart Association",
+      "date": "2024-05-15"
     },
     {
       "id": 80,
-      "category": "eye_health",
-      "situation": "vision",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+      "text": "Manage cholesterol with soluble fiber: oats, barley, beans, apples. Soluble fiber binds cholesterol in digestive system and removes it from body.",
+      "category": "heart",
+      "tags": ["cholesterol", "fiber", "heart health", "diet management"],
+      "situation": ["high cholesterol", "heart disease prevention", "family history"],
+      "severity": "preventive",
+      "source": "Cholesterol Management Guidelines",
+      "date": "2024-05-12"
     },
     {
       "id": 81,
-      "category": "travel_health",
-      "situation": "preparation",
-      "text": "Stay hydrated and practice good hygiene while traveling."
+      "text": "For diabetic foot care, inspect feet daily for cuts, blisters, redness, or swelling. Diabetes reduces sensation and healing ability in feet.",
+      "category": "diabetes",
+      "tags": ["diabetic foot care", "prevention", "inspection", "complication prevention"],
+      "situation": ["diabetes diagnosis", "neuropathy symptoms", "foot problems"],
+      "severity": "preventive",
+      "source": "Diabetes Foot Care Guidelines",
+      "date": "2024-05-10"
     },
     {
       "id": 82,
-      "category": "food_safety",
-      "situation": "preparation",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
+      "text": "Wear medical alert bracelet if diabetic. In emergency, this alerts responders to check blood sugar and provide appropriate care.",
+      "category": "diabetes",
+      "tags": ["medical alert", "diabetes safety", "emergency preparedness", "hypoglycemia"],
+      "situation": ["type 1 diabetes", "frequent hypoglycemia", "travel"],
+      "severity": "preventive",
+      "source": "Diabetes Emergency Protocols",
+      "date": "2024-05-08"
     },
     {
       "id": 83,
-      "category": "mental_health",
-      "situation": "depression",
-      "text": "Take time for self-care and maintain social connections."
+      "text": "Reduce processed food consumption. Processed foods often contain hidden sodium, sugars, and unhealthy fats that raise blood pressure.",
+      "category": "hypertension",
+      "tags": ["processed foods", "blood pressure", "nutrition", "hypertension diet"],
+      "situation": ["high blood pressure", "weight management", "general health"],
+      "severity": "preventive",
+      "source": "Hypertension Nutrition Guidelines",
+      "date": "2024-05-05"
     },
     {
       "id": 84,
-      "category": "elderly_care",
-      "situation": "cognitive health",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+      "text": "Limit alcohol to 1 drink daily for women, 2 for men. Excessive alcohol raises blood pressure and reduces effectiveness of blood pressure medications.",
+      "category": "hypertension",
+      "tags": ["alcohol", "blood pressure", "moderation", "medication interaction"],
+      "situation": ["high blood pressure", "medication use", "lifestyle factors"],
+      "severity": "preventive",
+      "source": "Blood Pressure Management",
+      "date": "2024-05-03"
     },
     {
       "id": 85,
-      "category": "travel_health",
-      "situation": "motion sickness",
-      "text": "Stay hydrated and practice good hygiene while traveling."
+      "text": "For pet allergies, wash bedding weekly in hot water (130°F/54°C). This kills dust mites and removes pet dander that accumulates in bedding.",
+      "category": "allergy",
+      "tags": ["pet allergies", "bedding hygiene", "dust mites", "allergen reduction"],
+      "situation": ["pet owners with allergies", "indoor allergies", "asthma triggers"],
+      "severity": "preventive",
+      "source": "Allergy Management",
+      "date": "2024-05-01"
     },
     {
       "id": 86,
-      "category": "seasonal_care",
-      "situation": "clothing",
-      "text": "Adjust your diet and activities according to seasonal changes."
+      "text": "Keep windows closed during high pollen seasons. Use air conditioning with HEPA filter to maintain indoor air quality without bringing in allergens.",
+      "category": "allergy",
+      "tags": ["pollen allergies", "indoor air quality", "seasonal management", "prevention"],
+      "situation": ["hay fever", "seasonal allergies", "asthma exacerbation"],
+      "severity": "preventive",
+      "source": "Allergy and Asthma Management",
+      "date": "2024-04-28"
     },
     {
       "id": 87,
-      "category": "nutrition",
-      "situation": "vitamin deficiency",
-      "text": "Eat leafy greens regularly for better immunity."
+      "text": "Get vaccinated annually against influenza. Flu vaccine reduces flu risk by 40-60% and severity by 60% if infection occurs.",
+      "category": "immunity",
+      "tags": ["vaccination", "flu prevention", "immune protection", "public health"],
+      "situation": ["flu season", "chronic illness", "elderly", "healthcare workers"],
+      "severity": "preventive",
+      "source": "CDC Vaccination Guidelines",
+      "date": "2024-04-25"
     },
     {
       "id": 88,
-      "category": "oral_health",
-      "situation": "breath",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+      "text": "Manage stress effectively as chronic stress suppresses immune function. Stress reduction techniques improve immune response to vaccines by 25%.",
+      "category": "immunity",
+      "tags": ["stress management", "immune function", "vaccine response", "psychoneuroimmunology"],
+      "situation": ["high stress period", "frequent illnesses", "vaccination timing"],
+      "severity": "preventive",
+      "source": "Psychoneuroimmunology Research",
+      "date": "2024-04-22"
     },
     {
       "id": 89,
-      "category": "fitness",
-      "situation": "flexibility",
-      "text": "Include 27 minutes of exercise in your daily routine."
+      "text": "Cover coughs and sneezes with elbow, not hands. This prevents spreading germs to surfaces you touch and reduces infection transmission by 80%.",
+      "category": "hygiene",
+      "tags": ["cough etiquette", "infection control", "germ spreading", "public health"],
+      "situation": ["cold/flu season", "public places", "sick family members"],
+      "severity": "preventive",
+      "source": "Infection Prevention Guidelines",
+      "date": "2024-04-20"
     },
     {
       "id": 90,
-      "category": "eye_health",
-      "situation": "nutrition",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
+      "text": "Clean frequently touched surfaces daily: doorknobs, light switches, remote controls. Viruses can survive on surfaces for hours to days.",
+      "category": "hygiene",
+      "tags": ["surface cleaning", "germ prevention", "home hygiene", "infection control"],
+      "situation": ["sick household", "flu season", "pandemic precautions"],
+      "severity": "preventive",
+      "source": "Environmental Hygiene",
+      "date": "2024-04-18"
     },
     {
       "id": 91,
-      "category": "diabetes",
-      "situation": "monitoring",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
+      "text": "For cluster headaches, breathe 100% oxygen via mask at onset. This can abort attacks within 15 minutes for 70% of sufferers.",
+      "category": "headache",
+      "tags": ["cluster headache", "oxygen therapy", "abortive treatment", "severe headache"],
+      "situation": ["cluster headache attack", "severe headache", "emergency treatment"],
+      "severity": "moderate",
+      "source": "Cluster Headache Guidelines",
+      "date": "2024-04-15"
     },
     {
       "id": 92,
-      "category": "child",
-      "situation": "immunity",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
+      "text": "Maintain headache diary tracking frequency, duration, intensity, triggers, and medications. This data is crucial for accurate diagnosis and treatment planning.",
+      "category": "headache",
+      "tags": ["headache diary", "diagnosis", "treatment planning", "pattern tracking"],
+      "situation": ["chronic headaches", "treatment resistant", "multiple headache types"],
+      "severity": "preventive",
+      "source": "Headache Specialist Recommendations",
+      "date": "2024-04-12"
     },
     {
       "id": 93,
-      "category": "cooking_tips",
-      "situation": "nutrient retention",
-      "text": "Use healthy cooking methods like steaming and baking instead of frying."
+      "text": "For gas and bloating, avoid carbonated drinks and chew food slowly. Swallowing air contributes to 50% of gas in digestive system.",
+      "category": "digestion",
+      "tags": ["gas", "bloating", "eating habits", "digestive comfort"],
+      "situation": ["chronic bloating", "digestive discomfort", "social situations"],
+      "severity": "mild",
+      "source": "Gastroenterology",
+      "date": "2024-04-10"
     },
     {
       "id": 94,
-      "category": "mental_health",
-      "situation": "social connection",
-      "text": "Take time for self-care and maintain social connections."
+      "text": "Identify food intolerances with elimination diet: Remove suspected foods 2-4 weeks, then reintroduce one at a time while monitoring symptoms.",
+      "category": "digestion",
+      "tags": ["food intolerance", "elimination diet", "symptom identification", "digestive health"],
+      "situation": ["unexplained digestive issues", "suspected food reactions", "IBS symptoms"],
+      "severity": "moderate",
+      "source": "Food Allergy and Intolerance Guidelines",
+      "date": "2024-04-08"
     },
     {
       "id": 95,
-      "category": "oral_health",
-      "situation": "gum health",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
+      "text": "For hemorrhoids, take sitz bath (warm water bath for hips and buttocks) for 15 minutes 2-3 times daily. This reduces swelling and promotes healing.",
+      "category": "stomach",
+      "tags": ["hemorrhoids", "sitz bath", "pain relief", "healing"],
+      "situation": ["hemorrhoid flare-up", "postpartum", "constipation-related"],
+      "severity": "mild",
+      "source": "Proctology Guidelines",
+      "date": "2024-04-05"
     },
     {
       "id": 96,
-      "category": "fitness",
-      "situation": "muscle gain",
-      "text": "Include 38 minutes of exercise in your daily routine."
+      "text": "Increase fiber gradually to 25-30g daily to prevent hemorrhoids. Sudden large increases can cause bloating and gas.",
+      "category": "digestion",
+      "tags": ["fiber", "hemorrhoid prevention", "gradual increase", "digestive adjustment"],
+      "situation": ["chronic constipation", "hemorrhoid history", "diet improvement"],
+      "severity": "preventive",
+      "source": "Dietary Fiber Guidelines",
+      "date": "2024-04-03"
     },
     {
       "id": 97,
-      "category": "elderly_care",
-      "situation": "mobility",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
+      "text": "For shoulder pain, practice pendulum exercises: Lean forward supporting yourself with good arm, let painful arm hang loosely, swing gently in small circles.",
+      "category": "pain",
+      "tags": ["shoulder pain", "pendulum exercises", "frozen shoulder", "rehabilitation"],
+      "situation": ["shoulder injury", "frozen shoulder", "post-surgery recovery"],
+      "severity": "mild",
+      "source": "Orthopedic Rehabilitation",
+      "date": "2024-04-01"
     },
     {
       "id": 98,
-      "category": "immunity",
-      "situation": "frequent illness",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+      "text": "Improve workstation ergonomics: Monitor at eye level, elbows at 90 degrees, feet flat on floor. Proper setup reduces musculoskeletal pain by 60%.",
+      "category": "pain",
+      "tags": ["ergonomics", "workstation setup", "pain prevention", "posture"],
+      "situation": ["desk job", "chronic neck/shoulder pain", "home office"],
+      "severity": "preventive",
+      "source": "Occupational Ergonomics",
+      "date": "2024-03-28"
     },
     {
       "id": 99,
-      "category": "immunity",
-      "situation": "prevention",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
+      "text": "For sleep apnea, sleep on side instead of back. Side sleeping keeps airway more open and reduces apnea events by 50% in positional apnea.",
+      "category": "sleep",
+      "tags": ["sleep apnea", "sleep position", "snoring reduction", "airway management"],
+      "situation": ["snoring", "sleep apnea diagnosis", "daytime sleepiness"],
+      "severity": "moderate",
+      "source": "Sleep Medicine",
+      "date": "2024-03-25"
     },
     {
       "id": 100,
-      "category": "maternal",
-      "situation": "energy",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 101,
-      "category": "food_safety",
-      "situation": "storage",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 102,
-      "category": "diabetes",
-      "situation": "monitoring",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
-    },
-    {
-      "id": 103,
-      "category": "mental_health",
-      "situation": "mindfulness",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 104,
-      "category": "first_aid",
-      "situation": "sprains",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 105,
-      "category": "first_aid",
-      "situation": "emergency",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 106,
-      "category": "hair_care",
-      "situation": "scalp health",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
-    },
-    {
-      "id": 107,
-      "category": "weight_management",
-      "situation": "obesity",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 108,
-      "category": "eye_health",
-      "situation": "protection",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 109,
-      "category": "skin_care",
-      "situation": "aging",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 110,
-      "category": "oral_health",
-      "situation": "dental hygiene",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
-    },
-    {
-      "id": 111,
-      "category": "budget_nutrition",
-      "situation": "affordable",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 112,
-      "category": "fitness",
-      "situation": "endurance",
-      "text": "Include 25 minutes of exercise in your daily routine."
-    },
-    {
-      "id": 113,
-      "category": "child",
-      "situation": "healthy habits",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 114,
-      "category": "stress",
-      "situation": "anxiety",
-      "text": "Practice deep breathing for 18 minutes when feeling stressed."
-    },
-    {
-      "id": 115,
-      "category": "hydration",
-      "situation": "daily intake",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 116,
-      "category": "digestion",
-      "situation": "constipation",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
-    },
-    {
-      "id": 117,
-      "category": "maternal",
-      "situation": "postpartum",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 118,
-      "category": "oral_health",
-      "situation": "gum health",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
-    },
-    {
-      "id": 119,
-      "category": "cooking_tips",
-      "situation": "nutrient retention",
-      "text": "Use healthy cooking methods like steaming and baking instead of frying."
-    },
-    {
-      "id": 120,
-      "category": "elderly_care",
-      "situation": "mobility",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
-    },
-    {
-      "id": 121,
-      "category": "immunity",
-      "situation": "cold season",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
-    },
-    {
-      "id": 122,
-      "category": "hygiene",
-      "situation": "prevention",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 123,
-      "category": "food_safety",
-      "situation": "storage",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 124,
-      "category": "food_safety",
-      "situation": "cooking",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 125,
-      "category": "nutrition",
-      "situation": "energy levels",
-      "text": "Eat leafy greens regularly for better muscle function."
-    },
-    {
-      "id": 126,
-      "category": "hygiene",
-      "situation": "food",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 127,
-      "category": "hygiene",
-      "situation": "hand washing",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 128,
-      "category": "stress",
-      "situation": "relaxation",
-      "text": "Practice deep breathing for 7 minutes when feeling stressed."
-    },
-    {
-      "id": 129,
-      "category": "travel_health",
-      "situation": "motion sickness",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 130,
-      "category": "mental_health",
-      "situation": "social connection",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 131,
-      "category": "maternal",
-      "situation": "pregnancy",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 132,
-      "category": "hygiene",
-      "situation": "food",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 133,
+      "text": "Lose 10% of body weight if overweight with sleep apnea. Weight loss reduces sleep apnea severity by 30% and often eliminates need for CPAP.",
       "category": "sleep",
-      "situation": "insomnia",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 134,
-      "category": "hygiene",
-      "situation": "food",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 135,
-      "category": "hygiene",
-      "situation": "hand washing",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 136,
-      "category": "heart",
-      "situation": "circulation",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
-    },
-    {
-      "id": 137,
-      "category": "oral_health",
-      "situation": "dental hygiene",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
-    },
-    {
-      "id": 138,
-      "category": "hydration",
-      "situation": "daily intake",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 139,
-      "category": "sleep",
-      "situation": "quality",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 140,
-      "category": "sleep",
-      "situation": "duration",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 141,
-      "category": "nutrition",
-      "situation": "malnutrition",
-      "text": "Eat herbs regularly for better digestion."
-    },
-    {
-      "id": 142,
-      "category": "hygiene",
-      "situation": "environmental",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 143,
-      "category": "immunity",
-      "situation": "weak immune system",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
-    },
-    {
-      "id": 144,
-      "category": "stress",
-      "situation": "mental fatigue",
-      "text": "Practice deep breathing for 6 minutes when feeling stressed."
-    },
-    {
-      "id": 145,
-      "category": "eye_health",
-      "situation": "vision",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 146,
-      "category": "heart",
-      "situation": "prevention",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
-    },
-    {
-      "id": 147,
-      "category": "food_safety",
-      "situation": "preparation",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 148,
-      "category": "skin_care",
-      "situation": "sun protection",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 149,
-      "category": "hygiene",
-      "situation": "food",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 150,
-      "category": "mental_health",
-      "situation": "depression",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 151,
-      "category": "hair_care",
-      "situation": "shine",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
-    },
-    {
-      "id": 152,
-      "category": "mental_health",
-      "situation": "stress",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 153,
-      "category": "sleep",
-      "situation": "duration",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 154,
-      "category": "seasonal_care",
-      "situation": "allergies",
-      "text": "Adjust your diet and activities according to seasonal changes."
-    },
-    {
-      "id": 155,
-      "category": "seasonal_care",
-      "situation": "activity",
-      "text": "Adjust your diet and activities according to seasonal changes."
-    },
-    {
-      "id": 156,
-      "category": "hydration",
-      "situation": "exercise",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 157,
-      "category": "elderly_care",
-      "situation": "aging",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
-    },
-    {
-      "id": 158,
-      "category": "skin_care",
-      "situation": "acne",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 159,
-      "category": "oral_health",
-      "situation": "breath",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
-    },
-    {
-      "id": 160,
-      "category": "cooking_tips",
-      "situation": "flavor",
-      "text": "Use healthy cooking methods like steaming and baking instead of frying."
-    },
-    {
-      "id": 161,
-      "category": "elderly_care",
-      "situation": "hydration",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
-    },
-    {
-      "id": 162,
-      "category": "seasonal_care",
-      "situation": "allergies",
-      "text": "Adjust your diet and activities according to seasonal changes."
-    },
-    {
-      "id": 163,
-      "category": "hair_care",
-      "situation": "growth",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
-    },
-    {
-      "id": 164,
-      "category": "hydration",
-      "situation": "dehydration",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 165,
-      "category": "mental_health",
-      "situation": "stress",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 166,
-      "category": "travel_health",
-      "situation": "hydration",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 167,
-      "category": "hydration",
-      "situation": "daily intake",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 168,
-      "category": "food_safety",
-      "situation": "storage",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 169,
-      "category": "skin_care",
-      "situation": "hydration",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 170,
-      "category": "stress",
-      "situation": "mental fatigue",
-      "text": "Practice deep breathing for 12 minutes when feeling stressed."
-    },
-    {
-      "id": 171,
-      "category": "hair_care",
-      "situation": "scalp health",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
-    },
-    {
-      "id": 172,
-      "category": "first_aid",
-      "situation": "cuts",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 173,
-      "category": "cooking_tips",
-      "situation": "time saving",
-      "text": "Use healthy cooking methods like steaming and baking instead of frying."
-    },
-    {
-      "id": 174,
-      "category": "nutrition",
-      "situation": "vitamin deficiency",
-      "text": "Eat healthy fats regularly for better energy."
-    },
-    {
-      "id": 175,
-      "category": "oral_health",
-      "situation": "gum health",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
-    },
-    {
-      "id": 176,
-      "category": "elderly_care",
-      "situation": "hydration",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
-    },
-    {
-      "id": 177,
-      "category": "mental_health",
-      "situation": "mindfulness",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 178,
-      "category": "stress",
-      "situation": "mental fatigue",
-      "text": "Practice deep breathing for 19 minutes when feeling stressed."
-    },
-    {
-      "id": 179,
-      "category": "seasonal_care",
-      "situation": "immunity",
-      "text": "Adjust your diet and activities according to seasonal changes."
-    },
-    {
-      "id": 180,
-      "category": "digestion",
-      "situation": "regularity",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
-    },
-    {
-      "id": 181,
-      "category": "eye_health",
-      "situation": "eye strain",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 182,
-      "category": "cooking_tips",
-      "situation": "healthy methods",
-      "text": "Use healthy cooking methods like steaming and baking instead of frying."
-    },
-    {
-      "id": 183,
-      "category": "skin_care",
-      "situation": "aging",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 184,
-      "category": "cooking_tips",
-      "situation": "nutrient retention",
-      "text": "Use healthy cooking methods like steaming and baking instead of frying."
-    },
-    {
-      "id": 185,
-      "category": "weight_management",
-      "situation": "portion control",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 186,
-      "category": "skin_care",
-      "situation": "aging",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 187,
-      "category": "heart",
-      "situation": "prevention",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
-    },
-    {
-      "id": 188,
-      "category": "seasonal_care",
-      "situation": "immunity",
-      "text": "Adjust your diet and activities according to seasonal changes."
-    },
-    {
-      "id": 189,
-      "category": "heart",
-      "situation": "circulation",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
-    },
-    {
-      "id": 190,
-      "category": "hydration",
-      "situation": "hot weather",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 191,
-      "category": "maternal",
-      "situation": "pregnancy",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 192,
-      "category": "stress",
-      "situation": "anxiety",
-      "text": "Practice deep breathing for 19 minutes when feeling stressed."
-    },
-    {
-      "id": 193,
-      "category": "food_safety",
-      "situation": "cooking",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 194,
-      "category": "sleep",
-      "situation": "routine",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 195,
-      "category": "maternal",
-      "situation": "breastfeeding",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 196,
-      "category": "immunity",
-      "situation": "frequent illness",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
-    },
-    {
-      "id": 197,
-      "category": "first_aid",
-      "situation": "emergency",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 198,
-      "category": "oral_health",
-      "situation": "prevention",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
-    },
-    {
-      "id": 199,
-      "category": "maternal",
-      "situation": "postpartum",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 200,
-      "category": "eye_health",
-      "situation": "dry eyes",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 201,
-      "category": "oral_health",
-      "situation": "breath",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
-    },
-    {
-      "id": 202,
-      "category": "maternal",
-      "situation": "pregnancy",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 203,
-      "category": "travel_health",
-      "situation": "hydration",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 204,
-      "category": "maternal",
-      "situation": "postpartum",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 205,
-      "category": "hygiene",
-      "situation": "environmental",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 206,
-      "category": "hydration",
-      "situation": "illness",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 207,
-      "category": "seasonal_care",
-      "situation": "immunity",
-      "text": "Adjust your diet and activities according to seasonal changes."
-    },
-    {
-      "id": 208,
-      "category": "hydration",
-      "situation": "illness",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 209,
-      "category": "hygiene",
-      "situation": "personal",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 210,
-      "category": "cooking_tips",
-      "situation": "time saving",
-      "text": "Use healthy cooking methods like steaming and baking instead of frying."
-    },
-    {
-      "id": 211,
-      "category": "mental_health",
-      "situation": "mindfulness",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 212,
-      "category": "mental_health",
-      "situation": "depression",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 213,
-      "category": "elderly_care",
-      "situation": "nutrition",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
-    },
-    {
-      "id": 214,
-      "category": "fitness",
-      "situation": "muscle gain",
-      "text": "Include 36 minutes of exercise in your daily routine."
-    },
-    {
-      "id": 215,
-      "category": "travel_health",
-      "situation": "preparation",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 216,
-      "category": "budget_nutrition",
-      "situation": "affordable",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 217,
-      "category": "skin_care",
-      "situation": "dry skin",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 218,
-      "category": "sleep",
-      "situation": "restoration",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 219,
-      "category": "nutrition",
-      "situation": "malnutrition",
-      "text": "Eat dairy regularly for better hydration."
-    },
-    {
-      "id": 220,
-      "category": "maternal",
-      "situation": "postpartum",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 221,
-      "category": "sleep",
-      "situation": "duration",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 222,
-      "category": "first_aid",
-      "situation": "burns",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 223,
-      "category": "nutrition",
-      "situation": "vitamin deficiency",
-      "text": "Eat healthy fats regularly for better health."
-    },
-    {
-      "id": 224,
-      "category": "sleep",
-      "situation": "restoration",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 225,
-      "category": "elderly_care",
-      "situation": "nutrition",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
-    },
-    {
-      "id": 226,
-      "category": "maternal",
-      "situation": "breastfeeding",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 227,
-      "category": "weight_management",
-      "situation": "portion control",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 228,
-      "category": "first_aid",
-      "situation": "injuries",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 229,
-      "category": "sleep",
-      "situation": "duration",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 230,
-      "category": "diabetes",
-      "situation": "monitoring",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
-    },
-    {
-      "id": 231,
-      "category": "budget_nutrition",
-      "situation": "seasonal",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 232,
-      "category": "hair_care",
-      "situation": "dry hair",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
-    },
-    {
-      "id": 233,
-      "category": "first_aid",
-      "situation": "emergency",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 234,
-      "category": "child",
-      "situation": "healthy habits",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 235,
-      "category": "budget_nutrition",
-      "situation": "planning",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 236,
-      "category": "mental_health",
-      "situation": "social connection",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 237,
-      "category": "fitness",
-      "situation": "weight loss",
-      "text": "Include 23 minutes of exercise in your daily routine."
-    },
-    {
-      "id": 238,
-      "category": "sleep",
-      "situation": "quality",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 239,
-      "category": "hygiene",
-      "situation": "personal",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 240,
-      "category": "nutrition",
-      "situation": "balanced meals",
-      "text": "Eat fruits regularly for better mental clarity."
-    },
-    {
-      "id": 241,
-      "category": "stress",
-      "situation": "mental fatigue",
-      "text": "Practice deep breathing for 9 minutes when feeling stressed."
-    },
-    {
-      "id": 242,
-      "category": "nutrition",
-      "situation": "vitamin deficiency",
-      "text": "Eat vegetables regularly for better weight management."
-    },
-    {
-      "id": 243,
-      "category": "child",
-      "situation": "immunity",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 244,
-      "category": "eye_health",
-      "situation": "eye strain",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 245,
-      "category": "first_aid",
-      "situation": "cuts",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 246,
-      "category": "elderly_care",
-      "situation": "nutrition",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
-    },
-    {
-      "id": 247,
-      "category": "hygiene",
-      "situation": "food",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 248,
-      "category": "skin_care",
-      "situation": "hydration",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 249,
-      "category": "food_safety",
-      "situation": "hygiene",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 250,
-      "category": "budget_nutrition",
-      "situation": "bulk buying",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 251,
-      "category": "travel_health",
-      "situation": "preparation",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 252,
-      "category": "oral_health",
-      "situation": "gum health",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
-    },
-    {
-      "id": 253,
-      "category": "eye_health",
-      "situation": "vision",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 254,
-      "category": "diabetes",
-      "situation": "monitoring",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
-    },
-    {
-      "id": 255,
-      "category": "eye_health",
-      "situation": "nutrition",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 256,
-      "category": "mental_health",
-      "situation": "social connection",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 257,
-      "category": "child",
-      "situation": "healthy habits",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 258,
-      "category": "hair_care",
-      "situation": "scalp health",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
-    },
-    {
-      "id": 259,
-      "category": "fitness",
-      "situation": "endurance",
-      "text": "Include 10 minutes of exercise in your daily routine."
-    },
-    {
-      "id": 260,
-      "category": "travel_health",
-      "situation": "motion sickness",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 261,
-      "category": "maternal",
-      "situation": "postpartum",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 262,
-      "category": "weight_management",
-      "situation": "maintenance",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 263,
-      "category": "skin_care",
-      "situation": "dry skin",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 264,
-      "category": "fitness",
-      "situation": "flexibility",
-      "text": "Include 15 minutes of exercise in your daily routine."
-    },
-    {
-      "id": 265,
-      "category": "maternal",
-      "situation": "nutrition needs",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 266,
-      "category": "sleep",
-      "situation": "quality",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 267,
-      "category": "skin_care",
-      "situation": "hydration",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 268,
-      "category": "eye_health",
-      "situation": "protection",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 269,
-      "category": "weight_management",
-      "situation": "obesity",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 270,
-      "category": "nutrition",
-      "situation": "vitamin deficiency",
-      "text": "Eat cruciferous vegetables regularly for better metabolism."
-    },
-    {
-      "id": 271,
-      "category": "diabetes",
-      "situation": "diet control",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
-    },
-    {
-      "id": 272,
-      "category": "hygiene",
-      "situation": "personal",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 273,
-      "category": "hydration",
-      "situation": "dehydration",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 274,
-      "category": "travel_health",
-      "situation": "preparation",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 275,
-      "category": "heart",
-      "situation": "blood pressure",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
-    },
-    {
-      "id": 276,
-      "category": "nutrition",
-      "situation": "malnutrition",
-      "text": "Eat spices regularly for better immunity."
-    },
-    {
-      "id": 277,
-      "category": "first_aid",
-      "situation": "emergency",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 278,
-      "category": "hair_care",
-      "situation": "growth",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
-    },
-    {
-      "id": 279,
-      "category": "nutrition",
-      "situation": "poor diet",
-      "text": "Eat leafy greens regularly for better stress reduction."
-    },
-    {
-      "id": 280,
-      "category": "immunity",
-      "situation": "frequent illness",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
-    },
-    {
-      "id": 281,
-      "category": "hydration",
-      "situation": "hot weather",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 282,
-      "category": "sleep",
-      "situation": "restoration",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 283,
-      "category": "oral_health",
-      "situation": "prevention",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
-    },
-    {
-      "id": 284,
-      "category": "eye_health",
-      "situation": "vision",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 285,
-      "category": "oral_health",
-      "situation": "breath",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
-    },
-    {
-      "id": 286,
-      "category": "oral_health",
-      "situation": "gum health",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
-    },
-    {
-      "id": 287,
-      "category": "child",
-      "situation": "immunity",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 288,
-      "category": "eye_health",
-      "situation": "nutrition",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 289,
-      "category": "mental_health",
-      "situation": "social connection",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 290,
-      "category": "fitness",
-      "situation": "flexibility",
-      "text": "Include 32 minutes of exercise in your daily routine."
-    },
-    {
-      "id": 291,
-      "category": "fitness",
-      "situation": "inactive",
-      "text": "Include 32 minutes of exercise in your daily routine."
-    },
-    {
-      "id": 292,
-      "category": "elderly_care",
-      "situation": "mobility",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
-    },
-    {
-      "id": 293,
-      "category": "maternal",
-      "situation": "postpartum",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 294,
-      "category": "skin_care",
-      "situation": "sun protection",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 295,
-      "category": "cooking_tips",
-      "situation": "equipment",
-      "text": "Use healthy cooking methods like steaming and baking instead of frying."
-    },
-    {
-      "id": 296,
-      "category": "maternal",
-      "situation": "nutrition needs",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 297,
-      "category": "weight_management",
-      "situation": "metabolism",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 298,
-      "category": "travel_health",
-      "situation": "rest",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 299,
-      "category": "maternal",
-      "situation": "postpartum",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 300,
-      "category": "stress",
-      "situation": "burnout",
-      "text": "Practice deep breathing for 6 minutes when feeling stressed."
-    },
-    {
-      "id": 301,
-      "category": "digestion",
-      "situation": "constipation",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
-    },
-    {
-      "id": 302,
-      "category": "hygiene",
-      "situation": "personal",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 303,
-      "category": "maternal",
-      "situation": "nutrition needs",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 304,
-      "category": "hair_care",
-      "situation": "scalp health",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
-    },
-    {
-      "id": 305,
-      "category": "travel_health",
-      "situation": "food safety",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 306,
-      "category": "digestion",
-      "situation": "indigestion",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
-    },
-    {
-      "id": 307,
-      "category": "skin_care",
-      "situation": "hydration",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 308,
-      "category": "seasonal_care",
-      "situation": "allergies",
-      "text": "Adjust your diet and activities according to seasonal changes."
-    },
-    {
-      "id": 309,
-      "category": "hygiene",
-      "situation": "food",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 310,
-      "category": "maternal",
-      "situation": "breastfeeding",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 311,
-      "category": "elderly_care",
-      "situation": "nutrition",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
-    },
-    {
-      "id": 312,
-      "category": "skin_care",
-      "situation": "hydration",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 313,
-      "category": "sleep",
-      "situation": "restoration",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 314,
-      "category": "travel_health",
-      "situation": "food safety",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 315,
-      "category": "sleep",
-      "situation": "insomnia",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 316,
-      "category": "weight_management",
-      "situation": "weight loss",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 317,
-      "category": "food_safety",
-      "situation": "preparation",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 318,
-      "category": "nutrition",
-      "situation": "balanced meals",
-      "text": "Eat nuts regularly for better digestion."
-    },
-    {
-      "id": 319,
-      "category": "eye_health",
-      "situation": "nutrition",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 320,
-      "category": "digestion",
-      "situation": "gut health",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
-    },
-    {
-      "id": 321,
-      "category": "food_safety",
-      "situation": "preparation",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 322,
-      "category": "first_aid",
-      "situation": "injuries",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 323,
-      "category": "hygiene",
-      "situation": "personal",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 324,
-      "category": "skin_care",
-      "situation": "acne",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 325,
-      "category": "sleep",
-      "situation": "duration",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 326,
-      "category": "hair_care",
-      "situation": "shine",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
-    },
-    {
-      "id": 327,
-      "category": "heart",
-      "situation": "prevention",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
-    },
-    {
-      "id": 328,
-      "category": "eye_health",
-      "situation": "vision",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 329,
-      "category": "digestion",
-      "situation": "regularity",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
-    },
-    {
-      "id": 330,
-      "category": "weight_management",
-      "situation": "maintenance",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 331,
-      "category": "weight_management",
-      "situation": "portion control",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 332,
-      "category": "mental_health",
-      "situation": "anxiety",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 333,
-      "category": "sleep",
-      "situation": "restoration",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 334,
-      "category": "first_aid",
-      "situation": "burns",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 335,
-      "category": "sleep",
-      "situation": "routine",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 336,
-      "category": "hydration",
-      "situation": "illness",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 337,
-      "category": "seasonal_care",
-      "situation": "allergies",
-      "text": "Adjust your diet and activities according to seasonal changes."
-    },
-    {
-      "id": 338,
-      "category": "hair_care",
-      "situation": "scalp health",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
-    },
-    {
-      "id": 339,
-      "category": "budget_nutrition",
-      "situation": "waste reduction",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 340,
-      "category": "sleep",
-      "situation": "routine",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 341,
-      "category": "child",
-      "situation": "development",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 342,
-      "category": "eye_health",
-      "situation": "dry eyes",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 343,
-      "category": "mental_health",
-      "situation": "stress",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 344,
-      "category": "mental_health",
-      "situation": "depression",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 345,
-      "category": "fitness",
-      "situation": "muscle gain",
-      "text": "Include 20 minutes of exercise in your daily routine."
-    },
-    {
-      "id": 346,
-      "category": "mental_health",
-      "situation": "mindfulness",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 347,
-      "category": "skin_care",
-      "situation": "sun protection",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 348,
-      "category": "budget_nutrition",
-      "situation": "planning",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 349,
-      "category": "digestion",
-      "situation": "constipation",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
-    },
-    {
-      "id": 350,
-      "category": "budget_nutrition",
-      "situation": "planning",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 351,
-      "category": "nutrition",
-      "situation": "balanced meals",
-      "text": "Eat seeds regularly for better muscle function."
-    },
-    {
-      "id": 352,
-      "category": "travel_health",
-      "situation": "hydration",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 353,
-      "category": "diabetes",
-      "situation": "weight management",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
-    },
-    {
-      "id": 354,
-      "category": "oral_health",
-      "situation": "gum health",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
-    },
-    {
-      "id": 355,
-      "category": "maternal",
-      "situation": "energy",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 356,
-      "category": "digestion",
-      "situation": "constipation",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
-    },
-    {
-      "id": 357,
-      "category": "diabetes",
-      "situation": "monitoring",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
-    },
-    {
-      "id": 358,
-      "category": "first_aid",
-      "situation": "burns",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 359,
-      "category": "nutrition",
-      "situation": "balanced meals",
-      "text": "Eat dairy regularly for better muscle function."
-    },
-    {
-      "id": 360,
-      "category": "skin_care",
-      "situation": "aging",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 361,
-      "category": "budget_nutrition",
-      "situation": "seasonal",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 362,
-      "category": "child",
-      "situation": "appetite",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 363,
-      "category": "travel_health",
-      "situation": "preparation",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 364,
-      "category": "child",
-      "situation": "healthy habits",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 365,
-      "category": "first_aid",
-      "situation": "burns",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 366,
-      "category": "weight_management",
-      "situation": "portion control",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 367,
-      "category": "stress",
-      "situation": "relaxation",
-      "text": "Practice deep breathing for 13 minutes when feeling stressed."
-    },
-    {
-      "id": 368,
-      "category": "stress",
-      "situation": "mental fatigue",
-      "text": "Practice deep breathing for 17 minutes when feeling stressed."
-    },
-    {
-      "id": 369,
-      "category": "digestion",
-      "situation": "gut health",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
-    },
-    {
-      "id": 370,
-      "category": "food_safety",
-      "situation": "cooking",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 371,
-      "category": "weight_management",
-      "situation": "obesity",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 372,
-      "category": "hair_care",
-      "situation": "scalp health",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
-    },
-    {
-      "id": 373,
-      "category": "sleep",
-      "situation": "routine",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 374,
-      "category": "diabetes",
-      "situation": "blood sugar",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
-    },
-    {
-      "id": 375,
-      "category": "heart",
-      "situation": "prevention",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
-    },
-    {
-      "id": 376,
-      "category": "elderly_care",
-      "situation": "nutrition",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
-    },
-    {
-      "id": 377,
-      "category": "nutrition",
-      "situation": "energy levels",
-      "text": "Eat legumes regularly for better hydration."
-    },
-    {
-      "id": 378,
-      "category": "hydration",
-      "situation": "hot weather",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 379,
-      "category": "nutrition",
-      "situation": "vitamin deficiency",
-      "text": "Eat herbs regularly for better energy."
-    },
-    {
-      "id": 380,
-      "category": "digestion",
-      "situation": "constipation",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
-    },
-    {
-      "id": 381,
-      "category": "hydration",
-      "situation": "exercise",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 382,
-      "category": "travel_health",
-      "situation": "hydration",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 383,
-      "category": "fitness",
-      "situation": "inactive",
-      "text": "Include 11 minutes of exercise in your daily routine."
-    },
-    {
-      "id": 384,
-      "category": "mental_health",
-      "situation": "stress",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 385,
-      "category": "child",
-      "situation": "healthy habits",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 386,
-      "category": "weight_management",
-      "situation": "maintenance",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 387,
-      "category": "mental_health",
-      "situation": "anxiety",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 388,
-      "category": "travel_health",
-      "situation": "food safety",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 389,
-      "category": "diabetes",
-      "situation": "diet control",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
-    },
-    {
-      "id": 390,
-      "category": "first_aid",
-      "situation": "cuts",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 391,
-      "category": "weight_management",
-      "situation": "portion control",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 392,
-      "category": "child",
-      "situation": "development",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 393,
-      "category": "mental_health",
-      "situation": "social connection",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 394,
-      "category": "stress",
-      "situation": "work pressure",
-      "text": "Practice deep breathing for 13 minutes when feeling stressed."
-    },
-    {
-      "id": 395,
-      "category": "maternal",
-      "situation": "energy",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 396,
-      "category": "diabetes",
-      "situation": "diet control",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
-    },
-    {
-      "id": 397,
-      "category": "hygiene",
-      "situation": "food",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 398,
-      "category": "travel_health",
-      "situation": "rest",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 399,
-      "category": "child",
-      "situation": "appetite",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 400,
-      "category": "hydration",
-      "situation": "illness",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 401,
-      "category": "immunity",
-      "situation": "recovery",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
-    },
-    {
-      "id": 402,
-      "category": "heart",
-      "situation": "prevention",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
-    },
-    {
-      "id": 403,
-      "category": "sleep",
-      "situation": "insomnia",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 404,
-      "category": "first_aid",
-      "situation": "injuries",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 405,
-      "category": "weight_management",
-      "situation": "portion control",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 406,
-      "category": "food_safety",
-      "situation": "hygiene",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 407,
-      "category": "nutrition",
-      "situation": "malnutrition",
-      "text": "Eat spices regularly for better bone strength."
-    },
-    {
-      "id": 408,
-      "category": "mental_health",
-      "situation": "stress",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 409,
-      "category": "elderly_care",
-      "situation": "cognitive health",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
-    },
-    {
-      "id": 410,
-      "category": "eye_health",
-      "situation": "vision",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 411,
-      "category": "immunity",
-      "situation": "cold season",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
-    },
-    {
-      "id": 412,
-      "category": "food_safety",
-      "situation": "cooking",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 413,
-      "category": "food_safety",
-      "situation": "hygiene",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 414,
-      "category": "nutrition",
-      "situation": "poor diet",
-      "text": "Eat root vegetables regularly for better stress reduction."
-    },
-    {
-      "id": 415,
-      "category": "stress",
-      "situation": "mental fatigue",
-      "text": "Practice deep breathing for 9 minutes when feeling stressed."
-    },
-    {
-      "id": 416,
-      "category": "hydration",
-      "situation": "hot weather",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 417,
-      "category": "skin_care",
-      "situation": "aging",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 418,
-      "category": "heart",
-      "situation": "prevention",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
-    },
-    {
-      "id": 419,
-      "category": "hygiene",
-      "situation": "personal",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 420,
-      "category": "first_aid",
-      "situation": "sprains",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 421,
-      "category": "elderly_care",
-      "situation": "cognitive health",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
-    },
-    {
-      "id": 422,
-      "category": "budget_nutrition",
-      "situation": "affordable",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 423,
-      "category": "heart",
-      "situation": "blood pressure",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
-    },
-    {
-      "id": 424,
-      "category": "child",
-      "situation": "growth",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 425,
-      "category": "travel_health",
-      "situation": "motion sickness",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 426,
-      "category": "travel_health",
-      "situation": "preparation",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 427,
-      "category": "seasonal_care",
-      "situation": "activity",
-      "text": "Adjust your diet and activities according to seasonal changes."
-    },
-    {
-      "id": 428,
-      "category": "eye_health",
-      "situation": "protection",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 429,
-      "category": "oral_health",
-      "situation": "prevention",
-      "text": "Brush twice daily, floss regularly, and visit dentist for checkups."
-    },
-    {
-      "id": 430,
-      "category": "travel_health",
-      "situation": "preparation",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 431,
-      "category": "maternal",
-      "situation": "pregnancy",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 432,
-      "category": "hygiene",
-      "situation": "personal",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 433,
-      "category": "diabetes",
-      "situation": "prevention",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
-    },
-    {
-      "id": 434,
-      "category": "travel_health",
-      "situation": "rest",
-      "text": "Stay hydrated and practice good hygiene while traveling."
-    },
-    {
-      "id": 435,
-      "category": "fitness",
-      "situation": "endurance",
-      "text": "Include 28 minutes of exercise in your daily routine."
-    },
-    {
-      "id": 436,
-      "category": "budget_nutrition",
-      "situation": "bulk buying",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 437,
-      "category": "hair_care",
-      "situation": "hair loss",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
-    },
-    {
-      "id": 438,
-      "category": "child",
-      "situation": "growth",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 439,
-      "category": "hygiene",
-      "situation": "food",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 440,
-      "category": "digestion",
-      "situation": "constipation",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
-    },
-    {
-      "id": 441,
-      "category": "hydration",
-      "situation": "illness",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 442,
-      "category": "mental_health",
-      "situation": "mindfulness",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 443,
-      "category": "hair_care",
-      "situation": "scalp health",
-      "text": "Nourish your hair with protein-rich foods and gentle hair care practices."
-    },
-    {
-      "id": 444,
-      "category": "child",
-      "situation": "growth",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 445,
-      "category": "nutrition",
-      "situation": "balanced meals",
-      "text": "Eat berries regularly for better health."
-    },
-    {
-      "id": 446,
-      "category": "heart",
-      "situation": "blood pressure",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
-    },
-    {
-      "id": 447,
-      "category": "food_safety",
-      "situation": "hygiene",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 448,
-      "category": "stress",
-      "situation": "anxiety",
-      "text": "Practice deep breathing for 7 minutes when feeling stressed."
-    },
-    {
-      "id": 449,
-      "category": "elderly_care",
-      "situation": "mobility",
-      "text": "Ensure adequate protein intake and regular gentle exercise for seniors."
-    },
-    {
-      "id": 450,
-      "category": "mental_health",
-      "situation": "stress",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 451,
-      "category": "food_safety",
-      "situation": "preservation",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 452,
-      "category": "nutrition",
-      "situation": "energy levels",
-      "text": "Eat root vegetables regularly for better bone strength."
-    },
-    {
-      "id": 453,
-      "category": "first_aid",
-      "situation": "injuries",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 454,
-      "category": "child",
-      "situation": "growth",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 455,
-      "category": "hydration",
-      "situation": "daily intake",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 456,
-      "category": "hygiene",
-      "situation": "prevention",
-      "text": "Practice good personal hygiene and keep your environment clean."
-    },
-    {
-      "id": 457,
-      "category": "hydration",
-      "situation": "daily intake",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 458,
-      "category": "fitness",
-      "situation": "inactive",
-      "text": "Include 36 minutes of exercise in your daily routine."
-    },
-    {
-      "id": 459,
-      "category": "budget_nutrition",
-      "situation": "bulk buying",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 460,
-      "category": "budget_nutrition",
-      "situation": "seasonal",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 461,
-      "category": "heart",
-      "situation": "prevention",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
-    },
-    {
-      "id": 462,
-      "category": "budget_nutrition",
-      "situation": "planning",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 463,
-      "category": "digestion",
-      "situation": "gut health",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
-    },
-    {
-      "id": 464,
-      "category": "nutrition",
-      "situation": "vitamin deficiency",
-      "text": "Eat root vegetables regularly for better bone strength."
-    },
-    {
-      "id": 465,
-      "category": "budget_nutrition",
-      "situation": "planning",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    },
-    {
-      "id": 466,
-      "category": "immunity",
-      "situation": "weak immune system",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
-    },
-    {
-      "id": 467,
-      "category": "sleep",
-      "situation": "insomnia",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 468,
-      "category": "first_aid",
-      "situation": "cuts",
-      "text": "Keep basic first aid supplies at home and know how to use them."
-    },
-    {
-      "id": 469,
-      "category": "diabetes",
-      "situation": "blood sugar",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
-    },
-    {
-      "id": 470,
-      "category": "stress",
-      "situation": "relaxation",
-      "text": "Practice deep breathing for 7 minutes when feeling stressed."
-    },
-    {
-      "id": 471,
-      "category": "immunity",
-      "situation": "frequent illness",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
-    },
-    {
-      "id": 472,
-      "category": "eye_health",
-      "situation": "vision",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 473,
-      "category": "heart",
-      "situation": "blood pressure",
-      "text": "Limit saturated fats and include heart-healthy foods like fish and nuts."
-    },
-    {
-      "id": 474,
-      "category": "immunity",
-      "situation": "prevention",
-      "text": "Boost your immunity with vitamin-rich foods like citrus fruits and leafy greens."
-    },
-    {
-      "id": 475,
-      "category": "food_safety",
-      "situation": "cooking",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 476,
-      "category": "digestion",
-      "situation": "indigestion",
-      "text": "Include fiber-rich foods and drink plenty of water for healthy digestion."
-    },
-    {
-      "id": 477,
-      "category": "stress",
-      "situation": "work pressure",
-      "text": "Practice deep breathing for 14 minutes when feeling stressed."
-    },
-    {
-      "id": 478,
-      "category": "sleep",
-      "situation": "insomnia",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 479,
-      "category": "food_safety",
-      "situation": "hygiene",
-      "text": "Practice proper food handling and storage to prevent foodborne illness."
-    },
-    {
-      "id": 480,
-      "category": "maternal",
-      "situation": "nutrition needs",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 481,
-      "category": "child",
-      "situation": "appetite",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 482,
-      "category": "child",
-      "situation": "appetite",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 483,
-      "category": "sleep",
-      "situation": "duration",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 484,
-      "category": "cooking_tips",
-      "situation": "equipment",
-      "text": "Use healthy cooking methods like steaming and baking instead of frying."
-    },
-    {
-      "id": 485,
-      "category": "weight_management",
-      "situation": "portion control",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 486,
-      "category": "seasonal_care",
-      "situation": "clothing",
-      "text": "Adjust your diet and activities according to seasonal changes."
-    },
-    {
-      "id": 487,
-      "category": "diabetes",
-      "situation": "blood sugar",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
-    },
-    {
-      "id": 488,
-      "category": "weight_management",
-      "situation": "metabolism",
-      "text": "Combine balanced diet with regular exercise for healthy weight."
-    },
-    {
-      "id": 489,
-      "category": "hydration",
-      "situation": "illness",
-      "text": "Drink water throughout the day, especially before and after physical activity."
-    },
-    {
-      "id": 490,
-      "category": "eye_health",
-      "situation": "nutrition",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 491,
-      "category": "eye_health",
-      "situation": "nutrition",
-      "text": "Give your eyes regular breaks from screens and eat eye-healthy foods."
-    },
-    {
-      "id": 492,
-      "category": "nutrition",
-      "situation": "balanced meals",
-      "text": "Eat root vegetables regularly for better skin health."
-    },
-    {
-      "id": 493,
-      "category": "sleep",
-      "situation": "quality",
-      "text": "Maintain consistent sleep schedule and create relaxing bedtime routine."
-    },
-    {
-      "id": 494,
-      "category": "maternal",
-      "situation": "postpartum",
-      "text": "During pregnancy, ensure adequate intake of iron, calcium, and folic acid."
-    },
-    {
-      "id": 495,
-      "category": "child",
-      "situation": "growth",
-      "text": "Encourage children to eat colorful fruits and vegetables for balanced nutrition."
-    },
-    {
-      "id": 496,
-      "category": "diabetes",
-      "situation": "weight management",
-      "text": "Monitor carbohydrate intake and choose complex carbs over simple sugars."
-    },
-    {
-      "id": 497,
-      "category": "skin_care",
-      "situation": "sun protection",
-      "text": "Protect your skin from sun damage and stay hydrated for healthy skin."
-    },
-    {
-      "id": 498,
-      "category": "cooking_tips",
-      "situation": "equipment",
-      "text": "Use healthy cooking methods like steaming and baking instead of frying."
-    },
-    {
-      "id": 499,
-      "category": "mental_health",
-      "situation": "depression",
-      "text": "Take time for self-care and maintain social connections."
-    },
-    {
-      "id": 500,
-      "category": "budget_nutrition",
-      "situation": "affordable",
-      "text": "Buy seasonal produce and plan meals to save money on healthy food."
-    }
-  ]
+      "tags": ["weight loss", "sleep apnea", "CPAP alternative", "health improvement"],
+      "situation": ["obesity with sleep apnea", "CPAP intolerance", "metabolic syndrome"],
+      "severity": "moderate",
+      "source": "Sleep and Weight Research",
+      "date": "2024-03-22"
+    },
+    {
+    "id": 101,
+    "text": "For muscle cramps, gently stretch the affected muscle and apply gentle pressure. Cramps often occur due to electrolyte imbalance, so drink fluids with electrolytes.",
+    "category": "pain",
+    "tags": ["muscle cramps", "electrolytes", "stretching", "hydration"],
+    "situation": ["during exercise", "night cramps", "dehydration"],
+    "severity": "mild",
+    "source": "Sports Medicine Journal",
+    "date": "2024-07-20"
+  },
+  {
+    "id": 102,
+    "text": "Place a pillow between your knees when sleeping on your side. This aligns hips and reduces lower back strain during sleep.",
+    "category": "sleep",
+    "tags": ["sleep posture", "back pain", "pillow positioning", "alignment"],
+    "situation": ["back pain at night", "pregnancy", "hip pain"],
+    "severity": "preventive",
+    "source": "Sleep Posture Research",
+    "date": "2024-07-18"
+  },
+  {
+    "id": 103,
+    "text": "For nasal congestion, inhale steam from a bowl of hot water with a towel over your head for 10 minutes. The moisture helps loosen mucus.",
+    "category": "cold",
+    "tags": ["nasal congestion", "steam inhalation", "sinus relief", "natural remedy"],
+    "situation": ["sinus congestion", "allergy symptoms", "cold symptoms"],
+    "severity": "mild",
+    "source": "Respiratory Care Guidelines",
+    "date": "2024-07-15"
+  },
+  {
+    "id": 104,
+    "text": "Eat slowly and chew each bite 20-30 times. Proper chewing initiates digestive enzymes and reduces digestive workload.",
+    "category": "digestion",
+    "tags": ["eating habits", "chewing", "digestion", "portion control"],
+    "situation": ["indigestion", "weight management", "overeating"],
+    "severity": "preventive",
+    "source": "Digestive Health Foundation",
+    "date": "2024-07-12"
+  },
+  {
+    "id": 105,
+    "text": "For minor burns, run cool (not cold) water over the area for 10-15 minutes. Avoid ice as it can damage tissue further.",
+    "category": "skin",
+    "tags": ["burns", "first aid", "skin care", "emergency care"],
+    "situation": ["cooking burns", "sunburn", "accidental burns"],
+    "severity": "mild",
+    "source": "First Aid Guidelines",
+    "date": "2024-07-10"
+  },
+  {
+    "id": 106,
+    "text": "Include fermented foods like sauerkraut, kefir, and miso in your diet weekly. These support gut microbiome diversity and immune function.",
+    "category": "nutrition",
+    "tags": ["fermented foods", "gut health", "probiotics", "immune support"],
+    "situation": ["digestive issues", "antibiotic recovery", "immune boosting"],
+    "severity": "preventive",
+    "source": "Nutrition and Microbiology Research",
+    "date": "2024-07-08"
+  },
+  {
+    "id": 107,
+    "text": "Stretch hip flexors daily if you sit for long periods. Tight hip flexors contribute to back pain and poor posture.",
+    "category": "fitness",
+    "tags": ["hip flexors", "stretching", "posture", "desk job"],
+    "situation": ["sedentary work", "back pain", "poor posture"],
+    "severity": "preventive",
+    "source": "Physical Therapy",
+    "date": "2024-07-05"
+  },
+  {
+    "id": 108,
+    "text": "Practice positive self-talk daily. Replace negative thoughts with compassionate, realistic statements to improve mental health.",
+    "category": "mental",
+    "tags": ["self-talk", "positive thinking", "mental health", "cognitive restructuring"],
+    "situation": ["negative thinking", "low self-esteem", "stress"],
+    "severity": "preventive",
+    "source": "Cognitive Behavioral Therapy",
+    "date": "2024-07-03"
+  },
+  {
+    "id": 109,
+    "text": "Know your blood pressure numbers: Normal is below 120/80 mmHg. Check regularly if you have risk factors like family history.",
+    "category": "heart",
+    "tags": ["blood pressure", "heart health", "monitoring", "prevention"],
+    "situation": ["routine check-up", "family history", "aging"],
+    "severity": "preventive",
+    "source": "American Heart Association",
+    "date": "2024-07-01"
+  },
+  {
+    "id": 110,
+    "text": "For diabetes foot care, wear properly fitting shoes and never walk barefoot. Inspect shoes for foreign objects before wearing.",
+    "category": "diabetes",
+    "tags": ["diabetic foot care", "shoe fitting", "prevention", "foot protection"],
+    "situation": ["diabetes management", "neuropathy", "foot sensitivity"],
+    "severity": "preventive",
+    "source": "Diabetes Foot Care Guidelines",
+    "date": "2024-06-28"
+  },
+  {
+    "id": 111,
+    "text": "Limit caffeine to 400mg daily (about 4 cups of coffee). Excessive caffeine can increase blood pressure and cause anxiety.",
+    "category": "hypertension",
+    "tags": ["caffeine", "blood pressure", "moderation", "stimulants"],
+    "situation": ["high blood pressure", "anxiety", "sleep problems"],
+    "severity": "preventive",
+    "source": "Blood Pressure Management",
+    "date": "2024-06-25"
+  },
+  {
+    "id": 112,
+    "text": "For pet dander allergies, use HEPA vacuum cleaner weekly and consider hard flooring instead of carpets which trap allergens.",
+    "category": "allergy",
+    "tags": ["pet allergies", "HEPA vacuum", "allergen reduction", "home environment"],
+    "situation": ["indoor allergies", "asthma triggers", "pet ownership"],
+    "severity": "preventive",
+    "source": "Allergy Home Management",
+    "date": "2024-06-22"
+  },
+  {
+    "id": 113,
+    "text": "Get 15 minutes of sunlight daily for vitamin D synthesis. Vitamin D is crucial for immune function and bone health.",
+    "category": "immunity",
+    "tags": ["vitamin D", "sunlight", "immune function", "bone health"],
+    "situation": ["winter months", "indoor lifestyle", "immune support"],
+    "severity": "preventive",
+    "source": "Vitamin D Research",
+    "date": "2024-06-20"
+  },
+  {
+    "id": 114,
+    "text": "Change toothbrush every 3 months or after illness. Worn bristles are less effective and can harbor bacteria.",
+    "category": "hygiene",
+    "tags": ["oral hygiene", "toothbrush care", "dental health", "bacteria prevention"],
+    "situation": ["routine replacement", "after illness", "dental care"],
+    "severity": "preventive",
+    "source": "Dental Association",
+    "date": "2024-06-18"
+  },
+  {
+    "id": 115,
+    "text": "For sinus headaches, apply warm compress over sinuses (cheeks and forehead). The warmth helps drain congested sinuses.",
+    "category": "headache",
+    "tags": ["sinus headache", "warm compress", "sinus relief", "congestion"],
+    "situation": ["sinus infection", "allergy season", "cold symptoms"],
+    "severity": "mild",
+    "source": "Sinus Care Guidelines",
+    "date": "2024-06-15"
+  },
+  {
+    "id": 116,
+    "text": "Keep headache diary noting time, duration, intensity, and potential triggers. This helps identify patterns for prevention.",
+    "category": "headache",
+    "tags": ["headache diary", "trigger identification", "prevention", "pattern tracking"],
+    "situation": ["chronic headaches", "migraine management", "treatment planning"],
+    "severity": "preventive",
+    "source": "Headache Specialist",
+    "date": "2024-06-12"
+  },
+  {
+    "id": 117,
+    "text": "For nausea, sip ginger tea or chew crystallized ginger. Ginger has anti-nausea properties without medication side effects.",
+    "category": "stomach",
+    "tags": ["nausea", "ginger", "natural remedy", "digestive comfort"],
+    "situation": ["morning sickness", "motion sickness", "post-surgery"],
+    "severity": "mild",
+    "source": "Nausea Management Research",
+    "date": "2024-06-10"
+  },
+  {
+    "id": 118,
+    "text": "Avoid tight clothing around waist after eating. Tight clothing can increase pressure on stomach and worsen acid reflux.",
+    "category": "digestion",
+    "tags": ["acid reflux", "clothing choice", "digestive comfort", "prevention"],
+    "situation": ["GERD", "heartburn", "overeating"],
+    "severity": "preventive",
+    "source": "Digestive Health",
+    "date": "2024-06-08"
+  },
+  {
+    "id": 119,
+    "text": "For ankle sprain, remember RICE: Rest, Ice, Compression, Elevation. Start within first 48 hours for best recovery.",
+    "category": "pain",
+    "tags": ["ankle sprain", "RICE method", "injury care", "first aid"],
+    "situation": ["sports injury", "accidental fall", "joint injury"],
+    "severity": "moderate",
+    "source": "Orthopedic First Aid",
+    "date": "2024-06-05"
+  },
+  {
+    "id": 120,
+    "text": "Invest in supportive mattress and pillow that maintain spinal alignment. Quality sleep surface reduces morning pain by 50%.",
+    "category": "sleep",
+    "tags": ["mattress", "pillow", "spinal alignment", "sleep quality"],
+    "situation": ["chronic pain", "poor sleep", "back/neck issues"],
+    "severity": "preventive",
+    "source": "Sleep Medicine Research",
+    "date": "2024-06-03"
+  },
+  {
+    "id": 121,
+    "text": "For sore throat, gargle with warm salt water (1/2 tsp salt in 8oz water) 3-4 times daily. Reduces swelling and discomfort.",
+    "category": "cold",
+    "tags": ["sore throat", "salt water gargle", "throat relief", "home remedy"],
+    "situation": ["cold/flu", "post-nasal drip", "viral infection"],
+    "severity": "mild",
+    "source": "Traditional Remedy",
+    "date": "2024-06-01"
+  },
+  {
+    "id": 122,
+    "text": "Eat mindfully without distractions. Turn off TV and put away phone during meals to improve digestion and prevent overeating.",
+    "category": "nutrition",
+    "tags": ["mindful eating", "portion control", "digestion", "eating habits"],
+    "situation": ["weight management", "digestive issues", "emotional eating"],
+    "severity": "preventive",
+    "source": "Mindful Eating Research",
+    "date": "2024-05-28"
+  },
+  {
+    "id": 123,
+    "text": "For dry elbows and knees, apply thick moisturizer like shea butter or petroleum jelly before bed and cover with cotton socks/gloves.",
+    "category": "skin",
+    "tags": ["dry skin", "moisturizing", "shea butter", "night treatment"],
+    "situation": ["winter skin", "rough patches", "aging skin"],
+    "severity": "mild",
+    "source": "Dermatology Care",
+    "date": "2024-05-25"
+  },
+  {
+    "id": 124,
+    "text": "Include resistance bands in fitness routine. They provide portable, low-impact strength training suitable for all fitness levels.",
+    "category": "fitness",
+    "tags": ["resistance bands", "strength training", "portable exercise", "home workout"],
+    "situation": ["travel", "home exercise", "rehabilitation"],
+    "severity": "preventive",
+    "source": "Fitness Equipment Research",
+    "date": "2024-05-22"
+  },
+  {
+    "id": 125,
+    "text": "Practice digital detox one day weekly. Disconnect from electronic devices to reduce mental clutter and improve real-world connections.",
+    "category": "mental",
+    "tags": ["digital detox", "mental health", "screen time", "connection"],
+    "situation": ["technology overload", "burnout", "relationship strain"],
+    "severity": "preventive",
+    "source": "Digital Wellness Research",
+    "date": "2024-05-20"
+  },
+  {
+    "id": 126,
+    "text": "Know cholesterol numbers: Total under 200 mg/dL, LDL under 100 mg/dL, HDL over 60 mg/dL. Get checked every 4-6 years.",
+    "category": "heart",
+    "tags": ["cholesterol", "heart health", "lipid panel", "prevention"],
+    "situation": ["routine screening", "family history", "aging"],
+    "severity": "preventive",
+    "source": "Cardiology Guidelines",
+    "date": "2024-05-18"
+  },
+  {
+    "id": 127,
+    "text": "Carry fast-acting glucose source if diabetic. Glucose tablets, juice boxes, or hard candies treat hypoglycemia quickly.",
+    "category": "diabetes",
+    "tags": ["hypoglycemia", "diabetes emergency", "glucose", "preparedness"],
+    "situation": ["type 1 diabetes", "insulin use", "exercise with diabetes"],
+    "severity": "moderate",
+    "source": "Diabetes Emergency Care",
+    "date": "2024-05-15"
+  },
+  {
+    "id": 128,
+    "text": "Reduce processed meat consumption (bacon, sausage, deli meats). Linked to increased blood pressure and heart disease risk.",
+    "category": "hypertension",
+    "tags": ["processed meat", "blood pressure", "diet", "heart health"],
+    "situation": ["high blood pressure", "diet improvement", "chronic disease prevention"],
+    "severity": "preventive",
+    "source": "Nutrition and Hypertension Research",
+    "date": "2024-05-12"
+  },
+  {
+    "id": 129,
+    "text": "Wash bedding in hot water weekly to reduce dust mites. Use allergen-proof mattress and pillow covers for additional protection.",
+    "category": "allergy",
+    "tags": ["dust mites", "bedding hygiene", "allergy prevention", "home environment"],
+    "situation": ["indoor allergies", "asthma", "eczema"],
+    "severity": "preventive",
+    "source": "Allergy Home Management",
+    "date": "2024-05-10"
+  },
+  {
+    "id": 130,
+    "text": "Eat colorful fruits and vegetables for varied antioxidants. Different colors indicate different beneficial plant compounds.",
+    "category": "immunity",
+    "tags": ["antioxidants", "phytonutrients", "immune support", "colorful eating"],
+    "situation": ["immune boosting", "chronic disease prevention", "aging"],
+    "severity": "preventive",
+    "source": "Nutrition and Immunology",
+    "date": "2024-05-08"
+  },
+  {
+    "id": 131,
+    "text": "Clean makeup brushes weekly with gentle soap. Bacteria buildup can cause skin irritation and breakouts.",
+    "category": "hygiene",
+    "tags": ["makeup hygiene", "skin care", "bacteria prevention", "beauty tools"],
+    "situation": ["acne-prone skin", "frequent makeup use", "skin infections"],
+    "severity": "preventive",
+    "source": "Dermatology Guidelines",
+    "date": "2024-05-05"
+  },
+  {
+    "id": 132,
+    "text": "For menstrual migraines, track cycle and symptoms. Hormonal fluctuations often trigger migraines around menstruation.",
+    "category": "headache",
+    "tags": ["menstrual migraine", "hormonal headache", "tracking", "cycle awareness"],
+    "situation": ["menstrual cycle", "hormonal changes", "women's health"],
+    "severity": "preventive",
+    "source": "Women's Headache Research",
+    "date": "2024-05-03"
+  },
+  {
+    "id": 133,
+    "text": "Stay upright for 2-3 hours after eating if prone to acid reflux. Gravity helps keep stomach contents from rising.",
+    "category": "digestion",
+    "tags": ["acid reflux", "post-meal posture", "GERD", "digestive comfort"],
+    "situation": ["heartburn", "nighttime reflux", "pregnancy"],
+    "severity": "preventive",
+    "source": "Gastroenterology",
+    "date": "2024-05-01"
+  },
+  {
+    "id": 134,
+    "text": "For plantar fasciitis, roll foot over frozen water bottle for 10 minutes daily. Cold reduces inflammation while massage stretches tissue.",
+    "category": "pain",
+    "tags": ["plantar fasciitis", "foot pain", "frozen bottle massage", "inflammation"],
+    "situation": ["heel pain", "morning foot pain", "overuse injury"],
+    "severity": "mild",
+    "source": "Podiatry Recommendations",
+    "date": "2024-04-28"
+  },
+  {
+    "id": 135,
+    "text": "Establish wind-down routine 30 minutes before bed. Dim lights, reduce noise, and engage in calming activities to signal sleep time.",
+    "category": "sleep",
+    "tags": ["wind-down routine", "sleep preparation", "circadian rhythm", "relaxation"],
+    "situation": ["difficulty falling asleep", "busy mind at bedtime", "stress"],
+    "severity": "preventive",
+    "source": "Sleep Hygiene",
+    "date": "2024-04-25"
+  },
+  {
+    "id": 136,
+    "text": "For earache, apply warm (not hot) compress over affected ear for 15-20 minutes. The warmth can help relieve pain.",
+    "category": "cold",
+    "tags": ["earache", "warm compress", "pain relief", "home remedy"],
+    "situation": ["ear infection", "swimmer's ear", "cold symptoms"],
+    "severity": "mild",
+    "source": "Pediatric Ear Care",
+    "date": "2024-04-22"
+  },
+  {
+    "id": 137,
+    "text": "Drink water before meals to aid weight management. Sometimes thirst is mistaken for hunger, leading to overeating.",
+    "category": "nutrition",
+    "tags": ["hydration", "weight management", "appetite control", "water intake"],
+    "situation": ["weight loss", "overeating", "meal planning"],
+    "severity": "preventive",
+    "source": "Nutrition and Weight Research",
+    "date": "2024-04-20"
+  },
+  {
+    "id": 138,
+    "text": "For chapped lips, apply natural oils like coconut or almond oil. Avoid licking lips which worsens dryness.",
+    "category": "skin",
+    "tags": ["chapped lips", "natural oils", "lip care", "dryness"],
+    "situation": ["winter weather", "dehydration", "frequent lip licking"],
+    "severity": "mild",
+    "source": "Dermatology",
+    "date": "2024-04-18"
+  },
+  {
+    "id": 139,
+    "text": "Incorporate balance exercises like standing on one leg daily. Improves stability and reduces fall risk, especially with aging.",
+    "category": "fitness",
+    "tags": ["balance exercises", "fall prevention", "aging", "stability"],
+    "situation": ["older adults", "rehabilitation", "coordination improvement"],
+    "severity": "preventive",
+    "source": "Geriatric Fitness",
+    "date": "2024-04-15"
+  },
+  {
+    "id": 140,
+    "text": "Practice saying 'no' to protect time and energy. Overcommitment is a major contributor to stress and burnout.",
+    "category": "mental",
+    "tags": ["boundaries", "stress management", "time management", "self-care"],
+    "situation": ["people-pleasing", "overwhelm", "work-life balance"],
+    "severity": "preventive",
+    "source": "Stress Management Psychology",
+    "date": "2024-04-12"
+  },
+  {
+    "id": 141,
+    "text": "Know stroke symptoms FAST: Face drooping, Arm weakness, Speech difficulty, Time to call emergency services.",
+    "category": "heart",
+    "tags": ["stroke", "emergency signs", "FAST acronym", "brain health"],
+    "situation": ["sudden symptoms", "high risk individuals", "family history"],
+    "severity": "emergency",
+    "source": "American Stroke Association",
+    "date": "2024-04-10"
+  },
+  {
+    "id": 142,
+    "text": "Rotate injection sites if using insulin. Prevents lipodystrophy (fat tissue changes) and improves insulin absorption.",
+    "category": "diabetes",
+    "tags": ["insulin injection", "site rotation", "diabetes management", "medication administration"],
+    "situation": ["type 1 diabetes", "insulin-dependent type 2", "daily injections"],
+    "severity": "preventive",
+    "source": "Diabetes Injection Guidelines",
+    "date": "2024-04-08"
+  },
+  {
+    "id": 143,
+    "text": "Practice paced breathing: 5-6 breaths per minute for 5 minutes daily. This activates relaxation response and can lower blood pressure.",
+    "category": "hypertension",
+    "tags": ["breathing exercise", "blood pressure", "relaxation", "stress reduction"],
+    "situation": ["high blood pressure", "stress management", "anxiety"],
+    "severity": "preventive",
+    "source": "Hypertension Non-Drug Therapy",
+    "date": "2024-04-05"
+  },
+  {
+    "id": 144,
+    "text": "Use nasal saline rinse daily during allergy season. Flushes out allergens and reduces sinus inflammation.",
+    "category": "allergy",
+    "tags": ["nasal rinse", "allergy relief", "sinus care", "neti pot"],
+    "situation": ["pollen season", "sinus congestion", "allergy symptoms"],
+    "severity": "preventive",
+    "source": "Allergy Management",
+    "date": "2024-04-03"
+  },
+  {
+    "id": 145,
+    "text": "Laugh daily - it increases immune cells and infection-fighting antibodies. Watch comedy, read funny books, or share jokes.",
+    "category": "immunity",
+    "tags": ["laughter", "immune function", "stress reduction", "mental health"],
+    "situation": ["stressful periods", "immune support", "mood improvement"],
+    "severity": "preventive",
+    "source": "Psychoneuroimmunology",
+    "date": "2024-04-01"
+  },
+  {
+    "id": 146,
+    "text": "Clean refrigerator monthly to prevent foodborne illness. Check expiration dates and wipe spills immediately.",
+    "category": "hygiene",
+    "tags": ["refrigerator cleaning", "food safety", "bacteria prevention", "kitchen hygiene"],
+    "situation": ["food storage", "preventing illness", "kitchen maintenance"],
+    "severity": "preventive",
+    "source": "Food Safety Guidelines",
+    "date": "2024-03-28"
+  },
+  {
+    "id": 147,
+    "text": "For tension headache prevention, practice shoulder rolls and neck stretches every hour during desk work.",
+    "category": "headache",
+    "tags": ["tension headache", "desk stretches", "prevention", "posture"],
+    "situation": ["desk job", "computer work", "long meetings"],
+    "severity": "preventive",
+    "source": "Occupational Health",
+    "date": "2024-03-25"
+  },
+  {
+    "id": 148,
+    "text": "Eat smaller, more frequent meals if prone to bloating. Large meals stretch stomach and increase gas production.",
+    "category": "digestion",
+    "tags": ["bloating", "meal frequency", "portion control", "digestive comfort"],
+    "situation": ["IBS", "chronic bloating", "digestive sensitivity"],
+    "severity": "preventive",
+    "source": "Gastroenterology",
+    "date": "2024-03-22"
+  },
+  {
+    "id": 149,
+    "text": "For arthritis pain, try swimming or water aerobics. Water buoyancy reduces joint stress while providing resistance.",
+    "category": "pain",
+    "tags": ["arthritis", "water exercise", "joint protection", "low-impact"],
+    "situation": ["osteoarthritis", "rheumatoid arthritis", "joint pain"],
+    "severity": "mild",
+    "source": "Arthritis Foundation",
+    "date": "2024-03-20"
+  },
+  {
+    "id": 150,
+    "text": "Avoid screens 1 hour before bed. Blue light suppresses melatonin production, delaying sleep onset.",
+    "category": "sleep",
+    "tags": ["screen time", "blue light", "sleep quality", "melatonin"],
+    "situation": ["insomnia", "difficulty falling asleep", "evening routine"],
+    "severity": "preventive",
+    "source": "Sleep Research",
+    "date": "2024-03-18"
+  },
+  {
+    "id": 151,
+    "text": "For cough suppression at night, elevate head with extra pillow. Reduces post-nasal drip and irritation.",
+    "category": "cold",
+    "tags": ["night cough", "sleep position", "cough relief", "post-nasal drip"],
+    "situation": ["persistent cough", "cold recovery", "allergy symptoms"],
+    "severity": "mild",
+    "source": "Respiratory Care",
+    "date": "2024-03-15"
+  },
+  {
+    "id": 152,
+    "text": "Read food labels for hidden sugars: corn syrup, dextrose, fructose, maltose, sucrose. Limit added sugars to 25g daily for women, 36g for men.",
+    "category": "nutrition",
+    "tags": ["sugar awareness", "food labels", "hidden sugars", "healthy eating"],
+    "situation": ["weight management", "diabetes", "dental health"],
+    "severity": "preventive",
+    "source": "Nutrition Label Education",
+    "date": "2024-03-12"
+  },
+  {
+    "id": 153,
+    "text": "For razor burn, apply aloe vera gel after shaving. Soothes irritation and promotes healing of minor nicks.",
+    "category": "skin",
+    "tags": ["razor burn", "shaving care", "aloe vera", "skin irritation"],
+    "situation": ["after shaving", "sensitive skin", "ingrown hairs"],
+    "severity": "mild",
+    "source": "Dermatology Care",
+    "date": "2024-03-10"
+  },
+  {
+    "id": 154,
+    "text": "Include flexibility training 2-3 times weekly. Maintains range of motion and reduces injury risk during other activities.",
+    "category": "fitness",
+    "tags": ["flexibility", "stretching", "range of motion", "injury prevention"],
+    "situation": ["aging", "sports performance", "recovery"],
+    "severity": "preventive",
+    "source": "Fitness Guidelines",
+    "date": "2024-03-08"
+  },
+  {
+    "id": 155,
+    "text": "Practice daily gratitude journaling. Write 3 specific things you're grateful for each day to cultivate positive mindset.",
+    "category": "mental",
+    "tags": ["gratitude journal", "positive psychology", "mental wellbeing", "daily practice"],
+    "situation": ["depression", "negative thinking", "stress"],
+    "severity": "preventive",
+    "source": "Positive Psychology Research",
+    "date": "2024-03-05"
+  },
+  {
+    "id": 156,
+    "text": "Monitor resting heart rate: Normal is 60-100 beats per minute. Lower resting rate often indicates better cardiovascular fitness.",
+    "category": "heart",
+    "tags": ["resting heart rate", "cardiovascular health", "fitness indicator", "monitoring"],
+    "situation": ["fitness tracking", "health assessment", "exercise program"],
+    "severity": "preventive",
+    "source": "Cardiology",
+    "date": "2024-03-03"
+  },
+  {
+    "id": 157,
+    "text": "Carry diabetes identification card with emergency contacts and medication information. Vital in case of severe hypoglycemia.",
+    "category": "diabetes",
+    "tags": ["diabetes ID", "emergency preparedness", "safety", "medical information"],
+    "situation": ["type 1 diabetes", "travel", "new environment"],
+    "severity": "preventive",
+    "source": "Diabetes Safety Guidelines",
+    "date": "2024-03-01"
+  },
+  {
+    "id": 158,
+    "text": "Increase potassium-rich foods: bananas, sweet potatoes, spinach, avocado. Potassium helps balance sodium effects on blood pressure.",
+    "category": "hypertension",
+    "tags": ["potassium", "blood pressure", "minerals", "diet"],
+    "situation": ["high blood pressure", "high sodium diet", "heart health"],
+    "severity": "preventive",
+    "source": "Hypertension Nutrition",
+    "date": "2024-02-28"
+  },
+  {
+    "id": 159,
+    "text": "Keep windows closed on windy days during pollen season. Wind spreads pollen particles increasing exposure.",
+    "category": "allergy",
+    "tags": ["pollen avoidance", "indoor air quality", "seasonal management", "prevention"],
+    "situation": ["hay fever", "pollen season", "asthma triggers"],
+    "severity": "preventive",
+    "source": "Allergy and Asthma Management",
+    "date": "2024-02-25"
+  },
+  {
+    "id": 160,
+    "text": "Get adequate zinc from foods like pumpkin seeds, lentils, chickpeas. Zinc supports immune cell function and wound healing.",
+    "category": "immunity",
+    "tags": ["zinc", "immune support", "minerals", "wound healing"],
+    "situation": ["frequent colds", "slow healing", "immune support"],
+    "severity": "preventive",
+    "source": "Immunology Nutrition",
+    "date": "2024-02-22"
+  },
+  {
+    "id": 161,
+    "text": "Wash reusable water bottles daily with soap and hot water. Bacteria and mold can grow in damp environments.",
+    "category": "hygiene",
+    "tags": ["water bottle hygiene", "bacteria prevention", "cleaning", "hydration"],
+    "situation": ["daily use", "gym use", "shared bottles"],
+    "severity": "preventive",
+    "source": "Public Health Guidelines",
+    "date": "2024-02-20"
+  },
+  {
+    "id": 162,
+    "text": "For migraine aura, move to dark, quiet room at first sign. Early intervention can reduce severity and duration.",
+    "category": "headache",
+    "tags": ["migraine aura", "early intervention", "dark room", "sensory reduction"],
+    "situation": ["migraine prodrome", "visual disturbances", "sensitivity"],
+    "severity": "moderate",
+    "source": "Migraine Management",
+    "date": "2024-02-18"
+  },
+  {
+    "id": 163,
+    "text": "Identify food triggers for digestive issues. Common triggers include dairy, gluten, spicy foods, caffeine, and alcohol.",
+    "category": "digestion",
+    "tags": ["food triggers", "digestive issues", "identification", "elimination diet"],
+    "situation": ["IBS", "unexplained symptoms", "food sensitivities"],
+    "severity": "preventive",
+    "source": "Gastroenterology",
+    "date": "2024-02-15"
+  },
+  {
+    "id": 164,
+    "text": "For knee osteoarthritis, strengthen quadriceps with leg extensions. Strong thigh muscles reduce knee joint loading by 30%.",
+    "category": "pain",
+    "tags": ["knee osteoarthritis", "quadriceps strength", "joint protection", "exercise therapy"],
+    "situation": ["arthritis pain", "knee weakness", "aging joints"],
+    "severity": "mild",
+    "source": "Orthopedic Rehabilitation",
+    "date": "2024-02-12"
+  },
+  {
+    "id": 165,
+    "text": "Maintain consistent wake time even on weekends. Varying wake time disrupts circadian rhythm more than varying bedtime.",
+    "category": "sleep",
+    "tags": ["wake time consistency", "circadian rhythm", "sleep schedule", "weekend routine"],
+    "situation": ["social jetlag", "insomnia", "shift work"],
+    "severity": "preventive",
+    "source": "Sleep Medicine",
+    "date": "2024-02-10"
+  },
+  {
+    "id": 166,
+    "text": "For chest congestion, use humidifier with eucalyptus oil. The moisture and menthol help break up mucus.",
+    "category": "cold",
+    "tags": ["chest congestion", "humidifier", "eucalyptus", "mucus relief"],
+    "situation": ["bronchitis", "chest cold", "productive cough"],
+    "severity": "mild",
+    "source": "Respiratory Care",
+    "date": "2024-02-08"
+  },
+  {
+    "id": 167,
+    "text": "Plan meals weekly to ensure balanced nutrition. Reduces reliance on processed convenience foods and supports healthy choices.",
+    "category": "nutrition",
+    "tags": ["meal planning", "nutrition", "food preparation", "healthy eating"],
+    "situation": ["busy schedule", "weight management", "family meals"],
+    "severity": "preventive",
+    "source": "Nutrition Planning",
+    "date": "2024-02-05"
+  },
+  {
+    "id": 168,
+    "text": "For calluses, soak feet in warm water with Epsom salt, then gently file with pumice stone. Moisturize thoroughly after.",
+    "category": "skin",
+    "tags": ["calluses", "foot care", "Epsom salt", "pumice stone"],
+    "situation": ["foot discomfort", "tight shoes", "standing work"],
+    "severity": "mild",
+    "source": "Podiatry Care",
+    "date": "2024-02-03"
+  },
+  {
+    "id": 169,
+    "text": "Listen to body signals during exercise. Distinguish between good pain (muscle fatigue) and bad pain (sharp, joint, or shooting).",
+    "category": "fitness",
+    "tags": ["exercise safety", "pain differentiation", "injury prevention", "body awareness"],
+    "situation": ["new exercise program", "return from injury", "intense training"],
+    "severity": "preventive",
+    "source": "Exercise Safety",
+    "date": "2024-02-01"
+  },
+  {
+    "id": 170,
+    "text": "Challenge negative thoughts with evidence. Ask: 'What evidence supports this thought? What evidence contradicts it?'",
+    "category": "mental",
+    "tags": ["cognitive restructuring", "negative thoughts", "evidence-based thinking", "mental health"],
+    "situation": ["anxiety", "depression", "negative thinking patterns"],
+    "severity": "preventive",
+    "source": "Cognitive Therapy",
+    "date": "2024-01-28"
+  },
+  {
+    "id": 171,
+    "text": "Know family heart health history. First-degree relatives with early heart disease (men <55, women <65) increases your risk.",
+    "category": "heart",
+    "tags": ["family history", "heart disease risk", "genetics", "prevention"],
+    "situation": ["family planning", "health screening", "risk assessment"],
+    "severity": "preventive",
+    "source": "Cardiology Risk Assessment",
+    "date": "2024-01-25"
+  },
+  {
+    "id": 172,
+    "text": "Check feet daily if diabetic. Use mirror to see bottoms or ask family member for help with hard-to-see areas.",
+    "category": "diabetes",
+    "tags": ["diabetic foot inspection", "daily care", "prevention", "self-examination"],
+    "situation": ["diabetes management", "neuropathy", "elderly"],
+    "severity": "preventive",
+    "source": "Diabetes Self-Care",
+    "date": "2024-01-22"
+  },
+  {
+    "id": 173,
+    "text": "Reduce stress through regular physical activity. Exercise lowers stress hormones and increases endorphins naturally.",
+    "category": "hypertension",
+    "tags": ["stress reduction", "exercise", "blood pressure", "endorphins"],
+    "situation": ["stress-related hypertension", "anxiety", "mood management"],
+    "severity": "preventive",
+    "source": "Hypertension and Stress Research",
+    "date": "2024-01-20"
+  },
+  {
+    "id": 174,
+    "text": "Shower after outdoor activities during pollen season. Removes pollen from hair and skin before it spreads indoors.",
+    "category": "allergy",
+    "tags": ["pollen removal", "showering", "allergy prevention", "outdoor activities"],
+    "situation": ["high pollen days", "gardening", "outdoor exercise"],
+    "severity": "preventive",
+    "source": "Allergy Management",
+    "date": "2024-01-18"
+  },
+  {
+    "id": 175,
+    "text": "Get adequate sleep for vaccine effectiveness. Sleep deprivation can reduce antibody response to vaccines by 50%.",
+    "category": "immunity",
+    "tags": ["sleep", "vaccine response", "immune function", "antibody production"],
+    "situation": ["before vaccination", "immune support", "recovery"],
+    "severity": "preventive",
+    "source": "Immunology Research",
+    "date": "2024-01-15"
+  },
+  {
+    "id": 176,
+    "text": "Clean computer keyboard and mouse weekly. These high-touch surfaces harbor bacteria and viruses.",
+    "category": "hygiene",
+    "tags": ["keyboard cleaning", "workplace hygiene", "germ prevention", "electronics"],
+    "situation": ["shared workspace", "sick season", "daily computer use"],
+    "severity": "preventive",
+    "source": "Office Hygiene Guidelines",
+    "date": "2024-01-12"
+  },
+  {
+    "id": 177,
+    "text": "For cluster headache prevention, maintain regular sleep schedule even during attack cycles. Irregular sleep can trigger attacks.",
+    "category": "headache",
+    "tags": ["cluster headache", "sleep schedule", "prevention", "cycle management"],
+    "situation": ["cluster period", "chronic headaches", "sleep disruption"],
+    "severity": "preventive",
+    "source": "Headache Specialist",
+    "date": "2024-01-10"
+  },
+  {
+    "id": 178,
+    "text": "Chew fennel seeds after meals to aid digestion. Traditional remedy that may reduce gas and bloating.",
+    "category": "digestion",
+    "tags": ["fennel seeds", "digestive aid", "traditional remedy", "after meals"],
+    "situation": ["indigestion", "bloating", "heavy meals"],
+    "severity": "mild",
+    "source": "Traditional Medicine",
+    "date": "2024-01-08"
+  },
+  {
+    "id": 179,
+    "text": "For carpal tunnel syndrome, take frequent breaks from repetitive hand movements. Stretch wrists and shake out hands regularly.",
+    "category": "pain",
+    "tags": ["carpal tunnel", "repetitive strain", "wrist care", "ergonomics"],
+    "situation": ["computer work", "manual labor", "crafts/hobbies"],
+    "severity": "preventive",
+    "source": "Occupational Therapy",
+    "date": "2024-01-05"
+  },
+  {
+    "id": 180,
+    "text": "Keep bedroom temperature between 60-67°F (15-19°C) for optimal sleep. Cooler temperatures signal body it's time for sleep.",
+    "category": "sleep",
+    "tags": ["bedroom temperature", "sleep environment", "thermoregulation", "sleep quality"],
+    "situation": ["difficulty sleeping", "night sweats", "hot climate"],
+    "severity": "preventive",
+    "source": "Sleep Environment Research",
+    "date": "2024-01-03"
+  },
+  {
+    "id": 181,
+    "text": "For laryngitis, rest voice completely for 24-48 hours. Whispering strains vocal cords more than quiet talking.",
+    "category": "cold",
+    "tags": ["laryngitis", "voice rest", "vocal cord care", "throat health"],
+    "situation": ["lost voice", "vocal strain", "throat infection"],
+    "severity": "mild",
+    "source": "ENT Specialist",
+    "date": "2024-01-01"
+  },
+  {
+    "id": 182,
+    "text": "Include protein with breakfast to stabilize blood sugar throughout day. Prevents mid-morning energy crashes and overeating later.",
+    "category": "nutrition",
+    "tags": ["breakfast protein", "blood sugar stability", "satiety", "energy"],
+    "situation": ["morning fatigue", "weight management", "diabetes"],
+    "severity": "preventive",
+    "source": "Nutrition Research",
+    "date": "2023-12-28"
+  },
+  {
+    "id": 183,
+    "text": "For ingrown toenails, soak foot in warm water with Epsom salt daily. Gently lift nail edge with clean cotton ball.",
+    "category": "skin",
+    "tags": ["ingrown toenail", "foot soak", "Epsom salt", "nail care"],
+    "situation": ["toe pain", "nail infection", "tight shoes"],
+    "severity": "mild",
+    "source": "Podiatry Care",
+    "date": "2023-12-25"
+  },
+  {
+    "id": 184,
+    "text": "Practice proper lifting technique: Keep back straight, bend knees, hold load close to body. Prevents back injuries.",
+    "category": "fitness",
+    "tags": ["lifting technique", "back safety", "injury prevention", "proper form"],
+    "situation": ["heavy lifting", "moving", "work safety"],
+    "severity": "preventive",
+    "source": "Occupational Safety",
+    "date": "2023-12-22"
+  },
+  {
+    "id": 185,
+    "text": "Set realistic, achievable goals. Break large goals into smaller steps to maintain motivation and track progress.",
+    "category": "mental",
+    "tags": ["goal setting", "motivation", "achievement", "planning"],
+    "situation": ["behavior change", "new habits", "personal development"],
+    "severity": "preventive",
+    "source": "Behavioral Psychology",
+    "date": "2023-12-20"
+  },
+  {
+    "id": 186,
+    "text": "Know your waist circumference: Men <40 inches, women <35 inches. Excess abdominal fat increases heart disease risk.",
+    "category": "heart",
+    "tags": ["waist circumference", "abdominal fat", "heart disease risk", "measurement"],
+    "situation": ["weight assessment", "metabolic health", "risk screening"],
+    "severity": "preventive",
+    "source": "Cardiovascular Risk Assessment",
+    "date": "2023-12-18"
+  },
+  {
+    "id": 187,
+    "text": "Rotate insulin injection sites: abdomen, thighs, buttocks, upper arms. Prevents tissue damage and ensures consistent absorption.",
+    "category": "diabetes",
+    "tags": ["insulin rotation", "injection sites", "tissue health", "diabetes care"],
+    "situation": ["daily insulin injections", "site reactions", "long-term management"],
+    "severity": "preventive",
+    "source": "Diabetes Injection Care",
+    "date": "2023-12-15"
+  },
+  {
+    "id": 188,
+    "text": "Limit alcohol consumption for blood pressure control. Alcohol can interfere with blood pressure medications' effectiveness.",
+    "category": "hypertension",
+    "tags": ["alcohol", "blood pressure control", "medication interaction", "moderation"],
+    "situation": ["high blood pressure", "medication use", "lifestyle management"],
+    "severity": "preventive",
+    "source": "Hypertension Lifestyle Guidelines",
+    "date": "2023-12-12"
+  },
+  {
+    "id": 189,
+    "text": "Wear sunglasses and hat during high pollen days. Protects eyes from direct pollen contact reducing eye allergy symptoms.",
+    "category": "allergy",
+    "tags": ["eye protection", "pollen avoidance", "sunglasses", "outdoor protection"],
+    "situation": ["pollen season", "outdoor activities", "eye allergies"],
+    "severity": "preventive",
+    "source": "Allergy Prevention",
+    "date": "2023-12-10"
+  },
+  {
+    "id": 190,
+    "text": "Eat garlic regularly for immune support. Contains allicin with antimicrobial properties and immune-boosting effects.",
+    "category": "immunity",
+    "tags": ["garlic", "immune support", "antimicrobial", "natural remedy"],
+    "situation": ["cold season", "immune boosting", "infection prevention"],
+    "severity": "preventive",
+    "source": "Natural Medicine Research",
+    "date": "2023-12-08"
+  },
+  {
+    "id": 191,
+    "text": "Clean shower curtain and liner monthly to prevent mold. Use vinegar solution for natural cleaning.",
+    "category": "hygiene",
+    "tags": ["shower cleaning", "mold prevention", "bathroom hygiene", "vinegar cleaning"],
+    "situation": ["bathroom maintenance", "mold allergies", "home cleaning"],
+    "severity": "preventive",
+    "source": "Home Hygiene",
+    "date": "2023-12-05"
+  },
+  {
+    "id": 192,
+    "text": "For exercise-induced headaches, ensure proper hydration before, during, and after exercise. Dehydration is common trigger.",
+    "category": "headache",
+    "tags": ["exercise headache", "hydration", "prevention", "sports"],
+    "situation": ["during/after exercise", "sports activities", "dehydration"],
+    "severity": "preventive",
+    "source": "Sports Medicine",
+    "date": "2023-12-03"
+  },
+  {
+    "id": 193,
+    "text": "Identify stress-eating triggers and develop alternative coping strategies. Emotional eating often addresses underlying emotions, not hunger.",
+    "category": "digestion",
+    "tags": ["emotional eating", "stress management", "coping strategies", "mindful eating"],
+    "situation": ["stress", "weight management", "emotional health"],
+    "severity": "preventive",
+    "source": "Behavioral Nutrition",
+    "date": "2023-12-01"
+  },
+  {
+    "id": 194,
+    "text": "For sciatica pain, try piriformis stretch: Lie on back, cross ankle over opposite knee, pull thigh toward chest.",
+    "category": "pain",
+    "tags": ["sciatica", "piriformis stretch", "nerve pain", "lower back"],
+    "situation": ["nerve pain", "lower back issues", "leg pain"],
+    "severity": "mild",
+    "source": "Physical Therapy",
+    "date": "2023-11-28"
+  },
+  {
+    "id": 195,
+    "text": "Limit fluids 2 hours before bedtime to reduce nighttime bathroom trips. Balance with adequate daytime hydration.",
+    "category": "sleep",
+    "tags": ["nocturia", "fluid timing", "sleep disruption", "hydration management"],
+    "situation": ["frequent nighttime urination", "sleep interruption", "elderly"],
+    "severity": "preventive",
+    "source": "Urology and Sleep",
+    "date": "2023-11-25"
+  },
+  {
+    "id": 196,
+    "text": "For bronchitis, drink plenty of warm fluids to thin mucus. Avoid dairy if it seems to increase mucus production for you.",
+    "category": "cold",
+    "tags": ["bronchitis", "mucus thinning", "warm fluids", "respiratory care"],
+    "situation": ["chest congestion", "productive cough", "respiratory infection"],
+    "severity": "mild",
+    "source": "Respiratory Care",
+    "date": "2023-11-22"
+  },
+  {
+    "id": 197,
+    "text": "Eat whole fruits instead of fruit juice. Provides fiber, reduces sugar spike, and increases satiety.",
+    "category": "nutrition",
+    "tags": ["whole fruits", "fiber", "blood sugar", "satiety"],
+    "situation": ["weight management", "diabetes", "digestive health"],
+    "severity": "preventive",
+    "source": "Nutrition Guidelines",
+    "date": "2023-11-20"
+  },
+  {
+    "id": 198,
+    "text": "For winter dry skin, shorten showers to 5-10 minutes with lukewarm (not hot) water. Hot water strips natural oils.",
+    "category": "skin",
+    "tags": ["dry skin", "winter care", "shower habits", "skin protection"],
+    "situation": ["winter weather", "eczema", "sensitive skin"],
+    "severity": "preventive",
+    "source": "Dermatology",
+    "date": "2023-11-18"
+  },
+  {
+    "id": 199,
+    "text": "Include rest days in exercise routine. Muscles need 24-48 hours to repair and strengthen after resistance training.",
+    "category": "fitness",
+    "tags": ["rest days", "recovery", "muscle repair", "overtraining prevention"],
+    "situation": ["strength training", "fitness plateau", "fatigue"],
+    "severity": "preventive",
+    "source": "Exercise Physiology",
+    "date": "2023-11-15"
+  },
+  {
+    "id": 200,
+    "text": "Practice deep belly breathing when stressed. Place hand on abdomen, feel it rise with inhale, fall with exhale.",
+    "category": "mental",
+    "tags": ["belly breathing", "stress relief", "relaxation", "diaphragmatic breathing"],
+    "situation": ["anxiety", "stress response", "panic symptoms"],
+    "severity": "mild",
+    "source": "Stress Management",
+    "date": "2023-11-12"
+  }
+]
 }

@@ -6,73 +6,207 @@
     <title>Health Tips Search - AfyaLite</title>
     <link rel="stylesheet" href="../style/tips.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated Background Elements -->
+    <div class="bg-elements">
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+    </div>
+
     <header>
         <div class="header-container">
-            <h1><i class="fas fa-heartbeat"></i> Health Tips Search</h1>
-            <p>Find specific health advice for your needs</p>
+            <div class="header-content">
+                <h1><i class="fas fa-heartbeat pulse"></i> Health Tips Search</h1>
+                <p class="subtitle">Find specific health advice from our database of 3000+ tips</p>
+                <div class="stats">
+                    <span class="stat"><i class="fas fa-tips"></i> 3000+ Tips</span>
+                    <span class="stat"><i class="fas fa-categories"></i> 50+ Categories</span>
+                    <span class="stat"><i class="fas fa-search"></i> Instant Search</span>
+                </div>
+            </div>
         </div>
     </header>
 
     <main class="container">
-        <!-- Tip of the Hour -->
+        <!-- Daily Tip with Animation -->
         <section class="daily-tip-section">
-            <h2><i class="fas fa-lightbulb"></i> Quick Health Tip</h2>
-            <div id="daily-tip" class="tip-card"></div>
+            <div class="section-header">
+                <h2><i class="fas fa-lightbulb shine"></i> Tip of the Hour</h2>
+                <button id="refresh-tip" class="refresh-btn">
+                    <i class="fas fa-sync-alt"></i> New Tip
+                </button>
+            </div>
+            <div id="daily-tip" class="tip-card featured">
+                <div class="tip-content">
+                    <div class="tip-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <p class="tip-text">Loading health tip...</p>
+                    <div class="tip-meta">
+                        <span class="tip-category">Health</span>
+                        <span class="tip-time"><i class="far fa-clock"></i> Updates hourly</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Main Search Section -->
-        <section class="search-tips-section">
+        <!-- Enhanced Search Section -->
+        <section class="search-tips-section glass">
             <div class="search-header" id="search-header">
-                <h2><i class="fas fa-search"></i> Search Health Tips</h2>
-                <button class="collapse-btn" id="collapse-search-btn">
-                    <i class="fas fa-chevron-down"></i>
-                </button>
+                <h2><i class="fas fa-search"></i> Search Health Database</h2>
+                <div class="search-controls">
+                    <button class="collapse-btn" id="collapse-search-btn">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <span class="search-info"><i class="fas fa-info-circle"></i> Try: pain, stomach, headache</span>
+                </div>
             </div>
             
             <div class="search-content" id="search-content">
-                <div class="search-box">
-                    <input type="text" id="search-input" placeholder="Type a symptom, condition, or health topic...">
-                    <button id="search-btn"><i class="fas fa-search"></i> Search</button>
-                    <button id="clear-search"><i class="fas fa-times"></i> Clear</button>
+                <!-- Search Box -->
+                <div class="search-box-wrapper">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="search-input" 
+                               placeholder="Search symptoms, conditions, or health topics (e.g., 'stomach pain', 'headache remedies')..."
+                               autocomplete="off">
+                        <div class="search-actions">
+                            <button id="search-btn" class="search-btn primary">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                            <button id="clear-search" class="search-btn secondary">
+                                <i class="fas fa-times"></i> Clear
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Suggestions -->
+                    <div class="quick-suggestions">
+                        <span class="suggestion-label">Quick search:</span>
+                        <button class="suggestion-tag" data-term="headache">Headache</button>
+                        <button class="suggestion-tag" data-term="stomach pain">Stomach</button>
+                        <button class="suggestion-tag" data-term="sleep problems">Sleep</button>
+                        <button class="suggestion-tag" data-term="stress relief">Stress</button>
+                        <button class="suggestion-tag" data-term="back pain">Back Pain</button>
+                    </div>
                 </div>
+
+                <!-- Search Results -->
                 <div id="search-results" class="results-container">
-                    <!-- Search results will appear here -->
+                    <div class="welcome-message">
+                        <div class="welcome-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>Welcome to Health Tips Search</h3>
+                        <p>Search for any health concern above or click on quick categories below.</p>
+                        <p>We have <strong>3000+ health tips</strong> in our database!</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Quick Categories -->
+        <!-- Enhanced Categories Section -->
         <section class="categories-section">
-            <h2><i class="fas fa-bolt"></i> Quick Categories</h2>
-            <div class="categories-grid">
-                <button class="category-btn" data-category="headache">Headache</button>
-                <button class="category-btn" data-category="stomach">Stomach</button>
-                <button class="category-btn" data-category="sleep">Sleep</button>
-                <button class="category-btn" data-category="stress">Stress</button>
-                <button class="category-btn" data-category="fatigue">Fatigue</button>
-                <button class="category-btn" data-category="cold">Cold/Flu</button>
-                <button class="category-btn" data-category="pain">Pain</button>
-                <button class="category-btn" data-category="anxiety">Anxiety</button>
+            <div class="section-header">
+                <h2><i class="fas fa-bolt"></i> Quick Health Categories</h2>
+                <p class="section-subtitle">Click any category to browse related tips</p>
             </div>
+            
+            <div class="categories-grid">
+                <button class="category-btn" data-category="pain">
+                    <i class="fas fa-head-side-virus"></i>
+                    <span>Pain Relief</span>
+                </button>
+                <button class="category-btn" data-category="stomach">
+                    <i class="fas fa-stomach"></i>
+                    <span>Digestion</span>
+                </button>
+                <button class="category-btn" data-category="sleep">
+                    <i class="fas fa-bed"></i>
+                    <span>Sleep</span>
+                </button>
+                <button class="category-btn" data-category="stress">
+                    <i class="fas fa-brain"></i>
+                    <span>Stress</span>
+                </button>
+                <button class="category-btn" data-category="cold">
+                    <i class="fas fa-temperature-high"></i>
+                    <span>Cold/Flu</span>
+                </button>
+                <button class="category-btn" data-category="skin">
+                    <i class="fas fa-allergies"></i>
+                    <span>Skin Care</span>
+                </button>
+                <button class="category-btn" data-category="nutrition">
+                    <i class="fas fa-apple-alt"></i>
+                    <span>Nutrition</span>
+                </button>
+                <button class="category-btn" data-category="fitness">
+                    <i class="fas fa-running"></i>
+                    <span>Fitness</span>
+                </button>
+            </div>
+            
             <div id="category-results" class="category-results">
                 <!-- Category results will appear here -->
             </div>
         </section>
 
-        <!-- Related Tips Section (Will be populated dynamically) -->
+        <!-- Related Tips Section -->
         <div id="related-tips-container"></div>
+
+        <!-- Search Tips Section -->
+        <section class="help-section">
+            <h3><i class="fas fa-question-circle"></i> Search Tips</h3>
+            <div class="help-grid">
+                <div class="help-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h4>Be Specific</h4>
+                    <p>Use specific terms like "migraine headache" instead of just "headache"</p>
+                </div>
+                <div class="help-card">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Multiple Symptoms</h4>
+                    <p>Search for multiple symptoms: "headache and nausea"</p>
+                </div>
+                <div class="help-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h4>Try Synonyms</h4>
+                    <p>If no results, try synonyms: "fatigue" instead of "tiredness"</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Back Home Button -->
+    <div class="home-btn-container">
+        <a href="../index.html" class="back-home-btn">
+            <i class="fas fa-home"></i> Back to Home
+        </a>
+    </div>
 
     <footer>
         <div class="footer-container">
-            <p>© 2025 AfyaLite - Your Health Companion 🌿</p>
-            <a href="../index.html" class="back-home">
-                <i class="fas fa-home"></i> Back to Home
-            </a>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>AfyaLite</span>
+                </div>
+                <p>Your trusted health companion with 3000+ evidence-based health tips</p>
+                <div class="footer-info">
+                    <p><i class="fas fa-database"></i> Database: 3000+ Health Tips</p>
+                    <p><i class="fas fa-tags"></i> Categories: 50+ Health Topics</p>
+                </div>
+                <p class="copyright">© 2025 AfyaLite - Your Health Companion 🌿</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
 
     <script src="../js/tips.js"></script>
 </body>

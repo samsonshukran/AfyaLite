@@ -5,96 +5,330 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nutrition Education | AfyaLite</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/education.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
 <header class="page-header">
-    <h1>📚 Nutrition Education</h1>
-    <p>Simple nutrition knowledge using Kenyan & East African foods</p>
-    <a href="../index.html" class="back-link">🏠 Back to Home</a>
+    <div class="header-content">
+        <h1><span class="emoji">📚</span> Nutrition Education</h1>
+        <p class="tagline">Simple nutrition knowledge using Kenyan & East African foods</p>
+     
+    </div>
+    <div class="header-wave">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="currentColor"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="currentColor"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="currentColor"></path>
+        </svg>
+    </div>
 </header>
 
 <main class="education-section">
-
-    <p class="edu-intro">
-        Good nutrition helps prevent disease, improves energy, and supports growth.
-        Learn how to eat well using affordable local foods.
-    </p>
-
-    <div class="edu-grid">
-
-        <div class="edu-card carb">
-            <h3>🍚 Carbohydrates</h3>
-            <p class="role">Main energy foods</p>
-            <p>
-                Carbohydrates give the body energy for work, school, and daily activities.
+    <div class="edu-container">
+        <div class="edu-hero">
+            <h2><i class="fas fa-heartbeat"></i> Eat Well, Live Healthy</h2>
+            <p class="hero-description">
+                Good nutrition helps prevent disease, improves energy, and supports growth.
+                Learn how to eat well using affordable local foods available in Kenyan markets.
             </p>
-            <p><strong>Examples:</strong> Ugali, Rice, Chapati, Matoke, Cassava</p>
-            <p class="tip">💡 Tip: Avoid excess sugar and refined flour.</p>
         </div>
 
-        <div class="edu-card protein">
-            <h3>🍗 Proteins</h3>
-            <p class="role">Body building foods</p>
-            <p>
-                Proteins help build muscles, repair tissues, and strengthen immunity.
-            </p>
-            <p><strong>Examples:</strong> Fish, Beans, Eggs, Chicken, Beef</p>
-            <p class="tip">💡 Tip: Beans are affordable and healthy.</p>
+        <div class="edu-search">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="eduSearch" placeholder="Search nutrition topics...">
+                <button id="clearSearch"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="search-tags">
+                <span class="tag" data-filter="carb">Carbohydrates</span>
+                <span class="tag" data-filter="protein">Proteins</span>
+                <span class="tag" data-filter="veg">Vegetables</span>
+                <span class="tag" data-filter="fats">Fats</span>
+                <span class="tag" data-filter="water">Hydration</span>
+                <span class="tag" data-filter="hygiene">Hygiene</span>
+            </div>
         </div>
 
-        <div class="edu-card veg">
-            <h3>🥬 Vegetables & Fruits</h3>
-            <p class="role">Protective foods</p>
-            <p>
-                These foods prevent diseases by providing vitamins and minerals.
-            </p>
-            <p><strong>Examples:</strong> Sukuma, Spinach, Cabbage, Banana, Mango</p>
-            <p class="tip">💡 Tip: Eat vegetables daily.</p>
+        <div class="edu-grid">
+            <div class="edu-card carb" data-category="carb">
+                <div class="card-icon">
+                    <i class="fas fa-bread-slice"></i>
+                </div>
+                <div class="card-content">
+                    <h3><i class="fas fa-utensils"></i> Carbohydrates</h3>
+                    <p class="role">Main Energy Foods</p>
+                    <p class="desc">
+                        Carbohydrates give the body energy for work, school, and daily activities.
+                        They should make up 45-65% of your daily calories.
+                    </p>
+                    <div class="examples">
+                        <h4><i class="fas fa-check-circle"></i> Local Examples:</h4>
+                        <div class="example-items">
+                            <span class="example-item">Ugali</span>
+                            <span class="example-item">Rice</span>
+                            <span class="example-item">Chapati</span>
+                            <span class="example-item">Matoke</span>
+                            <span class="example-item">Cassava</span>
+                            <span class="example-item">Sweet Potatoes</span>
+                        </div>
+                    </div>
+                    <div class="tip-box">
+                        <i class="fas fa-lightbulb"></i>
+                        <strong>Tip:</strong> Choose whole grains over refined options. Brown rice and whole wheat chapati are healthier choices.
+                    </div>
+                    <div class="nutrition-facts">
+                        <div class="fact">
+                            <i class="fas fa-fire"></i>
+                            <span>4 calories per gram</span>
+                        </div>
+                        <div class="fact">
+                            <i class="fas fa-clock"></i>
+                            <span>Long-lasting energy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-card protein" data-category="protein">
+                <div class="card-icon">
+                    <i class="fas fa-drumstick-bite"></i>
+                </div>
+                <div class="card-content">
+                    <h3><i class="fas fa-dumbbell"></i> Proteins</h3>
+                    <p class="role">Body Building Foods</p>
+                    <p class="desc">
+                        Proteins help build muscles, repair tissues, strengthen immunity, and produce enzymes and hormones.
+                        Essential for growth and development.
+                    </p>
+                    <div class="examples">
+                        <h4><i class="fas fa-check-circle"></i> Local Examples:</h4>
+                        <div class="example-items">
+                            <span class="example-item">Fish</span>
+                            <span class="example-item">Beans</span>
+                            <span class="example-item">Eggs</span>
+                            <span class="example-item">Chicken</span>
+                            <span class="example-item">Beef</span>
+                            <span class="example-item">Lentils</span>
+                        </div>
+                    </div>
+                    <div class="tip-box">
+                        <i class="fas fa-lightbulb"></i>
+                        <strong>Tip:</strong> Beans are affordable, healthy, and provide both protein and fiber. Mix with grains for complete protein.
+                    </div>
+                    <div class="nutrition-facts">
+                        <div class="fact">
+                            <i class="fas fa-weight"></i>
+                            <span>4 calories per gram</span>
+                        </div>
+                        <div class="fact">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Boosts immunity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-card veg" data-category="veg">
+                <div class="card-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="card-content">
+                    <h3><i class="fas fa-apple-alt"></i> Vegetables & Fruits</h3>
+                    <p class="role">Protective Foods</p>
+                    <p class="desc">
+                        These foods prevent diseases by providing essential vitamins, minerals, and antioxidants.
+                        They support eye health, skin health, and overall immunity.
+                    </p>
+                    <div class="examples">
+                        <h4><i class="fas fa-check-circle"></i> Local Examples:</h4>
+                        <div class="example-items">
+                            <span class="example-item">Sukuma Wiki</span>
+                            <span class="example-item">Spinach</span>
+                            <span class="example-item">Cabbage</span>
+                            <span class="example-item">Banana</span>
+                            <span class="example-item">Mango</span>
+                            <span class="example-item">Passion Fruit</span>
+                        </div>
+                    </div>
+                    <div class="tip-box">
+                        <i class="fas fa-lightbulb"></i>
+                        <strong>Tip:</strong> Eat a rainbow of colors! Different colored fruits and vegetables provide different nutrients.
+                    </div>
+                    <div class="nutrition-facts">
+                        <div class="fact">
+                            <i class="fas fa-eye"></i>
+                            <span>Rich in vitamins</span>
+                        </div>
+                        <div class="fact">
+                            <i class="fas fa-heart"></i>
+                            <span>Prevents diseases</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-card fats" data-category="fats">
+                <div class="card-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="card-content">
+                    <h3><i class="fas fa-brain"></i> Healthy Fats</h3>
+                    <p class="role">Energy & Brain Support</p>
+                    <p class="desc">
+                        Fats help absorb vitamins (A, D, E, K), support brain health, provide energy, and maintain healthy skin.
+                        Essential for hormone production.
+                    </p>
+                    <div class="examples">
+                        <h4><i class="fas fa-check-circle"></i> Local Examples:</h4>
+                        <div class="example-items">
+                            <span class="example-item">Avocado</span>
+                            <span class="example-item">Coconut Oil</span>
+                            <span class="example-item">Groundnuts</span>
+                            <span class="example-item">Sunflower Oil</span>
+                            <span class="example-item">Simsim</span>
+                            <span class="example-item">Nuts</span>
+                        </div>
+                    </div>
+                    <div class="tip-box">
+                        <i class="fas fa-lightbulb"></i>
+                        <strong>Tip:</strong> Use small amounts of healthy oils for cooking. Avoid reheating oil multiple times.
+                    </div>
+                    <div class="nutrition-facts">
+                        <div class="fact">
+                            <i class="fas fa-brain"></i>
+                            <span>9 calories per gram</span>
+                        </div>
+                        <div class="fact">
+                            <i class="fas fa-temperature-high"></i>
+                            <span>Insulates body</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-card water" data-category="water">
+                <div class="card-icon">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <div class="card-content">
+                    <h3><i class="fas fa-glass-whiskey"></i> Water & Hydration</h3>
+                    <p class="role">Essential for Life</p>
+                    <p class="desc">
+                        Water helps digestion, blood circulation, temperature control, and removes waste from the body.
+                        Makes up about 60% of body weight.
+                    </p>
+                    <div class="examples">
+                        <h4><i class="fas fa-check-circle"></i> Hydration Sources:</h4>
+                        <div class="example-items">
+                            <span class="example-item">Clean Water</span>
+                            <span class="example-item">Herbal Teas</span>
+                            <span class="example-item">Fruits</span>
+                            <span class="example-item">Soups</span>
+                            <span class="example-item">Coconut Water</span>
+                        </div>
+                    </div>
+                    <div class="tip-box">
+                        <i class="fas fa-lightbulb"></i>
+                        <strong>Tip:</strong> Drink at least 8 glasses (2 liters) daily. Carry a reusable water bottle and sip throughout the day.
+                    </div>
+                    <div class="nutrition-facts">
+                        <div class="fact">
+                            <i class="fas fa-percentage"></i>
+                            <span>60% of body</span>
+                        </div>
+                        <div class="fact">
+                            <i class="fas fa-recycle"></i>
+                            <span>Detoxifies body</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-card hygiene" data-category="hygiene">
+                <div class="card-icon">
+                    <i class="fas fa-hands-wash"></i>
+                </div>
+                <div class="card-content">
+                    <h3><i class="fas fa-shield-virus"></i> Food Hygiene & Safety</h3>
+                    <p class="role">Disease Prevention</p>
+                    <p class="desc">
+                        Proper food handling prevents diarrhea, worms, and food poisoning.
+                        Essential for keeping your family healthy and safe.
+                    </p>
+                    <div class="examples">
+                        <h4><i class="fas fa-check-circle"></i> Good Practices:</h4>
+                        <div class="example-items">
+                            <span class="example-item">Wash Hands</span>
+                            <span class="example-item">Clean Surfaces</span>
+                            <span class="example-item">Cook Thoroughly</span>
+                            <span class="example-item">Store Properly</span>
+                            <span class="example-item">Separate Raw/Cooked</span>
+                        </div>
+                    </div>
+                    <div class="tip-box">
+                        <i class="fas fa-lightbulb"></i>
+                        <strong>Tip:</strong> Wash hands for 20 seconds with soap before handling food. Keep perishables refrigerated.
+                    </div>
+                    <div class="nutrition-facts">
+                        <div class="fact">
+                            <i class="fas fa-bacteria"></i>
+                            <span>Prevents illness</span>
+                        </div>
+                        <div class="fact">
+                            <i class="fas fa-heartbeat"></i>
+                            <span>Saves lives</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="edu-card fats">
-            <h3>🥑 Healthy Fats</h3>
-            <p class="role">Energy & brain support</p>
-            <p>
-                Fats help absorb vitamins and support brain health.
-            </p>
-            <p><strong>Examples:</strong> Avocado, Coconut, Groundnuts</p>
-            <p class="tip">💡 Tip: Use small amounts.</p>
+        <div class="quick-tips">
+            <h3><i class="fas fa-star"></i> Quick Nutrition Tips</h3>
+            <div class="tips-grid">
+                <div class="tip-item">
+                    <i class="fas fa-balance-scale"></i>
+                    <p>Eat balanced meals with all food groups</p>
+                </div>
+                <div class="tip-item">
+                    <i class="fas fa-utensils"></i>
+                    <p>Practice portion control</p>
+                </div>
+                <div class="tip-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Eat regular meals, don't skip breakfast</p>
+                </div>
+                <div class="tip-item">
+                    <i class="fas fa-seedling"></i>
+                    <p>Choose whole foods over processed</p>
+                </div>
+            </div>
         </div>
 
-        <div class="edu-card water">
-            <h3>💧 Water</h3>
-            <p class="role">Hydration & digestion</p>
-            <p>
-                Water helps digestion, blood circulation, and temperature control.
-            </p>
-            <p><strong>Advice:</strong> Drink clean water throughout the day.</p>
-            <p class="tip">💡 Tip: Carry a water bottle.</p>
-        </div>
+        <div class="home-btn-container">
+<a href="../index.html" class="back-home-btn">
+  <i class="fas fa-home"></i> Back to Home
+            </a>
+</div>
 
-        <div class="edu-card hygiene">
-            <h3>🧼 Food Hygiene</h3>
-            <p class="role">Disease prevention</p>
-            <p>
-                Poor hygiene causes diarrhea, worms, and infections.
-            </p>
-            <p><strong>Good habits:</strong> Wash hands, wash food, cook thoroughly</p>
-            <p class="tip">💡 Tip: Clean food saves lives.</p>
+        <div class="back-home-container">
+           
+            <button class="print-btn" onclick="window.print()">
+                <i class="fas fa-print"></i> Print Guide
+            </button>
         </div>
-
     </div>
-
-     <div class="back-home">
-        <a href="../index.html"><i class="fas fa-home"></i> Back to Home</a>
-    </div>
-
-
 </main>
 
 <footer class="page-footer">
-    <p>© 2025 AfyaLite – Health & Nutrition App 🌿</p>
+    <div class="footer-content">
+        <p>© 2025 AfyaLite – Health & Nutrition App <span class="footer-emoji">🌿</span></p>
+        <p class="footer-note">Empowering healthy choices through local nutrition knowledge</p>
+    </div>
 </footer>
 
+<script src="../script/education.js"></script>
 </body>
 </html>

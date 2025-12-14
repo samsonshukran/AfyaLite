@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise & Activity - AfyaLite</title>
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/exercise.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -13,6 +15,9 @@
     <div class="header-container">
         <h1><i class="fas fa-running"></i> Exercise & Activity</h1>
         <p>Stay active with guided exercises 🌿 Track your progress and improve your health!</p>
+        <div class="instructions">
+            <p><i class="fas fa-info-circle"></i> Click on videos to play/pause. Use buttons to control timers.</p>
+        </div>
     </div>
 </header>
 
@@ -52,10 +57,24 @@
         <!-- Exercises will be dynamically loaded -->
     </div>
 
-    <div class="back-home">
-        <a href="../index.html"><i class="fas fa-home"></i> Back to Home</a>
-    </div>
+   <div class="home-btn-container">
+<a href="../index.html" class="back-home-btn">
+  <i class="fas fa-home"></i> Back to Home
+            </a>
+</div>
 </main>
+
+<!-- Add this debug panel -->
+<div id="debugPanel" class="debug-panel">
+    <h4>Debug Info</h4>
+    <p>Base URL: <span id="baseURL"></span></p>
+    <p>Current Path: <span id="currentPath"></span></p>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 AfyaLite - Your Personal Health & Nutrition Companion 🌿</p>
+    </div>
 
 <script src="../js/exercise.js"></script>
 </body>

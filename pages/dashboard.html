@@ -1,76 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AfyaLite Dashboard</title>
-  <link rel="stylesheet" href="../style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfyaLite Dashboard - Health Overview</title>
+    <link rel="stylesheet" href="../style/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header class="page-header">
-  <h1>🌿 AfyaLite Dashboard</h1>
-  <p>Your nutrition and fitness overview</p>
-  <a href="../index.html" class="back-link">🏠 Back to Home</a>
-</header>
-
-<!-- Daily Streak -->
-<div class="streak-box">
-  🔥 Daily Exercise Streak: <span id="streakCount">0</span> days
-</div>
-
-<main class="dashboard-section">
-
-  <!-- Daily Health Score -->
-  <section class="dashboard-card">
-    <h2>💚 Daily Health Score</h2>
-    <div class="daily-score">
-      <div class="score-info">
-        <span id="dailyScorePercent">0%</span> completed
-      </div>
-      <div class="progress-bar daily-bar">
-        <div class="progress-fill" id="dailyScoreFill" style="width:0%"></div>
-      </div>
-      <p id="dailyScoreMsg" class="motivational-msg">Start your healthy meals today! 🌿</p>
-    </div>
-  </section>
-
-  <!-- Today's Meals -->
-  <section class="dashboard-card">
-    <h2>🍽️ Today's Meals</h2>
-    <textarea id="mealInput" rows="3" placeholder="Enter foods you ate today, e.g., ugali, sukuma, fish"></textarea>
-    <button id="checkMealBtn" style="background-color: rgb(0, 255, 34);border-radius:10px;margin:3px; padding:10px">Check Meal</button>
-    <div class="meal-recommendation">
-      <p id="mealRecommendation">Enter your meal above and click "Check Meal".</p>
-    </div>
-    <div class="progress-bar meal-bar">
-      <div class="progress-fill" id="mealProgressFill" style="width:0%"></div>
-    </div>
-  </section>
-
-  <!-- Weekly Exercise Summary -->
-  <section class="dashboard-card">
-    <h2>📊 Weekly Exercise Summary</h2>
-    <div class="weekly-summary" id="weeklySummary"></div>
-  </section>
-
-  <!-- Daily Tips -->
-  <section class="dashboard-card">
-    <h2>💡 Healthy Tips</h2>
-    <ul id="dailyTips"></ul>
-  </section>
-
-   <div class="back-home">
-        <a href="../index.html"><i class="fas fa-home"></i> Back to Home</a>
+    <!-- Loading Screen -->
+    <div class="dashboard-loader">
+        <div class="loader-content">
+            <div class="loader-spinner">
+                <i class="fas fa-heartbeat"></i>
+            </div>
+            <p>Loading your health dashboard...</p>
+        </div>
     </div>
 
+    <!-- Main Container -->
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-top">
+                <div class="logo-section">
+                    <a href="../index.html" class="back-home">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Back to Home</span>
+                    </a>
+                    <div class="header-title">
+                        <h1><i class="fas fa-chart-line"></i> Health Dashboard</h1>
+                        <p class="subtitle">Your complete health & nutrition overview</p>
+                    </div>
+                </div>
+                <div class="header-info">
+                    <div class="date-display" id="currentDate">
+                        <!-- Date will be filled by JS -->
+                    </div>
+                    <button class="refresh-btn" id="refreshDashboard">
+                        <i class="fas fa-redo"></i> Refresh
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Quick Stats -->
+            <div class="quick-stats">
+                <div class="stat-card">
+                    <div class="stat-icon health">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Health Score</h3>
+                        <div class="stat-value" id="overallHealthScore">0%</div>
+                        <div class="stat-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="healthScoreBar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon nutrition">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Meal Compliance</h3>
+                        <div class="stat-value" id="mealCompliance">0/3</div>
+                        <div class="stat-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="mealComplianceBar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon exercise">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Exercise Streak</h3>
+                        <div class="stat-value" id="exerciseStreak">0 days</div>
+                        <div class="stat-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="streakBar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon water">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Water Intake</h3>
+                        <div class="stat-value" id="waterIntake">0/8</div>
+                        <div class="stat-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="waterBar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-</main>
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Today's Analysis -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-chart-pie"></i> Today's Analysis</h2>
+                        <span class="section-badge">Live</span>
+                    </div>
+                    <div class="analysis-grid">
+                        <div class="analysis-card">
+                            <div class="analysis-header">
+                                <h3><i class="fas fa-utensils"></i> Meal Checker</h3>
+                                <button class="analysis-action" id="checkMealBtn">Check Now</button>
+                            </div>
+                            <div class="analysis-body">
+                                <textarea id="mealInput" placeholder="What did you eat today? e.g., ugali, sukuma, beans, mango..." rows="3"></textarea>
+                                <div class="analysis-result">
+                                    <div class="result-header">
+                                        <span class="result-label">Meal Rating:</span>
+                                        <span class="result-value" id="mealRating">-</span>
+                                    </div>
+                                    <div class="result-message" id="mealRecommendation">
+                                        Enter your meal to get analysis
+                                    </div>
+                                    <div class="result-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" id="mealProgressFill" style="width: 0%"></div>
+                                        </div>
+                                        <span class="progress-text" id="mealProgressText">0% Healthy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="analysis-card">
+                            <div class="analysis-header">
+                                <h3><i class="fas fa-tint"></i> Hydration Tracker</h3>
+                                <button class="analysis-action" id="addWaterBtn">+1 Glass</button>
+                            </div>
+                            <div class="analysis-body">
+                                <div class="hydration-display">
+                                    <div class="water-glasses">
+                                        <!-- Glasses will be generated by JS -->
+                                    </div>
+                                    <div class="hydration-stats">
+                                        <div class="stat-item">
+                                            <span class="stat-label">Today</span>
+                                            <span class="stat-number" id="waterToday">0</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <span class="stat-label">Goal</span>
+                                            <span class="stat-number">8</span>
+                                        </div>
+                                        <div class="stat-item">
+                                            <span class="stat-label">Remaining</span>
+                                            <span class="stat-number" id="waterRemaining">8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hydration-tip">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <p>Drink water regularly throughout the day for better hydration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-<footer class="page-footer">
-  <p>© 2025 AfyaLite – Health & Nutrition App 🌿</p>
-</footer>
+                <!-- Weekly Progress -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-calendar-week"></i> Weekly Progress</h2>
+                        <div class="week-selector">
+                            <button class="week-nav" id="prevWeek"><i class="fas fa-chevron-left"></i></button>
+                            <span class="week-label" id="currentWeek">This Week</span>
+                            <button class="week-nav" id="nextWeek"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="weekly-progress">
+                        <div class="week-grid" id="weekGrid">
+                            <!-- Week days will be generated by JS -->
+                        </div>
+                        <div class="week-stats">
+                            <div class="week-stat">
+                                <span class="week-stat-label">Healthy Days</span>
+                                <span class="week-stat-value" id="healthyDays">0</span>
+                            </div>
+                            <div class="week-stat">
+                                <span class="week-stat-label">Active Days</span>
+                                <span class="week-stat-value" id="activeDays">0</span>
+                            </div>
+                            <div class="week-stat">
+                                <span class="week-stat-label">Hydrated Days</span>
+                                <span class="week-stat-value" id="hydratedDays">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-<script src="../js/dashboard.js"></script>
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Health Goals -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-bullseye"></i> Daily Goals</h2>
+                        <span class="goals-complete" id="goalsComplete">0/5 Complete</span>
+                    </div>
+                    <div class="goals-list" id="goalsList">
+                        <!-- Goals will be generated by JS -->
+                    </div>
+                </section>
+
+                <!-- Activity Summary -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-history"></i> Recent Activity</h2>
+                        <button class="view-all" id="viewAllActivity">View All</button>
+                    </div>
+                    <div class="activity-feed" id="activityFeed">
+                        <!-- Activities will be generated by JS -->
+                    </div>
+                </section>
+
+                <!-- Nutrition Tips -->
+                <section class="dashboard-section tips-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-lightbulb"></i> Health Tips</h2>
+                        <button class="refresh-tip" id="refreshTip" title="Refresh health tip">
+                            <i class="fas fa-redo"></i>
+                        </button>
+                    </div>
+                    <div class="tips-container">
+                        <div class="tip-card">
+                            <div class="tip-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="tip-content">
+                                <p id="currentTip">Loading health tip...</p>
+                                <div class="tip-category">
+                                    <span class="category-tag" id="tipCategory">Nutrition</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tips-history">
+                            <h4>Recent Tips</h4>
+                            <ul id="tipsHistory">
+                                <!-- Tips history will be generated by JS -->
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quick Actions -->
+                <section class="dashboard-section">
+                    <div class="section-header">
+                        <h2><i class="fas fa-bolt"></i> Quick Actions</h2>
+                    </div>
+                    <div class="quick-actions">
+                        <button class="action-btn" id="bmiCalculator">
+                            <i class="fas fa-weight"></i>
+                            <span>BMI Calculator</span>
+                        </button>
+                        <button class="action-btn" id="mealPlanner">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Meal Planner</span>
+                        </button>
+                        <button class="action-btn" id="exerciseLog">
+                            <i class="fas fa-running"></i>
+                            <span>Log Exercise</span>
+                        </button>
+                        <button class="action-btn" id="healthReport">
+                            <i class="fas fa-file-medical"></i>
+                            <span>Health Report</span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3><i class="fas fa-heartbeat"></i> AfyaLite Dashboard</h3>
+                    <p>Track your health journey with data-driven insights</p>
+                </div>
+                <div class="footer-stats">
+                    <div class="footer-stat">
+                        <span class="stat-number" id="totalDays">0</span>
+                        <span class="stat-label">Days Tracked</span>
+                    </div>
+                    <div class="footer-stat">
+                        <span class="stat-number" id="totalMeals">0</span>
+                        <span class="stat-label">Meals Analyzed</span>
+                    </div>
+                    <div class="footer-stat">
+                        <span class="stat-number" id="totalExercise">0</span>
+                        <span class="stat-label">Exercise Sessions</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 AfyaLite - Your Personal Health Companion. Data is stored locally in your browser.</p>
+                <button class="export-data" id="exportData">
+                    <i class="fas fa-download"></i> Export Data
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal" id="bmiModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-weight"></i> BMI Calculator</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="bmi-inputs">
+                    <div class="input-group">
+                        <label for="weightInput">Weight (kg)</label>
+                        <input type="number" id="weightInput" placeholder="e.g., 70" min="20" max="200">
+                    </div>
+                    <div class="input-group">
+                        <label for="heightInput">Height (cm)</label>
+                        <input type="number" id="heightInput" placeholder="e.g., 170" min="100" max="250">
+                    </div>
+                </div>
+                <button class="btn-primary" id="calculateBMI">Calculate BMI</button>
+                <div class="bmi-result" id="bmiResult">
+                    <!-- BMI result will be shown here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="healthReportModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-file-medical"></i> Health Report</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="report-content" id="reportContent">
+                    <!-- Report will be generated by JS -->
+                </div>
+                <button class="btn-secondary" id="printReport">
+                    <i class="fas fa-print"></i> Print Report
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/dashboard.js"></script>
 </body>
 </html>

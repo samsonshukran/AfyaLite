@@ -1,59 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🥗 Meal Planner - AfyaLite</title>
-<link rel="stylesheet" href="../style/meal-planner.css">
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥗 Smart Meal Planner - AfyaLite</title>
+    <link rel="stylesheet" href="..style/style.css">
+    <link rel="stylesheet" href="../style/meal-planner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
+<!-- Background Elements -->
+<div class="bg-elements">
+    <div class="bg-element"></div>
+    <div class="bg-element"></div>
+    <div class="bg-element"></div>
+</div>
+
 <header>
     <div class="header-container">
-        <h1>🥗 Meal Planner</h1>
-        <p>Check if your meals are balanced and healthy 🍌🥘🥦</p>
+        <h1><i class="fas fa-utensils"></i> Smart Meal Planner</h1>
+        <p>Plan balanced meals, track nutrition, and achieve your health goals 🍎🥗🍗</p>
+        <div class="health-tip">
+            <i class="fas fa-lightbulb"></i>
+            <p id="dailyTip">A balanced diet includes proteins, carbs, vegetables, and fruits!</p>
+        </div>
     </div>
 </header>
 
 <main class="container">
-
-    <section class="meal-input-section">
-        <h2>📝 Enter Your Meals</h2>
-
-        <div class="meal-row">
-            <label for="breakfastInput">Breakfast:</label>
-            <input type="text" id="breakfastInput" placeholder="e.g., Ugali, Eggs, Banana">
-            <p class="mealResult" id="breakfastResult"></p>
+    <!-- Dashboard -->
+    <div class="dashboard">
+        <div class="nutrition-card">
+            <i class="fas fa-apple-alt"></i>
+            <div>
+                <h3>Today's Score</h3>
+                <p id="nutritionScore">0%</p>
+            </div>
         </div>
-
-        <div class="meal-row">
-            <label for="lunchInput">Lunch:</label>
-            <input type="text" id="lunchInput" placeholder="e.g., Rice, Sukuma, Fish">
-            <p class="mealResult" id="lunchResult"></p>
+        <div class="nutrition-card">
+            <i class="fas fa-fire"></i>
+            <div>
+                <h3>Balanced Meals</h3>
+                <p id="balancedCount">0/3</p>
+            </div>
         </div>
-
-        <div class="meal-row">
-            <label for="dinnerInput">Dinner:</label>
-            <input type="text" id="dinnerInput" placeholder="e.g., Chapati, Beans, Cabbage">
-            <p class="mealResult" id="dinnerResult"></p>
+        <div class="nutrition-card">
+            <i class="fas fa-tint"></i>
+            <div>
+                <h3>Water Intake</h3>
+                <p id="waterIntake">0/8 glasses</p>
+            </div>
         </div>
-
-        <button id="checkMealsBtn">Check Meals</button>
-
-        <div class="progress-bar">
-            <div class="progress-fill" id="mealProgressFill"></div>
+        <div class="nutrition-card">
+            <i class="fas fa-clock"></i>
+            <div>
+                <h3>Prep Time</h3>
+                <p id="totalPrepTime">0 mins</p>
+            </div>
         </div>
-    </section>
-
-    <div class="back-home">
-        <a href="../index.html"><i class="fas fa-home"></i> Back to Home</a>
     </div>
 
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+        <button class="action-btn" id="quickPlanBtn">
+            <i class="fas fa-bolt"></i>
+            <span>Quick Plan</span>
+        </button>
+        <button class="action-btn" id="shoppingBtn">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Shopping List</span>
+        </button>
+        <button class="action-btn" id="tipsBtn">
+            <i class="fas fa-tips"></i>
+            <span>Tips</span>
+        </button>
+        <button class="action-btn" id="printBtn">
+            <i class="fas fa-print"></i>
+            <span>Print</span>
+        </button>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Weekly Plan -->
+        <section class="weekly-plan">
+            <div class="section-header">
+                <h2><i class="fas fa-calendar-week"></i> This Week's Plan</h2>
+                <div class="week-nav">
+                    <button class="nav-btn" id="prevWeekBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <span id="currentWeek">Week 1, Jan 2025</span>
+                    <button class="nav-btn" id="nextWeekBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="week-grid" id="weekGrid">
+                <!-- Days will be loaded here -->
+            </div>
+
+            <div class="week-stats">
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <span class="stat-label">Total Prep Time</span>
+                        <span class="stat-value" id="weeklyPrepTime">245 mins</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-seedling"></i>
+                    <div>
+                        <span class="stat-label">Veggie Days</span>
+                        <span class="stat-value" id="veggieDays">3 days</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-utensils"></i>
+                    <div>
+                        <span class="stat-label">Total Meals</span>
+                        <span class="stat-value" id="totalMeals">21 meals</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Meal Input -->
+        <section class="daily-input">
+            <div class="section-header">
+                <h2><i class="fas fa-edit"></i> Today's Meals</h2>
+                <div class="day-selector">
+                    <select id="daySelector">
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+                    <div class="day-theme" id="selectedDayTheme">
+                        <i class="fas fa-palette"></i>
+                        <span>Theme: Balanced Energy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meal-tabs">
+                <div class="tab active" data-tab="breakfast">
+                    <i class="fas fa-sun"></i>
+                    <span>Breakfast</span>
+                </div>
+                <div class="tab" data-tab="lunch">
+                    <i class="fas fa-utensils"></i>
+                    <span>Lunch</span>
+                </div>
+                <div class="tab" data-tab="dinner">
+                    <i class="fas fa-moon"></i>
+                    <span>Dinner</span>
+                </div>
+            </div>
+
+            <div class="meal-content">
+                <!-- Breakfast Tab Content -->
+                <div class="tab-content active" id="breakfastTab">
+                    <div class="meal-card">
+                        <div class="meal-header">
+                            <div class="meal-info">
+                                <h3><i class="fas fa-sun"></i> Breakfast</h3>
+                                <div class="meal-meta">
+                                    <span><i class="fas fa-clock"></i> <span id="breakfastTime">7:00-9:00 AM</span></span>
+                                    <span><i class="fas fa-fire"></i> <span id="breakfastCalories">350</span> cal</span>
+                                </div>
+                            </div>
+                            <div class="suggestion-chip">
+                                <i class="fas fa-lightbulb"></i>
+                                <span id="breakfastSuggestion">Porridge with Banana & Nuts</span>
+                                <button class="use-suggestion" data-meal="breakfast">Use</button>
+                            </div>
+                        </div>
+
+                        <div class="meal-input-group">
+                            <div class="input-with-suggestions">
+                                <input type="text" id="breakfastInput" placeholder="What did you have for breakfast?" 
+                                       class="meal-input">
+                                <div class="quick-suggestions">
+                                    <button class="quick-btn" data-food="oatmeal">Oatmeal</button>
+                                    <button class="quick-btn" data-food="eggs">Eggs</button>
+                                    <button class="quick-btn" data-food="banana">Banana</button>
+                                    <button class="quick-btn" data-food="milk">Milk</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nutrition-analysis">
+                            <h4><i class="fas fa-chart-pie"></i> Nutrition Analysis</h4>
+                            <div class="analysis-result">
+                                <p id="breakfastResult">Enter your breakfast to analyze</p>
+                                <div class="nutrition-badges" id="breakfastBadges"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lunch Tab Content -->
+                <div class="tab-content" id="lunchTab">
+                    <div class="meal-card">
+                        <div class="meal-header">
+                            <div class="meal-info">
+                                <h3><i class="fas fa-utensils"></i> Lunch</h3>
+                                <div class="meal-meta">
+                                    <span><i class="fas fa-clock"></i> <span id="lunchTime">12:00-2:00 PM</span></span>
+                                    <span><i class="fas fa-fire"></i> <span id="lunchCalories">420</span> cal</span>
+                                </div>
+                            </div>
+                            <div class="suggestion-chip">
+                                <i class="fas fa-lightbulb"></i>
+                                <span id="lunchSuggestion">Githeri with Avocado</span>
+                                <button class="use-suggestion" data-meal="lunch">Use</button>
+                            </div>
+                        </div>
+
+                        <div class="meal-input-group">
+                            <div class="input-with-suggestions">
+                                <input type="text" id="lunchInput" placeholder="What did you have for lunch?" 
+                                       class="meal-input">
+                                <div class="quick-suggestions">
+                                    <button class="quick-btn" data-food="rice">Rice</button>
+                                    <button class="quick-btn" data-food="chicken">Chicken</button>
+                                    <button class="quick-btn" data-food="sukuma">Sukuma</button>
+                                    <button class="quick-btn" data-food="beans">Beans</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nutrition-analysis">
+                            <h4><i class="fas fa-chart-pie"></i> Nutrition Analysis</h4>
+                            <div class="analysis-result">
+                                <p id="lunchResult">Enter your lunch to analyze</p>
+                                <div class="nutrition-badges" id="lunchBadges"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dinner Tab Content -->
+                <div class="tab-content" id="dinnerTab">
+                    <div class="meal-card">
+                        <div class="meal-header">
+                            <div class="meal-info">
+                                <h3><i class="fas fa-moon"></i> Dinner</h3>
+                                <div class="meal-meta">
+                                    <span><i class="fas fa-clock"></i> <span id="dinnerTime">6:00-8:00 PM</span></span>
+                                    <span><i class="fas fa-fire"></i> <span id="dinnerCalories">380</span> cal</span>
+                                </div>
+                            </div>
+                            <div class="suggestion-chip">
+                                <i class="fas fa-lightbulb"></i>
+                                <span id="dinnerSuggestion">Grilled Tilapia with Sukuma & Ugali</span>
+                                <button class="use-suggestion" data-meal="dinner">Use</button>
+                            </div>
+                        </div>
+
+                        <div class="meal-input-group">
+                            <div class="input-with-suggestions">
+                                <input type="text" id="dinnerInput" placeholder="What did you have for dinner?" 
+                                       class="meal-input">
+                                <div class="quick-suggestions">
+                                    <button class="quick-btn" data-food="chapati">Chapati</button>
+                                    <button class="quick-btn" data-food="beans">Beans</button>
+                                    <button class="quick-btn" data-food="cabbage">Cabbage</button>
+                                    <button class="quick-btn" data-food="fish">Fish</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nutrition-analysis">
+                            <h4><i class="fas fa-chart-pie"></i> Nutrition Analysis</h4>
+                            <div class="analysis-result">
+                                <p id="dinnerResult">Enter your dinner to analyze</p>
+                                <div class="nutrition-badges" id="dinnerBadges"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meal-actions">
+                <button class="analyze-btn" id="analyzeAllBtn">
+                    <i class="fas fa-chart-line"></i> Analyze All Meals
+                </button>
+                <button class="clear-btn" id="clearAllBtn">
+                    <i class="fas fa-redo"></i> Clear All
+                </button>
+                <button class="save-btn" id="savePlanBtn">
+                    <i class="fas fa-save"></i> Save Today's Plan
+                </button>
+            </div>
+
+            <div class="progress-tracker">
+                <div class="progress-header">
+                    <h4><i class="fas fa-trophy"></i> Daily Progress</h4>
+                    <span class="progress-score" id="progressScore">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                </div>
+                <div class="progress-labels">
+                    <span>Start</span>
+                    <span>Good</span>
+                    <span>Great</span>
+                    <span>Excellent</span>
+                </div>
+                <p class="progress-tip" id="progressTip">Add your meals to see your nutrition score</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <!-- Nutrition Guide -->
+        <div class="sidebar-card">
+            <h3><i class="fas fa-book-medical"></i> Nutrition Guide</h3>
+            <div class="nutrition-categories">
+                <div class="category active" data-category="proteins">
+                    <i class="fas fa-drumstick-bite"></i>
+                    <span>Proteins</span>
+                </div>
+                <div class="category" data-category="carbs">
+                    <i class="fas fa-bread-slice"></i>
+                    <span>Carbs</span>
+                </div>
+                <div class="category" data-category="vegetables">
+                    <i class="fas fa-leaf"></i>
+                    <span>Veggies</span>
+                </div>
+                <div class="category" data-category="fruits">
+                    <i class="fas fa-apple-alt"></i>
+                    <span>Fruits</span>
+                </div>
+            </div>
+            <div class="category-content">
+                <h4 id="categoryTitle">Proteins</h4>
+                <p id="categoryDesc">Builds and repairs tissues</p>
+                <div class="food-examples" id="foodExamples">
+                    <!-- Foods will load here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Daily Tips -->
+        <div class="sidebar-card">
+            <h3><i class="fas fa-tips"></i> Health Tips</h3>
+            <div class="tips-list" id="tipsList">
+                <!-- Tips will load here -->
+            </div>
+        </div>
+
+        <!-- Water Tracker -->
+        <div class="sidebar-card water-tracker">
+            <h3><i class="fas fa-tint"></i> Water Tracker</h3>
+            <div class="water-glasses">
+                <div class="glass" data-glass="1"></div>
+                <div class="glass" data-glass="2"></div>
+                <div class="glass" data-glass="3"></div>
+                <div class="glass" data-glass="4"></div>
+                <div class="glass" data-glass="5"></div>
+                <div class="glass" data-glass="6"></div>
+                <div class="glass" data-glass="7"></div>
+                <div class="glass" data-glass="8"></div>
+            </div>
+            <p class="water-goal">Goal: 8 glasses</p>
+            <button class="reset-water" id="resetWaterBtn">
+                <i class="fas fa-redo"></i> Reset
+            </button>
+        </div>
+
+        <!-- Preparation Tips -->
+        <div class="sidebar-card">
+            <h3><i class="fas fa-clock"></i> Quick Tips</h3>
+            <div class="prep-tips" id="prepTips">
+                <!-- Tips will load here -->
+            </div>
+        </div>
+    </aside>
 </main>
 
+<!-- Modals -->
+<div class="modal" id="shoppingModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><i class="fas fa-shopping-cart"></i> Shopping List</h3>
+            <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div id="shoppingListContent"></div>
+            <button class="print-btn" id="printListBtn">
+                <i class="fas fa-print"></i> Print List
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="tipsModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><i class="fas fa-lightbulb"></i> Nutrition Tips</h3>
+            <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div id="tipsContent"></div>
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="home-btn-container">
+<a href="../index.html" class="back-home-btn">
+  <i class="fas fa-home"></i> Back to Home
+            </a>
+</div>
+
 <footer>
-    <p>© 2025 AfyaLite - Health & Nutrition App 🌿</p>
+    <div class="footer-content">
+        <p>© 2025 AfyaLite - Your Personal Health & Nutrition Companion 🌿</p>
+        <p class="footer-note">"Eat well, live well, be well."</p>
+    </div>
 </footer>
 
 <script src="../js/meal-planner.js"></script>

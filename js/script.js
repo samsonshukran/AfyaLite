@@ -1,119 +1,298 @@
-document.addEventListener("DOMContentLoaded", () => {
-    /* ===== Daily Healthy Tips ===== */
-    const tipEl = document.getElementById('dailyTip');
-    const nextBtn = document.getElementById('nextTip');
-    const tips = [
-        "💧 Drink at least 8 glasses of clean water daily.",
-        "🥬 Include leafy greens like sukuma and spinach in your meals.",
-        "🍌 Eat seasonal fruits like mango, pawpaw, bananas, guava, oranges.",
-        "🥘 Eat more beans, peas, and legumes for protein.",
-        "🏃‍♂️ Walk 20-30 minutes every day for fitness.",
-        "🧼 Wash fruits and vegetables before eating.",
-        "🍳 Use local cooking methods like boiling or steaming for healthier meals.",
-        "🥥 Include coconut milk in moderation for flavor and nutrients.",
-        "🍚 Prefer whole grains like brown rice and millet over refined grains.",
-        "🍗 Include lean proteins like fish, chicken, eggs, and beans in your meals."
+// ===== AfyaLite - Enhanced Homepage Script =====
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('AfyaLite Homepage initialized');
+    
+    // Initialize all components
+    initApp();
+});
+
+// ===== MAIN INITIALIZATION =====
+function initApp() {
+    // Initialize dynamic tagline
+    initDynamicTagline();
+    
+    // Initialize card interactions
+    initCardInteractions();
+    
+    // Initialize scroll animations
+    initScrollAnimations();
+    
+    // Initialize theme detection
+    initThemeDetection();
+    
+    // Initialize smooth scroll
+    initSmoothScroll();
+}
+
+// ===== DYNAMIC TAGLINE =====
+function initDynamicTagline() {
+    const taglineElement = document.getElementById('tagline');
+    if (!taglineElement) return;
+    
+    const taglines = [
+        "Transform your health journey with smart nutrition",
+        "East Africa's favorite health companion",
+        "Simple tools for a healthier lifestyle",
+        "Your personal guide to better eating habits",
+        "Health made simple, affordable, and local",
+        "Join thousands on their wellness journey",
+        "Smart nutrition for smarter living"
     ];
-
-    if (tipEl && nextBtn) {
-        let currentTip = 0;
-        const showTip = (i) => tipEl.textContent = tips[i];
-        nextBtn.addEventListener('click', () => {
-            currentTip = (currentTip + 1) % tips.length;
-            showTip(currentTip);
-        });
-        showTip(currentTip);
+    
+    let currentIndex = 0;
+    
+    function typeTagline(tagline) {
+        taglineElement.textContent = '';
+        let charIndex = 0;
+        
+        function typeChar() {
+            if (charIndex < tagline.length) {
+                taglineElement.textContent += tagline.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeChar, 50);
+            } else {
+                // Wait 3 seconds before changing tagline
+                setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % taglines.length;
+                    typeTagline(taglines[currentIndex]);
+                }, 3000);
+            }
+        }
+        
+        typeChar();
     }
+    
+    // Start with first tagline
+    typeTagline(taglines[currentIndex]);
+}
 
-    /* ===== Meal Checker + History ===== */
-    const mealInput = document.getElementById("mealInput");
-    const checkMealBtn = document.getElementById("checkMealBtn");
-    const mealResult = document.getElementById("mealResult");
-    const historyList = document.getElementById("historyList");
-
-    const foodsDB = {
-        carbs: { items: ["ugali", "rice", "chapati", "matoke", "githeri"], suggestion: "Ugali, Rice, Chapati" },
-        proteins: { items: ["fish", "chicken", "beef", "eggs", "beans"], suggestion: "Fish, Beans, Eggs" },
-        vegFruit: { items: ["sukuma", "spinach", "cabbage", "banana", "mango", "pawpaw", "orange"], suggestion: "Sukuma, Spinach, Banana" }
-    };
-
-    let history = JSON.parse(localStorage.getItem("mealHistory")) || [];
-
-    const saveHistory = () => {
-        localStorage.setItem("mealHistory", JSON.stringify(history));
-        displayHistory();
-    };
-
-    const displayHistory = () => {
-        historyList.innerHTML = "";
-        history.forEach((item, index) => {
-            const li = document.createElement("li");
-            li.innerHTML = `
-                <strong>${item.meal}</strong><br>
-                Result: ${item.result}<br>
-                Rating: ${item.rating || "Not rated"}<br>
-                <small>${item.date}</small><br>
-                <button data-index="${index}" data-rating="Good">👍 Good</button>
-                <button data-index="${index}" data-rating="Fair">😐 Fair</button>
-                <button data-index="${index}" data-rating="Poor">👎 Poor</button>
-                <hr>
+// ===== CARD INTERACTIONS =====
+function initCardInteractions() {
+    const cards = document.querySelectorAll('.card');
+    
+    cards.forEach((card, index) => {
+        // Add animation delay
+        card.style.animationDelay = `${index * 0.1}s`;
+        
+        // Add click ripple effect
+        card.addEventListener('click', function(e) {
+            if (!e.target.closest('a')) return;
+            
+            // Create ripple element
+            const ripple = document.createElement('span');
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            
+            ripple.style.cssText = `
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(76, 175, 80, 0.3);
+                transform: scale(0);
+                animation: ripple 0.6s linear;
+                width: ${size}px;
+                height: ${size}px;
+                left: ${e.clientX - rect.left - size/2}px;
+                top: ${e.clientY - rect.top - size/2}px;
+                pointer-events: none;
             `;
-            historyList.appendChild(li);
+            
+            this.appendChild(ripple);
+            
+            // Remove ripple after animation
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
         });
-
-        // Attach event listeners for rating buttons
-        historyList.querySelectorAll("button").forEach(btn => {
-            btn.addEventListener("click", (e) => {
-                const idx = e.target.dataset.index;
-                const rating = e.target.dataset.rating;
-                history[idx].rating = rating;
-                saveHistory();
-            });
-        });
-    };
-
-    checkMealBtn.addEventListener("click", () => {
-        if (!mealInput.value.trim()) {
-            mealResult.style.color = "#f39c12";
-            mealResult.textContent = "⚠️ Please enter at least one food item.";
-            return;
-        }
-
-        const userFoods = mealInput.value.toLowerCase().split(",").map(f => f.trim());
-
-        const hasCarb = userFoods.some(f => foodsDB.carbs.items.includes(f));
-        const hasProtein = userFoods.some(f => foodsDB.proteins.items.includes(f));
-        const hasVegFruit = userFoods.some(f => foodsDB.vegFruit.items.includes(f));
-
-        let missing = [];
-        let suggestions = [];
-
-        if (!hasCarb) { missing.push("Carbohydrates 🍚"); suggestions.push(foodsDB.carbs.suggestion); }
-        if (!hasProtein) { missing.push("Protein 🍗🥚"); suggestions.push(foodsDB.proteins.suggestion); }
-        if (!hasVegFruit) { missing.push("Vegetables/Fruits 🥬🍌"); suggestions.push(foodsDB.vegFruit.suggestion); }
-
-        if (missing.length === 0) {
-            mealResult.style.color = "#27ae60";
-            mealResult.textContent = "✅ Balanced Meal! Great job eating healthy 💚";
-        } else if (missing.length === 1) {
-            mealResult.style.color = "#f39c12";
-            mealResult.innerHTML = `⚠️ Almost balanced!<br>Missing: <strong>${missing[0]}</strong><br>👉 Suggestion: ${suggestions[0]}`;
-        } else {
-            mealResult.style.color = "#e74c3c";
-            mealResult.innerHTML = `❌ Not balanced.<br>Missing: <strong>${missing.join(", ")}</strong><br>👉 Suggestions: ${suggestions.join(" | ")}`;
-        }
-
-        // Save to history
-        history.unshift({
-            meal: mealInput.value,
-            result: missing.length === 0 ? "✅ Balanced Meal" : missing.length === 1 ? "⚠️ Almost Balanced" : "❌ Not Balanced",
-            rating: "",
-            date: new Date().toLocaleString()
-        });
-
-        saveHistory();
-        mealInput.value = "";
     });
+    
+    // Add ripple animation to CSS
+    const rippleStyle = document.createElement('style');
+    rippleStyle.textContent = `
+        @keyframes ripple {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+    `;
+    document.head.appendChild(rippleStyle);
+}
 
-    displayHistory();
+// ===== SCROLL ANIMATIONS =====
+function initScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                
+                // Animate cards sequentially
+                if (entry.target.querySelector('.cards-container')) {
+                    const cards = entry.target.querySelectorAll('.card');
+                    cards.forEach((card, index) => {
+                        card.style.animationDelay = `${index * 0.1}s`;
+                    });
+                }
+            }
+        });
+    }, observerOptions);
+    
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+    });
+}
+
+// ===== THEME DETECTION =====
+function initThemeDetection() {
+    // Check for saved theme preference or system preference
+    const savedTheme = localStorage.getItem('afyalite-theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    function applyTheme(isDark) {
+        if (isDark) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+            document.documentElement.removeAttribute('data-theme');
+        }
+    }
+    
+    // Apply saved theme or system preference
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark.matches)) {
+        applyTheme(true);
+    }
+    
+    // Listen for system theme changes
+    prefersDark.addEventListener('change', (e) => {
+        if (!localStorage.getItem('afyalite-theme')) {
+            applyTheme(e.matches);
+        }
+    });
+    
+    // Add theme toggle button
+    addThemeToggle();
+}
+
+function addThemeToggle() {
+    const themeToggle = document.createElement('button');
+    themeToggle.className = 'theme-toggle';
+    themeToggle.setAttribute('aria-label', 'Toggle dark mode');
+    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    themeToggle.style.cssText = `
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: var(--primary);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        z-index: 1000;
+        box-shadow: var(--shadow-md);
+        transition: var(--transition);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    `;
+    
+    document.body.appendChild(themeToggle);
+    
+    // Set initial icon based on current theme
+    const isDark = document.documentElement.hasAttribute('data-theme');
+    themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    
+    themeToggle.addEventListener('click', () => {
+        const isDark = document.documentElement.toggleAttribute('data-theme');
+        
+        // Update icon
+        themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        themeToggle.style.background = isDark ? '#333' : 'var(--primary)';
+        
+        // Save preference
+        localStorage.setItem('afyalite-theme', isDark ? 'dark' : 'light');
+        
+        // Add animation
+        themeToggle.style.transform = 'scale(0.9)';
+        setTimeout(() => {
+            themeToggle.style.transform = 'scale(1)';
+        }, 150);
+    });
+}
+
+// ===== SMOOTH SCROLL =====
+function initSmoothScroll() {
+    // Header scroll indicator
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+        scrollIndicator.addEventListener('click', scrollToMain);
+    }
+    
+    // Anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
+            
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+}
+
+// ===== SCROLL TO MAIN FUNCTION =====
+function scrollToMain() {
+    const main = document.querySelector('main');
+    if (main) {
+        main.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
+// ===== KEYBOARD NAVIGATION =====
+document.addEventListener('keydown', (e) => {
+    // Tab key navigation for cards
+    if (e.key === 'Tab') {
+        const focusedCard = document.activeElement.closest('.card');
+        if (focusedCard) {
+            focusedCard.style.outline = '2px solid var(--primary)';
+        }
+    }
+});
+
+// ===== PERFORMANCE OPTIMIZATION =====
+// Debounce resize events
+let resizeTimer;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        // Handle resize events efficiently
+    }, 100);
+});
+
+// ===== ERROR HANDLING =====
+window.addEventListener('error', (e) => {
+    console.error('AfyaLite Error:', e.error);
+});
+
+// ===== PAGE VISIBILITY =====
+document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) {
+        // Page became visible again
+        console.log('Welcome back to AfyaLite!');
+    }
 });

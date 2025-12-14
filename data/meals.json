@@ -1,32 +1,394 @@
 {
+  "meta": {
+    "appName": "AfyaLite Meal Planner",
+    "version": "2.0",
+    "lastUpdated": "2025-01-15",
+    "author": "AfyaLite Team"
+  },
+  
+  "nutritionCategories": {
+    "proteins": ["chicken", "fish", "beef", "eggs", "beans", "lentils", "tofu", "milk", "yogurt", "cheese", "pork", "goat meat", "ndengu", "matumbo"],
+    "carbohydrates": ["rice", "ugali", "chapati", "matoke", "githeri", "potatoes", "pasta", "bread", "maize", "sweet potatoes", "cassava", "yam", "plantain"],
+    "vegetables": ["sukuma wiki", "spinach", "cabbage", "kachumbari", "carrots", "tomatoes", "onions", "bell peppers", "broccoli", "lettuce", "eggplant", "pumpkin", "cucumber", "beetroot"],
+    "fruits": ["banana", "mango", "pawpaw", "orange", "apple", "pineapple", "watermelon", "avocado", "passion fruit", "guava", "berries", "pear", "plums"],
+    "healthyFats": ["avocado", "nuts", "seeds", "olive oil", "coconut oil"],
+    "dairy": ["milk", "yogurt", "cheese", "butter", "cream"]
+  },
+  
+  "mealTimes": {
+    "breakfast": ["7:00 AM - 9:00 AM", "Energy boost to start your day"],
+    "lunch": ["12:00 PM - 2:00 PM", "Main meal for sustained energy"],
+    "dinner": ["6:00 PM - 8:00 PM", "Light meal for easy digestion"],
+    "snacks": ["10:00 AM & 4:00 PM", "Healthy snacks between meals"]
+  },
+  
   "weeklyMeals": [
     {
       "day": "Monday",
-      "foods": ["Porridge + Banana 🍌", "Githeri (Maize + Beans) 🌽🥘", "Tilapia + Sukuma + Ugali 🐟🥬"]
+      "date": "Get your week started right!",
+      "theme": "Balanced Energy Start",
+      "foods": [
+        {
+          "meal": "breakfast",
+          "name": "Porridge with Banana & Nuts",
+          "description": "Warm oatmeal porridge with sliced banana and crushed nuts",
+          "ingredients": ["oatmeal", "banana", "mixed nuts", "milk", "honey"],
+          "prepTime": 15,
+          "calories": 350,
+          "nutritionTags": ["high-fiber", "energy-boosting", "vegetarian"],
+          "healthBenefits": ["Provides sustained energy", "Rich in fiber", "Supports digestion"]
+        },
+        {
+          "meal": "lunch",
+          "name": "Githeri with Avocado",
+          "description": "Traditional maize and beans stew served with fresh avocado",
+          "ingredients": ["maize", "beans", "onions", "tomatoes", "avocado", "coriander"],
+          "prepTime": 45,
+          "calories": 420,
+          "nutritionTags": ["plant-protein", "high-fiber", "vegan"],
+          "healthBenefits": ["Complete protein source", "Rich in fiber", "Heart healthy"]
+        },
+        {
+          "meal": "dinner",
+          "name": "Grilled Tilapia with Sukuma Wiki & Ugali",
+          "description": "Fresh tilapia with sautéed collard greens and cornmeal ugali",
+          "ingredients": ["tilapia", "sukuma wiki", "ugali flour", "lemon", "garlic", "ginger"],
+          "prepTime": 35,
+          "calories": 380,
+          "nutritionTags": ["high-protein", "omega-3", "low-carb"],
+          "healthBenefits": ["Rich in omega-3", "Supports brain health", "High in iron"]
+        }
+      ],
+      "snack": "Fruit Salad (Mango, Pineapple & Passion)",
+      "waterGoal": "8 glasses",
+      "activitySuggestion": "30-minute morning walk"
     },
     {
       "day": "Tuesday",
-      "foods": ["Boiled Eggs + Tea 🍵🥚", "Ugali + Spinach + Fried Fish 🥬🐟", "Matoke + Beans 🥬🥘"]
+      "date": "Focus on Protein Power",
+      "theme": "Protein-Rich Day",
+      "foods": [
+        {
+          "meal": "breakfast",
+          "name": "Boiled Eggs with Whole Wheat Toast",
+          "description": "Two boiled eggs with whole wheat toast and sliced tomatoes",
+          "ingredients": ["eggs", "whole wheat bread", "tomatoes", "butter", "black pepper"],
+          "prepTime": 10,
+          "calories": 280,
+          "nutritionTags": ["high-protein", "low-carb", "quick-meal"],
+          "healthBenefits": ["Excellent protein source", "Supports muscle health", "Keeps you full longer"]
+        },
+        {
+          "meal": "lunch",
+          "name": "Ugali with Spinach & Fried Nile Perch",
+          "description": "Cornmeal ugali with fresh spinach and pan-fried fish",
+          "ingredients": ["ugali flour", "spinach", "nile perch", "onions", "tomatoes", "spices"],
+          "prepTime": 40,
+          "calories": 450,
+          "nutritionTags": ["high-protein", "iron-rich", "traditional"],
+          "healthBenefits": ["Rich in iron", "Supports immunity", "High quality protein"]
+        },
+        {
+          "meal": "dinner",
+          "name": "Matoke with Beans Stew",
+          "description": "Steamed plantains with savory beans cooked in tomato sauce",
+          "ingredients": ["matoke", "beans", "onions", "tomatoes", "coconut milk", "curry leaves"],
+          "prepTime": 50,
+          "calories": 320,
+          "nutritionTags": ["plant-based", "high-fiber", "comfort-food"],
+          "healthBenefits": ["Excellent fiber source", "Supports gut health", "Rich in potassium"]
+        }
+      ],
+      "snack": "Greek Yogurt with Berries",
+      "waterGoal": "8 glasses",
+      "activitySuggestion": "Strength training - 20 minutes"
     },
     {
       "day": "Wednesday",
-      "foods": ["Mandazi + Tea 🍩🍵", "Chapati + Ndengu 🫓🥘", "Rice + Chicken + Veggies 🍚🍗🥦"]
+      "date": "Mid-Week Energy Boost",
+      "theme": "Carb Smart Day",
+      "foods": [
+        {
+          "meal": "breakfast",
+          "name": "Mandazi with Spiced Tea",
+          "description": "Freshly made mandazi with ginger and cardamom spiced tea",
+          "ingredients": ["mandazi dough", "flour", "sugar", "ginger", "cardamom", "tea leaves"],
+          "prepTime": 25,
+          "calories": 320,
+          "nutritionTags": ["comfort-food", "energy-boosting", "traditional"],
+          "healthBenefits": ["Quick energy source", "Warming spices aid digestion", "Comforting start"]
+        },
+        {
+          "meal": "lunch",
+          "name": "Chapati with Lentil Curry",
+          "description": "Soft whole wheat chapati with creamy lentil curry",
+          "ingredients": ["whole wheat flour", "lentils", "onions", "garlic", "cumin", "coriander"],
+          "prepTime": 35,
+          "calories": 380,
+          "nutritionTags": ["plant-protein", "high-fiber", "vegetarian"],
+          "healthBenefits": ["Complete plant protein", "Rich in folate", "Supports heart health"]
+        },
+        {
+          "meal": "dinner",
+          "name": "Rice Pilau with Chicken & Mixed Vegetables",
+          "description": "Fragrant rice cooked with chicken and colorful vegetables",
+          "ingredients": ["basmati rice", "chicken", "carrots", "peas", "pilau masala", "bay leaves"],
+          "prepTime": 45,
+          "calories": 420,
+          "nutritionTags": ["balanced-meal", "aromatic", "family-favorite"],
+          "healthBenefits": ["Complete nutrition", "Good protein balance", "Rich in vitamins"]
+        }
+      ],
+      "snack": "Roasted Plantain Chips",
+      "waterGoal": "9 glasses",
+      "activitySuggestion": "Yoga or stretching - 30 minutes"
     },
     {
       "day": "Thursday",
-      "foods": ["Fruit Salad 🍍🍉🍌", "Ugali + Cabbage + Fish 🥬🐟", "Bean Stew + Chapati 🥘🫓"]
+      "date": "Veggie-Focused Day",
+      "theme": "Green & Clean",
+      "foods": [
+        {
+          "meal": "breakfast",
+          "name": "Tropical Fruit Salad",
+          "description": "Colorful mix of seasonal tropical fruits with mint",
+          "ingredients": ["pineapple", "watermelon", "mango", "passion fruit", "mint leaves", "lime"],
+          "prepTime": 15,
+          "calories": 220,
+          "nutritionTags": ["vitamin-rich", "antioxidants", "vegan"],
+          "healthBenefits": ["Rich in vitamins", "High antioxidant content", "Hydrating"]
+        },
+        {
+          "meal": "lunch",
+          "name": "Ugali with Cabbage & Fish Stew",
+          "description": "Ugali with sautéed cabbage and tomato-based fish stew",
+          "ingredients": ["ugali flour", "cabbage", "fish fillets", "tomatoes", "onions", "turmeric"],
+          "prepTime": 40,
+          "calories": 360,
+          "nutritionTags": ["omega-3", "vitamin-c", "low-calorie"],
+          "healthBenefits": ["Rich in vitamin C", "Anti-inflammatory", "Supports eye health"]
+        },
+        {
+          "meal": "dinner",
+          "name": "Bean Stew with Chapati & Kachumbari",
+          "description": "Hearty bean stew served with chapati and fresh kachumbari salad",
+          "ingredients": ["beans", "chapati", "tomatoes", "onions", "coriander", "lemon"],
+          "prepTime": 55,
+          "calories": 400,
+          "nutritionTags": ["plant-protein", "high-fiber", "budget-friendly"],
+          "healthBenefits": ["Excellent plant protein", "Rich in fiber", "Supports blood sugar control"]
+        }
+      ],
+      "snack": "Carrot & Cucumber Sticks with Hummus",
+      "waterGoal": "8 glasses",
+      "activitySuggestion": "Evening walk - 40 minutes"
     },
     {
       "day": "Friday",
-      "foods": ["Smoothie (Mango + Banana) 🥭🍌", "Githeri 🌽🥘", "Roasted Chicken + Veggies 🍗🥦"]
+      "date": "Light & Fresh",
+      "theme": "Light Meals Day",
+      "foods": [
+        {
+          "meal": "breakfast",
+          "name": "Mango Banana Smoothie Bowl",
+          "description": "Thick smoothie bowl topped with granola and chia seeds",
+          "ingredients": ["mango", "banana", "yogurt", "granola", "chia seeds", "honey"],
+          "prepTime": 10,
+          "calories": 280,
+          "nutritionTags": ["probiotic", "vitamin-a", "quick-meal"],
+          "healthBenefits": ["Rich in vitamin A", "Probiotics for gut health", "Quick preparation"]
+        },
+        {
+          "meal": "lunch",
+          "name": "Githeri with Steamed Vegetables",
+          "description": "Maize and beans with steamed seasonal vegetables",
+          "ingredients": ["maize", "beans", "broccoli", "carrots", "zucchini", "herbs"],
+          "prepTime": 35,
+          "calories": 320,
+          "nutritionTags": ["high-fiber", "vegetable-packed", "vegan"],
+          "healthBenefits": ["High in dietary fiber", "Rich in minerals", "Supports digestion"]
+        },
+        {
+          "meal": "dinner",
+          "name": "Roasted Chicken with Rainbow Vegetables",
+          "description": "Herb-roasted chicken with colorful roasted vegetables",
+          "ingredients": ["chicken", "bell peppers", "onions", "carrots", "rosemary", "olive oil"],
+          "prepTime": 50,
+          "calories": 380,
+          "nutritionTags": ["high-protein", "colorful-plate", "family-meal"],
+          "healthBenefits": ["Lean protein", "Colorful veggie variety", "Rich in antioxidants"]
+        }
+      ],
+      "snack": "Apple Slices with Peanut Butter",
+      "waterGoal": "8 glasses",
+      "activitySuggestion": "Dancing or cardio - 30 minutes"
     },
     {
       "day": "Saturday",
-      "foods": ["Cassava + Tea 🥥🍵", "Ugali + Sukuma + Beef 🥬🥩", "Fish Curry + Rice 🐟🍚"]
+      "date": "Comfort Food Day",
+      "theme": "Traditional Favorites",
+      "foods": [
+        {
+          "meal": "breakfast",
+          "name": "Cassava & Sweet Potato with Tea",
+          "description": "Boiled cassava and sweet potato with morning tea",
+          "ingredients": ["cassava", "sweet potato", "tea leaves", "ginger", "milk"],
+          "prepTime": 25,
+          "calories": 300,
+          "nutritionTags": ["complex-carbs", "energy-dense", "traditional"],
+          "healthBenefits": ["Slow-release energy", "Rich in complex carbs", "Gluten-free option"]
+        },
+        {
+          "meal": "lunch",
+          "name": "Ugali with Sukuma Wiki & Beef Stew",
+          "description": "Ugali with collard greens and tender beef stew",
+          "ingredients": ["ugali flour", "sukuma wiki", "beef", "tomatoes", "onions", "garlic"],
+          "prepTime": 60,
+          "calories": 480,
+          "nutritionTags": ["iron-rich", "hearty-meal", "protein-packed"],
+          "healthBenefits": ["Excellent iron source", "Supports red blood cells", "Sustained energy"]
+        },
+        {
+          "meal": "dinner",
+          "name": "Fish Curry with Coconut Rice",
+          "description": "Creamy fish curry served with fragrant coconut rice",
+          "ingredients": ["fish", "coconut milk", "rice", "curry leaves", "mustard seeds", "coriander"],
+          "prepTime": 40,
+          "calories": 420,
+          "nutritionTags": ["omega-3", "coconut-benefits", "aromatic"],
+          "healthBenefits": ["Rich in omega-3", "Coconut benefits", "Anti-inflammatory"]
+        }
+      ],
+      "snack": "Roasted Maize",
+      "waterGoal": "9 glasses",
+      "activitySuggestion": "Family outdoor activity"
     },
     {
       "day": "Sunday",
-      "foods": ["Pancakes + Tea 🥞🍵", "Matumbo + Ugali 🥘🌽", "Tilapia + Kachumbari 🐟🥗"]
+      "date": "Family Feast Day",
+      "theme": "Sunday Specials",
+      "foods": [
+        {
+          "meal": "breakfast",
+          "name": "Pancakes with Fruit Compote",
+          "description": "Whole wheat pancakes with mixed berry compote",
+          "ingredients": ["whole wheat flour", "eggs", "milk", "mixed berries", "honey", "baking powder"],
+          "prepTime": 20,
+          "calories": 350,
+          "nutritionTags": ["weekend-treat", "family-breakfast", "antioxidants"],
+          "healthBenefits": ["Whole grain goodness", "Antioxidant-rich topping", "Family bonding meal"]
+        },
+        {
+          "meal": "lunch",
+          "name": "Matumbo with Ugali & Traditional Greens",
+          "description": "Tripe stew with ugali and traditional African greens",
+          "ingredients": ["matumbo", "ugali flour", "managu", "onions", "ginger", "chili"],
+          "prepTime": 90,
+          "calories": 400,
+          "nutritionTags": ["iron-rich", "traditional", "protein-packed"],
+          "healthBenefits": ["High in protein", "Rich in iron", "Traditional comfort food"]
+        },
+        {
+          "meal": "dinner",
+          "name": "Whole Tilapia with Kachumbari & Ugali",
+          "description": "Grilled whole tilapia with fresh tomato salad and ugali",
+          "ingredients": ["whole tilapia", "tomatoes", "onions", "coriander", "lemon", "ugali flour"],
+          "prepTime": 45,
+          "calories": 380,
+          "nutritionTags": ["omega-3", "fresh-salad", "light-dinner"],
+          "healthBenefits": ["Complete omega-3 benefits", "Fresh vegetable nutrients", "Light evening meal"]
+        }
+      ],
+      "snack": "Fruit Platter",
+      "waterGoal": "8 glasses",
+      "activitySuggestion": "Rest day - light stretching"
     }
+  ],
+  
+  "mealPreparationTips": [
+    {
+      "tip": "Prep vegetables in advance",
+      "description": "Chop and store vegetables for 2-3 days to save time",
+      "timeSaved": "15-20 minutes daily"
+    },
+    {
+      "tip": "Cook grains in batches",
+      "description": "Cook rice, beans, or ugali for multiple meals",
+      "timeSaved": "30 minutes per batch"
+    },
+    {
+      "tip": "Use slow cooker for stews",
+      "description": "Prepare stews in slow cooker for tender results",
+      "timeSaved": "Active cooking time reduced by 70%"
+    },
+    {
+      "tip": "Freeze portioned meals",
+      "description": "Freeze individual portions for busy days",
+      "timeSaved": "Instant meal ready"
+    }
+  ],
+  
+  "shoppingListCategories": {
+    "proteins": ["chicken breast", "fish fillets", "eggs (dozen)", "beans (1kg)", "lentils (500g)"],
+    "carbohydrates": ["rice (2kg)", "ugali flour (2kg)", "whole wheat flour", "potatoes (2kg)", "plantains"],
+    "vegetables": ["sukuma wiki (bundle)", "spinach (bundle)", "tomatoes (2kg)", "onions (2kg)", "carrots (1kg)"],
+    "fruits": ["bananas (bunch)", "mangoes (4)", "oranges (6)", "apples (6)", "avocados (4)"],
+    "dairy": ["milk (2L)", "yogurt (1L)", "cheese (250g)"],
+    "pantry": ["cooking oil", "salt", "spices", "tea leaves", "honey"]
+  },
+  
+  "nutritionalGuidelines": {
+    "dailyCalories": {
+      "sedentary": "1800-2000",
+      "moderatelyActive": "2200-2400",
+      "veryActive": "2600-3000"
+    },
+    "macronutrientSplit": {
+      "proteins": "15-20%",
+      "carbohydrates": "45-55%",
+      "fats": "25-35%"
+    },
+    "waterIntake": "8-10 glasses daily",
+    "fiberIntake": "25-30 grams daily"
+  },
+  
+  "specialDietOptions": {
+    "vegetarian": {
+      "proteinSources": ["beans", "lentils", "tofu", "eggs", "dairy"],
+      "sampleMeal": "Githeri with avocado and chapati"
+    },
+    "vegan": {
+      "proteinSources": ["beans", "lentils", "tofu", "nuts", "seeds"],
+      "sampleMeal": "Bean stew with vegetables and rice"
+    },
+    "glutenFree": {
+      "alternatives": ["rice", "potatoes", "cassava", "plantains", "cornmeal"],
+      "sampleMeal": "Grilled fish with sweet potato and vegetables"
+    },
+    "lowCarb": {
+      "focus": ["proteins", "vegetables", "healthy fats", "limited grains"],
+      "sampleMeal": "Grilled chicken with mixed vegetables salad"
+    }
+  },
+  
+  "seasonalRecommendations": {
+    "rainySeason": {
+      "recommended": ["hot porridge", "soups", "stews", "warming spices"],
+      "avoid": ["cold salads", "raw vegetables", "cold drinks"]
+    },
+    "drySeason": {
+      "recommended": ["fresh salads", "fruits", "light meals", "hydration"],
+      "avoid": ["heavy stews", "excessive oils", "spicy foods"]
+    }
+  },
+  
+  "mealPlanningBenefits": [
+    "Saves time and reduces stress",
+    "Reduces food waste",
+    "Promotes balanced nutrition",
+    "Helps with budget management",
+    "Supports weight management goals",
+    "Encourages variety in diet",
+    "Makes grocery shopping efficient"
   ]
 }

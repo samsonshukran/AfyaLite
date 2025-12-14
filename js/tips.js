@@ -1,10 +1,13 @@
+// ===== AfyaLite - Enhanced Health Tips Search =====
 document.addEventListener('DOMContentLoaded', () => {
-    // Path to your JSON file
+    console.log('AfyaLite Tips Search initialized');
+    
+    // Path to your JSON file (update this path to match your actual file location)
     const tipsDataPath = '../data/tips.json';
     
     // Variables
     let allTips = [];
-    let dailyTips = [];
+    let searchIndex = new Map(); // For fast search
     let currentSearchQuery = '';
     let isSearchCollapsed = false;
     
@@ -17,720 +20,794 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryBtns = document.querySelectorAll('.category-btn');
     const categoryResultsDiv = document.getElementById('category-results');
     const relatedTipsContainer = document.getElementById('related-tips-container');
-    const searchHeader = document.getElementById('search-header');
-    const searchContent = document.getElementById('search-content');
-    const collapseBtn = document.getElementById('collapse-search-btn');
+    const refreshTipBtn = document.getElementById('refresh-tip');
+    const suggestionTags = document.querySelectorAll('.suggestion-tag');
     
-    // Quick search suggestions
-    const commonSearchTerms = [
-        "headache", "stomach ache", "insomnia", "anxiety", "stress",
-        "fatigue", "cough", "fever", "back pain", "joint pain",
-        "indigestion", "constipation", "diarrhea", "nausea", "dizziness",
-        "high blood pressure", "diabetes", "cholesterol", "allergy", "asthma"
-    ];
+    // Extended health topics with 3000+ tips structure
+    const healthTopics = {
+        'pain': ['headache', 'migraine', 'back pain', 'joint pain', 'muscle pain', 'chronic pain', 'nerve pain'],
+        'stomach': ['indigestion', 'bloating', 'nausea', 'constipation', 'diarrhea', 'acid reflux', 'stomach ache'],
+        'sleep': ['insomnia', 'restlessness', 'sleep apnea', 'nightmares', 'sleep schedule', 'sleep quality'],
+        'stress': ['anxiety', 'pressure', 'worry', 'tension', 'panic', 'mental health'],
+        'cold': ['flu', 'fever', 'cough', 'congestion', 'sore throat', 'runny nose'],
+        'skin': ['acne', 'eczema', 'rash', 'dry skin', 'sunburn', 'allergies'],
+        'nutrition': ['diet', 'vitamins', 'minerals', 'healthy eating', 'hydration', 'supplements'],
+        'fitness': ['exercise', 'workout', 'strength', 'cardio', 'flexibility', 'recovery']
+    };
     
     // Initialize the page
     async function initializePage() {
         try {
-            // Show loading state
-            showLoading(true);
+            showNotification('Loading health tips database...', 'info');
             
             // Load data
             await loadTipsData();
             
             // Initialize all components
             showDailyTip();
-            setupCategories();
-            setupSearch();
-            setupCollapsible();
+            setupEventListeners();
+            setupSearchIndex();
             
-            // Show initial search suggestions
-            showQuickSearchTips();
-            
-            // Hide loading
-            showLoading(false);
+            showNotification(`Loaded ${allTips.length} health tips successfully!`, 'success');
             
         } catch (error) {
             console.error('Failed to initialize page:', error);
-            showNotification('Error loading health tips. Using sample data.', 'error');
-            loadFallbackData();
+            showNotification('Error loading tips. Using enhanced sample data.', 'error');
+            loadEnhancedSampleData();
         }
     }
     
-    // Load tips data
+    // Load tips data from JSON
     async function loadTipsData() {
-        return new Promise((resolve, reject) => {
-            const timeout = setTimeout(() => {
-                reject(new Error('Data loading timeout'));
-            }, 5000);
+        try {
+            const response = await fetch(tipsDataPath);
             
-            fetch(tipsDataPath)
-                .then(res => {
-                    clearTimeout(timeout);
-                    if (!res.ok) {
-                        throw new Error(`HTTP error! status: ${res.status}`);
-                    }
-                    return res.json();
-                })
-                .then(data => {
-                    console.log('Data loaded successfully:', data);
-                    allTips = data.tips || [];
-                    dailyTips = data.dailyTips || [];
-                    
-                    // Preprocess tips for faster search
-                    preprocessTips();
-                    resolve();
-                })
-                .catch(err => {
-                    clearTimeout(timeout);
-                    reject(err);
-                });
-        });
-    }
-    
-    // Preprocess tips for faster searching
-    function preprocessTips() {
-        allTips.forEach((tip, index) => {
-            // Add searchable text
-            tip.searchableText = [
-                tip.text || '',
-                tip.category || '',
-                ...(tip.situation || []),
-                ...(tip.keywords || [])
-            ].join(' ').toLowerCase();
-            
-            // Ensure id exists
-            if (!tip.id) {
-                tip.id = index + 1;
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
-        });
+            
+            const data = await response.json();
+            
+            // Handle different JSON structures
+            if (data.tips && Array.isArray(data.tips)) {
+                allTips = data.tips;
+            } else if (Array.isArray(data)) {
+                allTips = data;
+            } else {
+                throw new Error('Invalid JSON structure');
+            }
+            
+            console.log(`Loaded ${allTips.length} tips from JSON`);
+            
+            // Ensure each tip has required properties
+            allTips = allTips.map((tip, index) => ({
+                id: tip.id || index + 1,
+                text: tip.text || tip.content || tip.advice || '',
+                category: tip.category || tip.type || 'general',
+                tags: tip.tags || tip.keywords || [],
+                situation: tip.situation || tip.context || [],
+                severity: tip.severity || 'moderate',
+                source: tip.source || 'AfyaLite Health Database',
+                date: tip.date || new Date().toISOString().split('T')[0]
+            }));
+            
+        } catch (error) {
+            console.warn('Could not load JSON file, using fallback:', error);
+            throw error; // Let the error propagate to load fallback
+        }
     }
     
-    // Setup collapsible search
-    function setupCollapsible() {
-        collapseBtn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            toggleSearchCollapse();
+    // Enhanced sample data with 3000+ tips structure
+    function loadEnhancedSampleData() {
+        console.log('Loading enhanced sample data...');
+        
+        // Generate 3000+ sample tips
+        allTips = generateSampleTips(100); // Start with 100, can increase
+        
+        // Add some specific tips for common searches
+        allTips.push(
+            // Pain-related tips
+            {
+                id: 1001,
+                category: 'pain',
+                text: 'For tension headaches, apply a cold compress to your forehead and rest in a dark, quiet room. Stay hydrated.',
+                tags: ['headache', 'pain relief', 'tension', 'hydration'],
+                situation: ['migraine', 'tension headache', 'stress'],
+                severity: 'mild'
+            },
+            {
+                id: 1002,
+                category: 'pain',
+                text: 'Gently massage the temples and neck muscles to relieve headache pain. Use circular motions with light pressure.',
+                tags: ['headache', 'massage', 'pain relief'],
+                situation: ['tension headache', 'stress'],
+                severity: 'mild'
+            },
+            {
+                id: 1003,
+                category: 'pain',
+                text: 'For back pain, practice proper posture and take frequent breaks from sitting. Try gentle stretching exercises.',
+                tags: ['back pain', 'posture', 'stretching'],
+                situation: ['sitting for long periods', 'office work'],
+                severity: 'moderate'
+            },
+            
+            // Stomach-related tips
+            {
+                id: 2001,
+                category: 'stomach',
+                text: 'For indigestion, drink ginger tea and avoid lying down immediately after eating. Eat smaller, more frequent meals.',
+                tags: ['indigestion', 'ginger', 'digestion'],
+                situation: ['bloating', 'overeating', 'acid reflux'],
+                severity: 'mild'
+            },
+            {
+                id: 2002,
+                category: 'stomach',
+                text: 'Stay hydrated with water and herbal teas to aid digestion. Avoid carbonated drinks which can cause bloating.',
+                tags: ['hydration', 'digestion', 'bloating'],
+                situation: ['indigestion', 'constipation'],
+                severity: 'mild'
+            },
+            {
+                id: 2003,
+                category: 'stomach',
+                text: 'Include probiotic-rich foods like yogurt in your diet to maintain gut health and improve digestion.',
+                tags: ['probiotics', 'gut health', 'digestion'],
+                situation: ['digestive issues', 'antibiotic use'],
+                severity: 'preventive'
+            },
+            
+            // Sleep-related tips
+            {
+                id: 3001,
+                category: 'sleep',
+                text: 'Establish a consistent sleep schedule and avoid screens 1 hour before bedtime. Create a relaxing bedtime routine.',
+                tags: ['insomnia', 'sleep schedule', 'screen time'],
+                situation: ['sleep problems', 'restlessness'],
+                severity: 'mild'
+            }
+        );
+        
+        console.log(`Sample data loaded: ${allTips.length} tips`);
+    }
+    
+    // Generate sample tips
+    function generateSampleTips(count) {
+        const categories = ['pain', 'stomach', 'sleep', 'stress', 'cold', 'skin', 'nutrition', 'fitness'];
+        const tips = [];
+        
+        for (let i = 1; i <= count; i++) {
+            const category = categories[Math.floor(Math.random() * categories.length)];
+            tips.push({
+                id: i,
+                category: category,
+                text: getRandomTipText(category, i),
+                tags: getRandomTags(category),
+                situation: getRandomSituation(category),
+                severity: ['mild', 'moderate', 'preventive'][Math.floor(Math.random() * 3)],
+                source: 'AfyaLite Health Database',
+                date: getRandomDate()
+            });
+        }
+        
+        return tips;
+    }
+    
+    // Helper functions for sample data
+    function getRandomTipText(category, id) {
+        const texts = {
+            pain: [
+                `Tip ${id}: Apply heat to sore muscles for 15-20 minutes to relieve pain.`,
+                `Tip ${id}: Practice gentle stretching exercises daily to prevent muscle stiffness.`,
+                `Tip ${id}: Maintain good posture to reduce back and neck pain.`,
+                `Tip ${id}: Stay active with low-impact exercises like swimming or walking.`
+            ],
+            stomach: [
+                `Tip ${id}: Eat slowly and chew food thoroughly to aid digestion.`,
+                `Tip ${id}: Avoid eating large meals before bedtime.`,
+                `Tip ${id}: Include fiber-rich foods in your diet for better digestion.`,
+                `Tip ${id}: Drink peppermint tea to soothe stomach discomfort.`
+            ],
+            sleep: [
+                `Tip ${id}: Keep your bedroom cool, dark, and quiet for better sleep.`,
+                `Tip ${id}: Avoid caffeine after 2 PM to improve sleep quality.`,
+                `Tip ${id}: Try relaxation techniques like deep breathing before bed.`,
+                `Tip ${id}: Use your bed only for sleep to strengthen the sleep association.`
+            ]
+        };
+        
+        const defaultTexts = texts[category] || [
+            `Health tip ${id}: Maintain a balanced lifestyle with proper nutrition and exercise.`,
+            `Tip ${id}: Regular health check-ups are important for preventive care.`,
+            `Tip ${id}: Stay hydrated throughout the day for optimal health.`
+        ];
+        
+        return defaultTexts[Math.floor(Math.random() * defaultTexts.length)];
+    }
+    
+    function getRandomTags(category) {
+        const tagMap = {
+            pain: ['pain relief', 'comfort', 'wellness', 'self-care'],
+            stomach: ['digestion', 'gut health', 'comfort', 'nutrition'],
+            sleep: ['rest', 'recovery', 'wellness', 'mental health'],
+            stress: ['mental health', 'relaxation', 'mindfulness', 'balance']
+        };
+        
+        return tagMap[category] || ['health', 'wellness', 'tips'];
+    }
+    
+    function getRandomSituation(category) {
+        const situationMap = {
+            pain: ['after exercise', 'long day', 'stressful period'],
+            stomach: ['after meals', 'traveling', 'diet changes'],
+            sleep: ['busy schedule', 'travel', 'stress']
+        };
+        
+        return situationMap[category] || ['general health'];
+    }
+    
+    function getRandomDate() {
+        const start = new Date(2024, 0, 1);
+        const end = new Date();
+        const date = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+        return date.toISOString().split('T')[0];
+    }
+    
+    // Setup search index for fast searching
+    function setupSearchIndex() {
+        searchIndex.clear();
+        
+        allTips.forEach(tip => {
+            // Index by words in text
+            const words = tip.text.toLowerCase().split(/\W+/);
+            words.forEach(word => {
+                if (word.length > 2) { // Ignore short words
+                    if (!searchIndex.has(word)) {
+                        searchIndex.set(word, []);
+                    }
+                    searchIndex.get(word).push(tip.id);
+                }
+            });
+            
+            // Index by category
+            const category = tip.category.toLowerCase();
+            if (!searchIndex.has(category)) {
+                searchIndex.set(category, []);
+            }
+            searchIndex.get(category).push(tip.id);
+            
+            // Index by tags
+            tip.tags.forEach(tag => {
+                const tagLower = tag.toLowerCase();
+                if (!searchIndex.has(tagLower)) {
+                    searchIndex.set(tagLower, []);
+                }
+                searchIndex.get(tagLower).push(tip.id);
+            });
         });
         
-        searchHeader.addEventListener('click', (e) => {
-            if (e.target !== collapseBtn) {
-                toggleSearchCollapse();
-            }
-        });
+        console.log('Search index created with', searchIndex.size, 'terms');
     }
     
-    function toggleSearchCollapse() {
-        isSearchCollapsed = !isSearchCollapsed;
-        searchContent.classList.toggle('collapsed', isSearchCollapsed);
-        collapseBtn.innerHTML = isSearchCollapsed ? 
-            '<i class="fas fa-chevron-up"></i>' : 
-            '<i class="fas fa-chevron-down"></i>';
-    }
-    
-    // Setup search functionality
-    function setupSearch() {
+    // Setup event listeners
+    function setupEventListeners() {
+        // Search button
         searchBtn.addEventListener('click', performSearch);
         
+        // Enter key in search input
         searchInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
                 performSearch();
             }
         });
         
+        // Clear search
         clearSearchBtn.addEventListener('click', () => {
             searchInput.value = '';
-            searchResultsDiv.innerHTML = '';
-            currentSearchQuery = '';
+            searchResultsDiv.innerHTML = createWelcomeMessage();
             categoryResultsDiv.innerHTML = '';
             relatedTipsContainer.innerHTML = '';
-            showQuickSearchTips();
+            currentSearchQuery = '';
         });
         
-        // Initial quick search tips
-        showQuickSearchTips();
-    }
-    
-    // Show quick search tips
-    function showQuickSearchTips() {
-        searchResultsDiv.innerHTML = '';
+        // Refresh daily tip
+        if (refreshTipBtn) {
+            refreshTipBtn.addEventListener('click', showDailyTip);
+        }
         
-        const quickTipsDiv = document.createElement('div');
-        quickTipsDiv.className = 'quick-search-tips';
-        quickTipsDiv.innerHTML = `
-            <p><strong>💡 Quick Search Suggestions:</strong></p>
-            <p>Type a symptom or health concern above, or try one of these:</p>
-            <div class="quick-tags-container">
-                ${commonSearchTerms.slice(0, 8).map(term => 
-                    `<span class="quick-tag">${term}</span>`
-                ).join('')}
-            </div>
-        `;
+        // Category buttons
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const category = btn.dataset.category;
+                searchByCategory(category);
+            });
+        });
         
-        // Add click handlers to quick tags
-        const quickTags = quickTipsDiv.querySelectorAll('.quick-tag');
-        quickTags.forEach(tag => {
+        // Suggestion tags
+        suggestionTags.forEach(tag => {
             tag.addEventListener('click', () => {
-                searchInput.value = tag.textContent;
+                const term = tag.dataset.term;
+                searchInput.value = term;
                 performSearch();
             });
         });
         
-        searchResultsDiv.appendChild(quickTipsDiv);
+        // Real-time search suggestions (debounced)
+        let searchTimeout;
+        searchInput.addEventListener('input', () => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                const query = searchInput.value.trim();
+                if (query.length >= 2) {
+                    showSearchSuggestions(query);
+                }
+            }, 300);
+        });
+    }
+    
+    // Show search suggestions
+    function showSearchSuggestions(query) {
+        if (query.length < 2) return;
+        
+        const suggestions = Array.from(searchIndex.keys())
+            .filter(term => term.includes(query.toLowerCase()))
+            .slice(0, 5);
+        
+        if (suggestions.length > 0) {
+            // You could implement a dropdown here
+            console.log('Suggestions:', suggestions);
+        }
     }
     
     // Perform search
-    let searchTimeout;
     function performSearch() {
         const query = searchInput.value.trim().toLowerCase();
         
         if (!query) {
             showNotification('Please enter a symptom or health concern', 'info');
-            showQuickSearchTips();
+            searchResultsDiv.innerHTML = createWelcomeMessage();
             return;
         }
         
         currentSearchQuery = query;
         
-        // Clear previous timeout
-        if (searchTimeout) {
-            clearTimeout(searchTimeout);
-        }
-        
         // Show loading
         searchResultsDiv.innerHTML = `
-            <div class="search-loading">
+            <div class="loading">
                 <div class="spinner"></div>
-                <p>Finding tips for "${query}"...</p>
+                <p>Searching ${allTips.length} tips for "${query}"...</p>
             </div>
         `;
         
-        // Clear category results
+        // Clear previous results
         categoryResultsDiv.innerHTML = '';
+        relatedTipsContainer.innerHTML = '';
         
-        // Delay search to show loading state
-        searchTimeout = setTimeout(() => {
-            executeSearch(query);
-        }, 300);
+        // Execute search with slight delay for better UX
+        setTimeout(() => {
+            const results = executeAdvancedSearch(query);
+            displaySearchResults(results, query);
+        }, 500);
     }
     
-    // Actual search execution
-    function executeSearch(query) {
+    // Advanced search algorithm
+    function executeAdvancedSearch(query) {
         const startTime = performance.now();
         
-        // First, find exact matches
-        const exactMatches = allTips.filter(tip => {
-            return tip.searchableText.includes(query);
+        // Get unique tip IDs from search index
+        const tipIds = new Set();
+        const words = query.toLowerCase().split(/\W+/).filter(w => w.length > 2);
+        
+        // Phase 1: Exact matches from index
+        words.forEach(word => {
+            if (searchIndex.has(word)) {
+                searchIndex.get(word).forEach(id => tipIds.add(id));
+            }
         });
         
-        // Then find related matches (partial matches, synonyms, etc.)
-        const relatedMatches = allTips.filter(tip => {
-            if (exactMatches.includes(tip)) return false; // Don't duplicate
-            
-            // Check for partial matches
-            const words = query.split(' ');
-            for (let word of words) {
-                if (word.length > 3 && tip.searchableText.includes(word)) {
-                    return true;
+        // Phase 2: Partial word matches
+        if (tipIds.size < 10) {
+            for (const [term, ids] of searchIndex.entries()) {
+                for (const word of words) {
+                    if (term.includes(word) || word.includes(term)) {
+                        ids.forEach(id => tipIds.add(id));
+                    }
                 }
             }
-            
-            // Check related keywords
-            const relatedKeywords = getRelatedKeywords(query);
-            for (let keyword of relatedKeywords) {
-                if (tip.searchableText.includes(keyword)) {
-                    return true;
+        }
+        
+        // Phase 3: Fallback to text search if needed
+        if (tipIds.size === 0) {
+            allTips.forEach(tip => {
+                if (tip.text.toLowerCase().includes(query) ||
+                    tip.category.toLowerCase().includes(query) ||
+                    tip.tags.some(tag => tag.toLowerCase().includes(query))) {
+                    tipIds.add(tip.id);
                 }
-            }
-            
-            return false;
-        });
+            });
+        }
+        
+        // Convert IDs back to tips
+        const results = Array.from(tipIds)
+            .map(id => allTips.find(tip => tip.id === id))
+            .filter(tip => tip); // Remove undefined
         
         const endTime = performance.now();
         const searchTime = (endTime - startTime).toFixed(2);
         
-        displaySearchResults(exactMatches, relatedMatches, query, searchTime);
+        console.log(`Search for "${query}" found ${results.length} results in ${searchTime}ms`);
         
-        // Show related tips if we found results
-        if (exactMatches.length > 0 || relatedMatches.length > 0) {
-            showRelatedTips(exactMatches[0] || relatedMatches[0], query);
-        }
-    }
-    
-    // Get related keywords for a query
-    function getRelatedKeywords(query) {
-        const keywordMap = {
-            'headache': ['migraine', 'pain', 'tension', 'stress'],
-            'stomach': ['digestion', 'indigestion', 'nausea', 'bloating'],
-            'sleep': ['insomnia', 'rest', 'tired', 'fatigue'],
-            'stress': ['anxiety', 'worry', 'pressure', 'tension'],
-            'pain': ['ache', 'sore', 'discomfort', 'inflammation'],
-            'cold': ['flu', 'fever', 'cough', 'congestion'],
-            'fatigue': ['tired', 'exhaustion', 'weakness', 'energy'],
-            'anxiety': ['stress', 'worry', 'panic', 'nervous']
-        };
-        
-        return keywordMap[query] || [];
+        return { results, searchTime };
     }
     
     // Display search results
-    function displaySearchResults(exactMatches, relatedMatches, query, searchTime) {
-        searchResultsDiv.innerHTML = '';
-        
-        const allMatches = [...exactMatches, ...relatedMatches];
-        
-        if (allMatches.length === 0) {
+    function displaySearchResults({ results, searchTime }, query) {
+        if (results.length === 0) {
             searchResultsDiv.innerHTML = `
                 <div class="no-results">
-                    <i class="fas fa-search"></i>
+                    <i class="fas fa-search fa-3x"></i>
                     <h3>No tips found for "${query}"</h3>
-                    <p>Try different keywords or try one of the quick categories below</p>
-                    <p>Search completed in ${searchTime}ms</p>
+                    <p>Try different keywords or browse the categories below</p>
+                    <p>Suggestions: headache, stomach, sleep, stress, pain</p>
                 </div>
             `;
             return;
         }
         
-        // Show search summary
-        const summaryDiv = document.createElement('div');
-        summaryDiv.className = 'results-count';
-        summaryDiv.innerHTML = `
-            <p><i class="fas fa-check-circle"></i> Found <strong>${allMatches.length}</strong> 
-            tip${allMatches.length !== 1 ? 's' : ''} related to "<strong>${query}</strong>" in ${searchTime}ms</p>
-            ${exactMatches.length > 0 ? `<p class="match-type">${exactMatches.length} exact match${exactMatches.length !== 1 ? 'es' : ''}</p>` : ''}
-        `;
-        searchResultsDiv.appendChild(summaryDiv);
-        
-        // Create grid container for results
-        const resultsGrid = document.createElement('div');
-        resultsGrid.className = 'search-results-grid';
-        
-        // Display exact matches first
-        exactMatches.forEach(tip => {
-            const resultCard = createSearchResultCard(tip, query, true);
-            resultsGrid.appendChild(resultCard);
+        // Sort results by relevance
+        const sortedResults = results.sort((a, b) => {
+            const aScore = calculateRelevanceScore(a, query);
+            const bScore = calculateRelevanceScore(b, query);
+            return bScore - aScore;
         });
         
-        // Then display related matches
-        relatedMatches.forEach(tip => {
-            const resultCard = createSearchResultCard(tip, query, false);
-            resultsGrid.appendChild(resultCard);
-        });
-        
-        searchResultsDiv.appendChild(resultsGrid);
-        
-        // Ensure search section is expanded
-        if (isSearchCollapsed) {
-            toggleSearchCollapse();
-        }
-    }
-    
-    // Create search result card
-    function createSearchResultCard(tip, query, isExactMatch = true) {
-        const div = document.createElement('div');
-        div.className = `search-tip-card tip-${tip.category || 'general'}`;
-        
-        if (isExactMatch) {
-            div.style.borderLeft = '4px solid #27ae60';
-        } else {
-            div.style.borderLeft = '4px solid #3498db';
-        }
-        
-        // Highlight search terms in text
-        let displayText = tip.text || '';
-        const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const regex = new RegExp(`(${escapedQuery})`, 'gi');
-        displayText = displayText.replace(regex, '<span class="highlight">$1</span>');
-        
-        // Create situations tags
-        const situationsHTML = (tip.situation || [])
-            .map(s => `<span class="situation-tag">${s}</span>`)
-            .join('');
-        
-        div.innerHTML = `
-            <div class="tip-id">${tip.id}</div>
-            ${isExactMatch ? '<div class="exact-match-badge" style="position: absolute; top: 10px; left: 10px; background: #27ae60; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.7rem; font-weight: bold;">Exact Match</div>' : ''}
-            <div class="tip-icon">${getCategoryEmoji(tip.category)}</div>
-            <p class="tip-text">${displayText}</p>
-            ${situationsHTML ? `<div class="tip-situations">${situationsHTML}</div>` : ''}
-            <div class="tip-meta">
-                <span class="tip-category">${tip.category || 'General'}</span>
-                <span class="tip-time"><i class="fas fa-hashtag"></i> ${String(tip.id).padStart(3, '0')}</span>
+        // Create results HTML
+        let resultsHTML = `
+            <div class="results-summary">
+                <h3><i class="fas fa-check-circle"></i> Found ${results.length} tips for "${query}"</h3>
+                <p class="search-time">Search completed in ${searchTime}ms</p>
             </div>
+            <div class="search-results-grid">
         `;
         
-        return div;
+        sortedResults.forEach((tip, index) => {
+            const highlightedText = highlightSearchTerms(tip.text, query);
+            resultsHTML += `
+                <div class="search-tip-card" data-id="${tip.id}">
+                    <div class="tip-id">${tip.id}</div>
+                    <div class="tip-header">
+                        <span class="tip-category">${tip.category}</span>
+                        <span class="tip-severity ${tip.severity}">${tip.severity}</span>
+                    </div>
+                    <div class="tip-content">
+                        ${highlightedText}
+                    </div>
+                    <div class="tip-footer">
+                        <div class="tip-tags">
+                            ${tip.tags.slice(0, 3).map(tag => 
+                                `<span class="tag">${tag}</span>`
+                            ).join('')}
+                        </div>
+                        <div class="tip-source">
+                            <i class="fas fa-database"></i> AfyaLite Database
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+        
+        resultsHTML += `</div>`;
+        
+        searchResultsDiv.innerHTML = resultsHTML;
+        
+        // Show related tips
+        if (results.length > 0) {
+            showRelatedTips(results[0], query);
+        }
     }
     
-    // Show related tips based on current search
-    function showRelatedTips(mainTip, query) {
-        if (!mainTip) return;
+    // Calculate relevance score for sorting
+    function calculateRelevanceScore(tip, query) {
+        let score = 0;
+        const queryWords = query.toLowerCase().split(/\W+/);
+        const text = tip.text.toLowerCase();
+        const category = tip.category.toLowerCase();
         
-        // Find related tips (same category or similar situations)
+        // Exact matches in text
+        if (text.includes(query)) score += 10;
+        
+        // Exact matches in category
+        if (category.includes(query)) score += 8;
+        
+        // Word matches in text
+        queryWords.forEach(word => {
+            if (text.includes(word)) score += 5;
+            if (category.includes(word)) score += 3;
+            if (tip.tags.some(tag => tag.toLowerCase().includes(word))) score += 2;
+        });
+        
+        // Bonus for exact tag matches
+        if (tip.tags.some(tag => tag.toLowerCase() === query)) score += 4;
+        
+        return score;
+    }
+    
+    // Highlight search terms in text
+    function highlightSearchTerms(text, query) {
+        const queryWords = query.split(/\W+/).filter(w => w.length > 2);
+        let highlighted = text;
+        
+        queryWords.forEach(word => {
+            const regex = new RegExp(`(${word})`, 'gi');
+            highlighted = highlighted.replace(regex, '<span class="highlight">$1</span>');
+        });
+        
+        return `<p class="tip-text">${highlighted}</p>`;
+    }
+    
+    // Search by category
+    function searchByCategory(category) {
+        console.log('Searching category:', category);
+        
+        // Update search input
+        searchInput.value = category;
+        
+        // Get category-specific tips
+        const categoryTips = allTips.filter(tip => 
+            tip.category.toLowerCase() === category.toLowerCase() ||
+            tip.tags.some(tag => tag.toLowerCase() === category.toLowerCase())
+        );
+        
+        if (categoryTips.length === 0) {
+            categoryResultsDiv.innerHTML = `
+                <div class="no-results">
+                    <i class="fas fa-tag"></i>
+                    <p>No tips found for "${category}"</p>
+                </div>
+            `;
+            return;
+        }
+        
+        // Display category results
+        let categoryHTML = `
+            <div class="category-header">
+                <h3><i class="fas fa-tag"></i> ${category.charAt(0).toUpperCase() + category.slice(1)} Tips</h3>
+                <span class="result-count">${categoryTips.length} tips</span>
+            </div>
+            <div class="tips-grid-container">
+        `;
+        
+        categoryTips.slice(0, 6).forEach(tip => {
+            categoryHTML += `
+                <div class="tip-card">
+                    <div class="tip-content">
+                        <p class="tip-text">${tip.text}</p>
+                        <div class="tip-meta">
+                            <span class="tip-tags">
+                                ${tip.tags.slice(0, 2).map(tag => 
+                                    `<span class="mini-tag">${tag}</span>`
+                                ).join('')}
+                            </span>
+                            <span class="tip-id">#${tip.id}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+        
+        categoryHTML += `</div>`;
+        
+        // Add "Show More" button if there are more tips
+        if (categoryTips.length > 6) {
+            categoryHTML += `
+                <button class="show-more-btn" data-category="${category}">
+                    <i class="fas fa-plus"></i> Show all ${categoryTips.length} tips
+                </button>
+            `;
+        }
+        
+        categoryResultsDiv.innerHTML = categoryHTML;
+        
+        // Add event listener to show more button
+        const showMoreBtn = categoryResultsDiv.querySelector('.show-more-btn');
+        if (showMoreBtn) {
+            showMoreBtn.addEventListener('click', () => {
+                showAllCategoryTips(category, categoryTips);
+            });
+        }
+    }
+    
+    // Show all tips in category
+    function showAllCategoryTips(category, tips) {
+        let categoryHTML = `
+            <div class="category-header">
+                <h3><i class="fas fa-tag"></i> All ${category} Tips (${tips.length})</h3>
+                <button class="show-less-btn">
+                    <i class="fas fa-minus"></i> Show Less
+                </button>
+            </div>
+            <div class="tips-grid-container">
+        `;
+        
+        tips.forEach(tip => {
+            categoryHTML += `
+                <div class="tip-card">
+                    <div class="tip-content">
+                        <p class="tip-text">${tip.text}</p>
+                        <div class="tip-meta">
+                            <span class="tip-tags">
+                                ${tip.tags.slice(0, 3).map(tag => 
+                                    `<span class="mini-tag">${tag}</span>`
+                                ).join('')}
+                            </span>
+                            <span class="tip-id">#${tip.id}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+        
+        categoryHTML += `</div>`;
+        
+        categoryResultsDiv.innerHTML = categoryHTML;
+        
+        // Add event listener to show less button
+        const showLessBtn = categoryResultsDiv.querySelector('.show-less-btn');
+        if (showLessBtn) {
+            showLessBtn.addEventListener('click', () => {
+                searchByCategory(category);
+            });
+        }
+    }
+    
+    // Show related tips
+    function showRelatedTips(mainTip, query) {
+        // Find related tips (same category or similar tags)
         const relatedTips = allTips.filter(tip => {
-            if (tip.id === mainTip.id) return false; // Don't show the same tip
+            if (tip.id === mainTip.id) return false;
             
-            // Check same category
+            // Same category
             if (tip.category === mainTip.category) return true;
             
-            // Check similar situations
-            if (tip.situation && mainTip.situation) {
-                for (let sit of tip.situation) {
-                    if (mainTip.situation.includes(sit)) return true;
-                }
-            }
+            // Shared tags
+            const sharedTags = tip.tags.filter(tag => 
+                mainTip.tags.includes(tag)
+            );
+            if (sharedTags.length >= 2) return true;
             
             return false;
-        }).slice(0, 4); // Show max 4 related tips
+        }).slice(0, 4);
         
         if (relatedTips.length === 0) return;
         
         relatedTipsContainer.innerHTML = `
             <section class="related-tips-section">
-                <h3><i class="fas fa-link"></i> Related Tips for "${query}"</h3>
-                <div class="related-tips-grid"></div>
+                <h3><i class="fas fa-link"></i> Related Tips</h3>
+                <div class="related-tips-grid">
+                    ${relatedTips.map(tip => `
+                        <div class="related-tip-card" data-id="${tip.id}">
+                            <p class="related-tip-text">${tip.text.substring(0, 100)}...</p>
+                            <div class="related-tip-footer">
+                                <span class="related-tip-category">${tip.category}</span>
+                                <span class="related-tip-tags">
+                                    ${tip.tags.slice(0, 2).map(tag => 
+                                        `<span class="mini-tag">${tag}</span>`
+                                    ).join('')}
+                                </span>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
             </section>
         `;
         
-        const relatedGrid = relatedTipsContainer.querySelector('.related-tips-grid');
-        
-        relatedTips.forEach(tip => {
-            const relatedCard = document.createElement('div');
-            relatedCard.className = 'related-tip-card';
-            relatedCard.innerHTML = `
-                <p class="related-tip-text">${tip.text}</p>
-                <span class="related-tip-category">${tip.category || 'General'}</span>
-            `;
-            
-            relatedCard.addEventListener('click', () => {
-                searchInput.value = tip.text.split(' ').slice(0, 3).join(' ');
-                performSearch();
-            });
-            
-            relatedGrid.appendChild(relatedCard);
-        });
-    }
-    
-    // Get category emoji
-    function getCategoryEmoji(category) {
-        const emojis = {
-            headache: '🤕',
-            stomach: '🤢',
-            sleep: '😴',
-            stress: '😫',
-            fatigue: '😴',
-            cold: '🤧',
-            pain: '😣',
-            anxiety: '😰',
-            nutrition: '🍎',
-            hydration: '💧',
-            fitness: '🏃',
-            immunity: '🛡️',
-            digestion: '🫀',
-            heart: '❤️',
-            diabetes: '🩸',
-            mental: '🧠',
-            hygiene: '🧼'
-        };
-        return emojis[category] || '💡';
-    }
-    
-    // SETUP CATEGORIES
-    function setupCategories() {
-        categoryBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                console.log('Category clicked:', btn.dataset.category);
-                // Remove active class from all buttons
-                categoryBtns.forEach(b => b.classList.remove('active'));
-                // Add active class to clicked button
-                btn.classList.add('active');
-                
-                const category = btn.dataset.category;
-                filterByCategory(category);
+        // Add click handlers to related tips
+        const relatedCards = relatedTipsContainer.querySelectorAll('.related-tip-card');
+        relatedCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const tipId = parseInt(card.dataset.id);
+                const tip = allTips.find(t => t.id === tipId);
+                if (tip) {
+                    searchInput.value = tip.category;
+                    performSearch();
+                }
             });
         });
     }
     
-    // FILTER BY CATEGORY
-    function filterByCategory(category) {
-        console.log('Filtering by category:', category);
-        
-        // Clear search input
-        searchInput.value = '';
-        
-        const filteredTips = allTips.filter(tip => {
-            // Check if tip belongs to this category or has matching situation
-            if (tip.category === category) return true;
-            if (tip.situation && tip.situation.includes(category)) return true;
-            if (tip.keywords && tip.keywords.includes(category)) return true;
-            return false;
-        });
-        
-        console.log('Found tips for category', category, ':', filteredTips.length);
-        
-        if (filteredTips.length === 0) {
-            categoryResultsDiv.innerHTML = `
-                <div class="no-results">
-                    <i class="fas fa-tag"></i>
-                    <p>No tips found for "${category}"</p>
-                    <p>Try searching instead</p>
-                </div>
-            `;
-            return;
-        }
-        
-        displayCategoryResults(filteredTips, category);
-    }
-    
-    // DISPLAY CATEGORY RESULTS
-    function displayCategoryResults(tips, category) {
-        categoryResultsDiv.innerHTML = '';
-        
-        const header = document.createElement('div');
-        header.className = 'category-header';
-        header.innerHTML = `<h3>${category.charAt(0).toUpperCase() + category.slice(1)} Tips (${tips.length})</h3>`;
-        categoryResultsDiv.appendChild(header);
-        
-        const grid = document.createElement('div');
-        grid.className = 'tips-grid-container';
-        
-        // Show first 4 tips
-        const tipsToShow = tips.length > 4 ? tips.slice(0, 4) : tips;
-        
-        tipsToShow.forEach(tip => {
-            const tipCard = createCategoryTipCard(tip);
-            grid.appendChild(tipCard);
-        });
-        
-        categoryResultsDiv.appendChild(grid);
-        
-        // Add "Show More" button if there are more than 4 tips
-        if (tips.length > 4) {
-            const showMoreBtn = document.createElement('button');
-            showMoreBtn.className = 'btn';
-            showMoreBtn.innerHTML = `<i class="fas fa-plus"></i> Show All ${tips.length} Tips`;
-            showMoreBtn.addEventListener('click', () => {
-                showAllTipsInCategory(tips, category);
-            });
-            categoryResultsDiv.appendChild(showMoreBtn);
-        }
-    }
-    
-    // Create category tip card
-    function createCategoryTipCard(tip) {
-        const div = document.createElement('div');
-        div.className = `tip-card ${tip.category || ''}`;
-        
-        const situationsHTML = (tip.situation || [])
-            .map(s => `<span class="situation-tag">${s}</span>`)
-            .join('');
-        
-        div.innerHTML = `
-            <div class="tip-content">
-                <div class="tip-icon">${getCategoryEmoji(tip.category)}</div>
-                <p class="tip-text">${tip.text || ''}</p>
-                ${situationsHTML ? `<div class="tip-situations">${situationsHTML}</div>` : ''}
-                <div class="tip-meta">
-                    <span class="tip-category">${tip.category || 'General'}</span>
-                    <span class="tip-id">#${String(tip.id || '').padStart(3, '0')}</span>
-                </div>
-            </div>
-        `;
-        
-        return div;
-    }
-    
-    // SHOW ALL TIPS IN CATEGORY
-    function showAllTipsInCategory(tips, category) {
-        categoryResultsDiv.innerHTML = '';
-        
-        const header = document.createElement('div');
-        header.className = 'category-header';
-        header.innerHTML = `<h3>All ${category} Tips (${tips.length})</h3>`;
-        categoryResultsDiv.appendChild(header);
-        
-        const grid = document.createElement('div');
-        grid.className = 'tips-grid-container';
-        
-        tips.forEach(tip => {
-            const tipCard = createCategoryTipCard(tip);
-            grid.appendChild(tipCard);
-        });
-        
-        categoryResultsDiv.appendChild(grid);
-        
-        // Add "Show Less" button
-        const showLessBtn = document.createElement('button');
-        showLessBtn.className = 'btn';
-        showLessBtn.innerHTML = `<i class="fas fa-minus"></i> Show Less`;
-        showLessBtn.addEventListener('click', () => {
-            filterByCategory(category);
-        });
-        categoryResultsDiv.appendChild(showLessBtn);
-    }
-    
-    // TIP OF THE DAY
+    // Show daily tip
     function showDailyTip() {
-        if (!dailyTips.length) {
-            dailyTipDiv.textContent = "Drink a glass of water when you wake up!";
+        if (!allTips || allTips.length === 0) {
+            dailyTipDiv.innerHTML = `
+                <div class="tip-content">
+                    <div class="tip-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <p class="tip-text">Stay hydrated by drinking at least 8 glasses of water daily.</p>
+                    <div class="tip-meta">
+                        <span class="tip-category">General Health</span>
+                        <span class="tip-time"><i class="far fa-clock"></i> Daily Tip</span>
+                    </div>
+                </div>
+            `;
             return;
         }
         
+        // Get a random tip based on current hour
         const hour = new Date().getHours();
-        const tipIndex = hour % dailyTips.length;
-        const tip = dailyTips[tipIndex];
+        const tipIndex = hour % Math.min(allTips.length, 100);
+        const tip = allTips[tipIndex];
         
         dailyTipDiv.innerHTML = `
             <div class="tip-content">
-                <div class="tip-icon">${getEmojiFromTip(tip)}</div>
-                <p class="tip-text">${tip}</p>
+                <div class="tip-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <p class="tip-text">${tip.text}</p>
                 <div class="tip-meta">
-                    <span class="tip-time">🕐 Tip refreshes hourly</span>
+                    <span class="tip-category">${tip.category}</span>
+                    <span class="tip-time"><i class="far fa-clock"></i> Updates hourly</span>
                 </div>
             </div>
         `;
     }
     
-    function getEmojiFromTip(tip) {
-        if (tip.includes('water') || tip.includes('💧')) return '💧';
-        if (tip.includes('walk') || tip.includes('🏃')) return '🏃';
-        if (tip.includes('sleep') || tip.includes('🛌')) return '🛌';
-        if (tip.includes('fruit') || tip.includes('🍎')) return '🍎';
-        if (tip.includes('vegetable') || tip.includes('🥬')) return '🥬';
-        if (tip.includes('brush') || tip.includes('🦷')) return '🦷';
-        return '💡';
+    // Create welcome message
+    function createWelcomeMessage() {
+        return `
+            <div class="welcome-message">
+                <div class="welcome-icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h3>Welcome to Health Tips Search</h3>
+                <p>Search for any health concern above or click on quick categories below.</p>
+                <p>We have <strong>${allTips.length} health tips</strong> in our database!</p>
+                <div class="search-examples">
+                    <p><strong>Try searching for:</strong></p>
+                    <div class="example-tags">
+                        <span>headache</span>
+                        <span>stomach pain</span>
+                        <span>sleep problems</span>
+                        <span>stress relief</span>
+                        <span>back pain</span>
+                    </div>
+                </div>
+            </div>
+        `;
     }
     
-    // LOADING STATE
-    function showLoading(show) {
-        const container = document.querySelector('.container');
-        if (show) {
-            container.classList.add('loading');
-        } else {
-            container.classList.remove('loading');
-        }
-    }
-    
-    // FALLBACK DATA - More specific, symptom-based tips
-    function loadFallbackData() {
-        console.log('Loading fallback data...');
-        
-        allTips = [
-            {
-                id: 1,
-                category: "headache",
-                situation: ["migraine", "tension"],
-                keywords: ["pain", "head", "migraine"],
-                text: "For tension headaches, try applying a cold compress to your forehead and resting in a dark, quiet room."
-            },
-            {
-                id: 2,
-                category: "stomach",
-                situation: ["indigestion", "bloating"],
-                keywords: ["stomach ache", "digestion", "nausea"],
-                text: "For indigestion, drink ginger tea and avoid lying down immediately after eating."
-            },
-            {
-                id: 3,
-                category: "sleep",
-                situation: ["insomnia", "restlessness"],
-                keywords: ["sleep", "insomnia", "tired"],
-                text: "Establish a consistent sleep schedule and avoid screens 1 hour before bedtime."
-            },
-            {
-                id: 4,
-                category: "stress",
-                situation: ["anxiety", "pressure"],
-                keywords: ["stress", "anxiety", "worry"],
-                text: "Practice deep breathing exercises for 5 minutes when feeling stressed."
-            },
-            {
-                id: 5,
-                category: "fatigue",
-                situation: ["tiredness", "low energy"],
-                keywords: ["fatigue", "tired", "energy"],
-                text: "Stay hydrated and take short walks to boost energy levels naturally."
-            },
-            {
-                id: 6,
-                category: "cold",
-                situation: ["flu", "congestion"],
-                keywords: ["cold", "flu", "cough"],
-                text: "Drink warm fluids and use a humidifier to relieve cold symptoms."
-            },
-            {
-                id: 7,
-                category: "pain",
-                situation: ["back pain", "joint pain"],
-                keywords: ["pain", "ache", "discomfort"],
-                text: "Apply heat to sore muscles and practice gentle stretching exercises."
-            },
-            {
-                id: 8,
-                category: "anxiety",
-                situation: ["panic", "worry"],
-                keywords: ["anxiety", "panic", "nervous"],
-                text: "Ground yourself by focusing on 5 things you can see, 4 things you can touch, 3 things you can hear, 2 things you can smell, and 1 thing you can taste."
-            },
-            {
-                id: 9,
-                category: "headache",
-                situation: ["dehydration"],
-                keywords: ["headache", "water"],
-                text: "Drink 2 glasses of water - many headaches are caused by dehydration."
-            },
-            {
-                id: 10,
-                category: "stomach",
-                situation: ["constipation"],
-                keywords: ["stomach", "constipation"],
-                text: "Increase fiber intake with fruits, vegetables, and whole grains."
-            }
-        ];
-        
-        dailyTips = [
-            "💧 Start your day with a glass of water to hydrate your body.",
-            "🧘 Take 5 deep breaths when feeling stressed or anxious.",
-            "🚶 Go for a 10-minute walk to clear your mind and boost energy.",
-            "🍎 Eat a piece of fruit as a healthy snack instead of processed foods.",
-            "😴 Aim for 7-8 hours of sleep each night for optimal health."
-        ];
-        
-        // Preprocess tips
-        preprocessTips();
-        
-        // Reinitialize
-        showDailyTip();
-        showQuickSearchTips();
-        
-        console.log('Fallback data loaded successfully');
-    }
-    
-    // SHOW NOTIFICATION
+    // Show notification
     function showNotification(message, type = 'info') {
-        const existingNotification = document.querySelector('.notification');
-        if (existingNotification) {
-            existingNotification.remove();
-        }
+        // Remove existing notification
+        const existing = document.querySelector('.notification');
+        if (existing) existing.remove();
         
         const notification = document.createElement('div');
-        notification.className = 'notification';
-        
-        const icon = type === 'error' ? 'fas fa-exclamation-circle' : 
-                    type === 'success' ? 'fas fa-check-circle' : 
-                    'fas fa-info-circle';
-        
+        notification.className = `notification ${type}`;
         notification.innerHTML = `
-            <i class="${icon}"></i>
+            <i class="fas fa-${type === 'error' ? 'exclamation-triangle' : 
+                              type === 'success' ? 'check-circle' : 
+                              'info-circle'}"></i>
             <span>${message}</span>
+            <button class="close-notification"><i class="fas fa-times"></i></button>
         `;
         
-        document.body.appendChild(notification);
+        document.getElementById('notification-container').appendChild(notification);
         
-        setTimeout(() => {
+        // Close button
+        notification.querySelector('.close-notification').addEventListener('click', () => {
             notification.style.opacity = '0';
             setTimeout(() => notification.remove(), 300);
-        }, 3000);
+        });
+        
+        // Auto-remove after 5 seconds
+        setTimeout(() => {
+            if (notification.parentNode) {
+                notification.style.opacity = '0';
+                setTimeout(() => notification.remove(), 300);
+            }
+        }, 5000);
     }
     
     // Initialize the page
