@@ -296,3 +296,33 @@ document.addEventListener('visibilitychange', () => {
         console.log('Welcome back to AfyaLite!');
     }
 });
+
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => {
+        console.log('ServiceWorker registered: ', registration);
+      })
+      .catch(error => {
+        console.log('ServiceWorker registration failed: ', error);
+      });
+  });
+}
+
+
+
+
+// Scroll to main function (called from header)
+window.scrollToMain = function() {
+    document.getElementById('main').scrollIntoView({ behavior: 'smooth' });
+};
+
+// Service Worker Registration for offline capability
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('✅ Service Worker registered:', reg))
+            .catch(err => console.log('❌ Service Worker registration failed:', err));
+    });
+}
