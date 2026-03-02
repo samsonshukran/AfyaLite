@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize all components
     initApp();
+    
+    // Register service worker (only once, with relative path)
+    registerServiceWorker();
 });
 
 // ===== MAIN INITIALIZATION =====
@@ -22,6 +25,21 @@ function initApp() {
     
     // Initialize smooth scroll
     initSmoothScroll();
+}
+
+// ===== SERVICE WORKER REGISTRATION =====
+function registerServiceWorker() {
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js')  // relative path
+                .then(registration => {
+                    console.log('✅ Service Worker registered:', registration);
+                })
+                .catch(error => {
+                    console.log('❌ Service Worker registration failed:', error);
+                });
+        });
+    }
 }
 
 // ===== DYNAMIC TAGLINE =====
@@ -297,32 +315,5 @@ document.addEventListener('visibilitychange', () => {
     }
 });
 
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
-      .then(registration => {
-        console.log('ServiceWorker registered: ', registration);
-      })
-      .catch(error => {
-        console.log('ServiceWorker registration failed: ', error);
-      });
-  });
-}
-
-
-
-
-// Scroll to main function (called from header)
-window.scrollToMain = function() {
-    document.getElementById('main').scrollIntoView({ behavior: 'smooth' });
-};
-
-// Service Worker Registration for offline capability
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-            .then(reg => console.log('✅ Service Worker registered:', reg))
-            .catch(err => console.log('❌ Service Worker registration failed:', err));
-    });
-}
+// Ensure scrollToMain is globally available
+window.scrollToMain = scrollToMain;

@@ -9,18 +9,19 @@
     <meta name="description" content="AfyaLite: Your intelligent health companion combining cutting-edge technology with traditional East African wisdom.">
     <meta name="theme-color" content="#2e7d32">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
     <!-- Manifest -->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="manifest.json">
     
     <!-- Icons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icon-16x16.png">
-    <link rel="apple-touch-icon" href="/assets/images/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/icon-16x16.png">
+    <link rel="apple-touch-icon" href="assets/images/icon-192x192.png">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
@@ -83,42 +84,43 @@
             </div>
 
             <div class="cards-container">
-                <a href="/pages/meal-planner.html" class="card">
+                <!-- All card links now use relative paths (no leading slash) -->
+                <a href="pages/meal-planner.html" class="card">
                     <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
                     <h3>Smart Meal Planner</h3>
                     <p>Create personalized weekly meal plans with locally available foods.</p>
                     <div class="card-footer"><span>Start Planning</span><i class="fas fa-arrow-right"></i></div>
                 </a>
 
-                <a href="/pages/tips.html" class="card">
+                <a href="pages/tips.html" class="card">
                     <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
                     <h3>Daily Health Insights</h3>
                     <p>Receive personalized health tips and insights every day.</p>
                     <div class="card-footer"><span>Get Inspired</span><i class="fas fa-arrow-right"></i></div>
                 </a>
 
-                <a href="/pages/recipes.html" class="card">
+                <a href="pages/recipes.html" class="card">
                     <div class="card-icon"><i class="fas fa-utensils"></i></div>
                     <h3>Local Recipe Hub</h3>
                     <p>Access hundreds of authentic East African recipes with modern twists.</p>
                     <div class="card-footer"><span>Browse Recipes</span><i class="fas fa-arrow-right"></i></div>
                 </a>
 
-                <a href="/pages/education.html" class="card">
+                <a href="pages/education.html" class="card">
                     <div class="card-icon"><i class="fas fa-book"></i></div>
                     <h3>Nutrition Academy</h3>
                     <p>Learn about healthy eating with interactive lessons and quizzes.</p>
                     <div class="card-footer"><span>Start Learning</span><i class="fas fa-arrow-right"></i></div>
                 </a>
 
-                <a href="/pages/exercise.html" class="card">
+                <a href="pages/exercise.html" class="card">
                     <div class="card-icon"><i class="fas fa-running"></i></div>
                     <h3>Exercise Companion</h3>
                     <p>Follow guided workout routines designed for all fitness levels.</p>
                     <div class="card-footer"><span>Get Active</span><i class="fas fa-arrow-right"></i></div>
                 </a>
 
-                <a href="/pages/dashboard.html" class="card">
+                <a href="pages/dashboard.html" class="card">
                     <div class="card-icon"><i class="fas fa-chart-line"></i></div>
                     <h3>Health Dashboard</h3>
                     <p>Monitor your health journey with our comprehensive dashboard.</p>
@@ -143,7 +145,7 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="/js/script.js"></script>
+    <!-- JavaScript – relative path -->
+    <script src="js/script.js"></script>
 </body>
 </html>
