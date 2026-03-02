@@ -1,4 +1,5 @@
 const CACHE_NAME = 'afyalite-cache-v2'; // Increment version when updating cache
+const BASE_PATH = '/AfyaLite/'; // Base path for all resources
 const urlsToCache = [
   '/AfyaLite/',
   '/AfyaLite/index.html',
